@@ -1,0 +1,79 @@
+{
+  "manifestVersion": 1,
+  "updated": "2026-07-10T15:00:00Z",
+  "channel": "stable",
+  "brands": [
+    {
+      "id": "Bambu Lab",
+      "name": "拓竹 (Bambu Lab)",
+      "logo": "bambu-logo.png"
+    }
+  ],
+  "machines": {
+    "A1": {
+      "id": "A1",
+      "display": "A1",
+      "image": "a1.webp",
+      "brand": "Bambu Lab",
+      "compatible": ["A1", "A1C", "A1F", "A1S"],
+      "dimensions": {
+        "bedSize": { "width": 260, "depth": 255 },
+        "movementRange": { "minX": -40, "minY": 0, "maxX": 260, "maxY": 255, "maxZ": 999 },
+        "edgeZone": 10,
+        "glueArea": { "glueMaxY": 225, "wipeX": 252 },
+        "calibration": {
+          "lShapeBaseX": 68.21,
+          "lShapeBaseY": 126.373,
+          "xLineX": 114.523,
+          "xLineY": 104.83,
+          "xLineYEnd": 114.83,
+          "yLineX": 104.53,
+          "yLineXEnd": 114.53,
+          "yLineY": 114.83,
+          "zStartX": 68.21,
+          "zStartY": 126.373
+        },
+        "flags": {
+          "gcodeMarker": ";===== machine: A1",
+          "hasSecondFan": false
+        }
+      },
+      "versions": [
+        {
+          "id": "STANDARD",
+          "name": "标准版",
+          "machineKey": "A1:STANDARD",
+          "presetFile": "A1.toml",
+          "tag": "推荐",
+          "description": "官方标准配置，适合大多数用户",
+          "downloads": [
+            {
+              "fileName": "A1.toml",
+              "type": "mkp_toml",
+              "relativePath": "presets/mkp/A1.toml",
+              "sha256": "a8e4c1413431f6d5790261d66d2906f88d25825b21482823c650150b52b997d7",
+              "size": 4476,
+              "releaseTime": "2026-07-05T11:50:49Z"
+            },
+            {
+              "fileName": "MKPProcess A1 0.4 0.20.json",
+              "type": "bbs_process",
+              "relativePath": "presets/bbs/Process/0.4mm/MKPProcess A1 0.4 0.20.json",
+              "sha256": "c11e8a29dd872f7a11d09cfa7019e100f49eec647681018bdee4baf12e1b0d33",
+              "size": 1329,
+              "releaseTime": "2026-05-25T03:30:54Z"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "contentFiles": [
+    {
+      "fileName": "faq.json",
+      "relativePath": "content/faq.json",
+      "sha256": "1c604398b328fe86c9994ac0282f577888095acfbe0fb03978ed9bdf2e015905",
+      "size": 39805
+    }
+  ]
+}

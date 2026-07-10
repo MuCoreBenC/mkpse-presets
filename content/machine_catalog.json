@@ -1,0 +1,497 @@
+{
+  "brands": [
+    {
+      "id": "Bambu Lab",
+      "logo": "bambu-logo.png",
+      "name": "拓竹 (Bambu Lab)"
+    }
+  ],
+  "dimensions": {
+    "A1": {
+      "bedSize": {
+        "depth": 255,
+        "width": 260
+      },
+      "calibration": {
+        "lShapeBaseX": 68.21,
+        "lShapeBaseY": 126.373,
+        "xLineX": 114.523,
+        "xLineY": 104.83,
+        "xLineYEnd": 114.83,
+        "yLineX": 104.53,
+        "yLineXEnd": 114.53,
+        "yLineY": 114.83,
+        "zStartX": 68.21,
+        "zStartY": 126.373
+      },
+      "edgeZone": 10,
+      "flags": {
+        "gcodeMarker": ";===== machine: A1",
+        "hasSecondFan": false
+      },
+      "glueArea": {
+        "glueMaxY": 225,
+        "wipeX": 252
+      },
+      "movementRange": {
+        "maxX": 260,
+        "maxY": 255,
+        "maxZ": 999,
+        "minX": -40,
+        "minY": 0
+      }
+    },
+    "A1_MINI": {
+      "bedSize": {
+        "depth": 180,
+        "width": 180
+      },
+      "calibration": {
+        "lShapeBaseX": 30.21,
+        "lShapeBaseY": 88.373,
+        "xLineX": 76.523,
+        "xLineY": 66.83,
+        "xLineYEnd": 76.83,
+        "yLineX": 66.523,
+        "yLineXEnd": 76.523,
+        "yLineY": 76.83,
+        "zStartX": 30.21,
+        "zStartY": 88.373
+      },
+      "edgeZone": 10,
+      "flags": {
+        "gcodeMarker": ";===== machine: A1 mini",
+        "hasSecondFan": false
+      },
+      "glueArea": {
+        "glueMaxY": 155,
+        "wipeX": 160
+      },
+      "movementRange": {
+        "maxX": 180,
+        "maxY": 180,
+        "maxZ": 999,
+        "minX": -10,
+        "minY": 0
+      }
+    },
+    "A2L": {
+      "bedSize": {
+        "depth": 320,
+        "width": 330
+      },
+      "calibration": {
+        "lShapeBaseX": 68.21,
+        "lShapeBaseY": 126.373,
+        "xLineX": 114.523,
+        "xLineY": 104.83,
+        "xLineYEnd": 114.83,
+        "yLineX": 104.53,
+        "yLineXEnd": 114.53,
+        "yLineY": 114.83,
+        "zStartX": 68.21,
+        "zStartY": 126.373
+      },
+      "edgeZone": 10,
+      "flags": {
+        "gcodeMarker": ";===== machine: A2L",
+        "hasSecondFan": false
+      },
+      "glueArea": {
+        "glueMaxY": 290,
+        "wipeX": 252
+      },
+      "movementRange": {
+        "maxX": 330,
+        "maxY": 320,
+        "maxZ": 999,
+        "minX": -40,
+        "minY": 0
+      }
+    },
+    "P1S": {
+      "bedSize": {
+        "depth": 265,
+        "width": 255
+      },
+      "calibration": {
+        "lShapeBaseX": 68.21,
+        "lShapeBaseY": 126.373,
+        "xLineX": 114.523,
+        "xLineY": 104.83,
+        "xLineYEnd": 114.83,
+        "yLineX": 104.53,
+        "yLineXEnd": 114.53,
+        "yLineY": 112.83,
+        "zStartX": 68.21,
+        "zStartY": 126.373
+      },
+      "edgeZone": 10,
+      "flags": {
+        "gcodeMarker": ";===== machine: P1",
+        "hasSecondFan": true
+      },
+      "glueArea": {
+        "glueMaxY": 265,
+        "wipeX": 20
+      },
+      "movementRange": {
+        "maxX": 255,
+        "maxY": 265,
+        "maxZ": 999,
+        "minX": 0,
+        "minY": 0
+      }
+    },
+    "P2S": {
+      "bedSize": {
+        "depth": 265,
+        "width": 256
+      },
+      "calibration": {
+        "lShapeBaseX": 68.21,
+        "lShapeBaseY": 126.373,
+        "xLineX": 114.523,
+        "xLineY": 104.83,
+        "xLineYEnd": 114.83,
+        "yLineX": 104.53,
+        "yLineXEnd": 114.53,
+        "yLineY": 112.83,
+        "zStartX": 68.21,
+        "zStartY": 126.373
+      },
+      "edgeZone": 10,
+      "flags": {
+        "gcodeMarker": ";===== machine: P2",
+        "hasSecondFan": true
+      },
+      "glueArea": {
+        "glueMaxY": 265,
+        "wipeX": 20
+      },
+      "movementRange": {
+        "maxX": 256,
+        "maxY": 265,
+        "maxZ": 999,
+        "minX": 0,
+        "minY": 0
+      }
+    },
+    "X1C": {
+      "bedSize": {
+        "depth": 265,
+        "width": 255
+      },
+      "calibration": {
+        "lShapeBaseX": 68.21,
+        "lShapeBaseY": 126.373,
+        "xLineX": 114.523,
+        "xLineY": 104.83,
+        "xLineYEnd": 114.83,
+        "yLineX": 104.53,
+        "yLineXEnd": 114.53,
+        "yLineY": 112.83,
+        "zStartX": 68.21,
+        "zStartY": 126.373
+      },
+      "edgeZone": 10,
+      "flags": {
+        "gcodeMarker": ";===== machine: X1",
+        "hasSecondFan": true
+      },
+      "glueArea": {
+        "glueMaxY": 265,
+        "wipeX": 20
+      },
+      "movementRange": {
+        "maxX": 255,
+        "maxY": 265,
+        "maxZ": 999,
+        "minX": 0,
+        "minY": 0
+      }
+    }
+  },
+  "forbiddenZones": {},
+  "models": {
+    "Bambu Lab": [
+      {
+        "compatible": "A1;A1C;A1F;A1S",
+        "display": "A1",
+        "id": "A1",
+        "image": "a1.webp",
+        "versions": [
+          {
+            "description": "官方标准配置，适合大多数用户",
+            "downloads": [
+              {
+                "fileName": "A1.toml",
+                "type": "mkp",
+                "url": "/presets/mkp/A1.toml"
+              },
+              {
+                "fileName": "MKPProcess A1 0.4 0.20.json",
+                "type": "bbs_Process",
+                "url": "/presets/bbs/Process/0.4mm/MKPProcess%20A1%200.4%200.20.json"
+              },
+              {
+                "fileName": "MKPProcess A1 0.2 0.10.json",
+                "type": "bbs_Process",
+                "url": "/presets/bbs/Process/0.2mm/MKPProcess%20A1%200.2%200.10.json"
+              }
+            ],
+            "id": "STANDARD",
+            "machineKey": "A1:STANDARD",
+            "name": "标准版",
+            "presetFile": "A1.toml",
+            "tag": "推荐"
+          },
+          {
+            "description": "支持快拆配件的改装配置",
+            "downloads": [
+              {
+                "fileName": "A1F.toml",
+                "type": "mkp",
+                "url": "/presets/mkp/A1F.toml"
+              },
+              {
+                "fileName": "MKPProcess A1 0.4 0.20.json",
+                "type": "bbs_Process",
+                "url": "/presets/bbs/Process/0.4mm/MKPProcess%20A1%200.4%200.20.json"
+              },
+              {
+                "fileName": "MKPProcess A1 0.2 0.10.json",
+                "type": "bbs_Process",
+                "url": "/presets/bbs/Process/0.2mm/MKPProcess%20A1%200.2%200.10.json"
+              }
+            ],
+            "id": "FAST",
+            "machineKey": "A1:FAST",
+            "name": "快拆版6月以前",
+            "presetFile": "A1F.toml",
+            "tag": "热门"
+          },
+          {
+            "description": "6月以后闲鱼购买的，以及6月28开源的快拆260628版本",
+            "downloads": [
+              {
+                "fileName": "A1F_260628.toml",
+                "type": "mkp",
+                "url": "/presets/mkp/A1F_260628.toml"
+              },
+              {
+                "fileName": "MKPProcess A1 0.4 0.20.json",
+                "type": "bbs_Process",
+                "url": "/presets/bbs/Process/0.4mm/MKPProcess%20A1%200.4%200.20.json"
+              },
+              {
+                "fileName": "MKPProcess A1 0.2 0.10.json",
+                "type": "bbs_Process",
+                "url": "/presets/bbs/Process/0.2mm/MKPProcess%20A1%200.2%200.10.json"
+              }
+            ],
+            "id": "FASTV3.3",
+            "machineKey": "A1:FASTV3.3",
+            "name": "快拆版260628",
+            "presetFile": "A1F_260628.toml",
+            "tag": "最新"
+          }
+        ]
+      },
+      {
+        "compatible": "A1MINI;A1M;A1MC;A1MQ;A1MF",
+        "display": "A1 mini",
+        "id": "A1_MINI",
+        "image": "a1mini.webp",
+        "versions": [
+          {
+            "description": "官方标准配置",
+            "downloads": [
+              {
+                "fileName": "A1M.toml",
+                "type": "mkp",
+                "url": "/presets/mkp/A1M.toml"
+              },
+              {
+                "fileName": "MKPProcess A1 mini 0.4 0.20.json",
+                "type": "bbs_Process",
+                "url": "/presets/bbs/Process/0.4mm/MKPProcess%20A1%20mini%200.4%200.20.json"
+              },
+              {
+                "fileName": "MKPProcess A1 mini 0.2 0.10.json",
+                "type": "bbs_Process",
+                "url": "/presets/bbs/Process/0.2mm/MKPProcess%20A1%20mini%200.2%200.10.json"
+              }
+            ],
+            "id": "STANDARD",
+            "machineKey": "A1MINI:STANDARD",
+            "name": "标准版",
+            "presetFile": "A1M.toml",
+            "tag": "推荐"
+          },
+          {
+            "description": "支持快拆配件的改装配置",
+            "downloads": [
+              {
+                "fileName": "A1MF.toml",
+                "type": "mkp",
+                "url": "/presets/mkp/A1MF.toml"
+              },
+              {
+                "fileName": "MKPProcess A1 mini 0.4 0.20.json",
+                "type": "bbs_Process",
+                "url": "/presets/bbs/Process/0.4mm/MKPProcess%20A1%20mini%200.4%200.20.json"
+              },
+              {
+                "fileName": "MKPProcess A1 mini 0.2 0.10.json",
+                "type": "bbs_Process",
+                "url": "/presets/bbs/Process/0.2mm/MKPProcess%20A1%20mini%200.2%200.10.json"
+              }
+            ],
+            "id": "FAST",
+            "machineKey": "A1MINI:FAST",
+            "name": "快拆版6月以前",
+            "presetFile": "A1MF.toml",
+            "tag": "热门"
+          },
+          {
+            "description": "6月以后闲鱼购买的，以及6月28开源的快拆260628版本",
+            "downloads": [
+              {
+                "fileName": "A1MF_260628.toml",
+                "type": "mkp",
+                "url": "/presets/mkp/A1MF_260628.toml"
+              },
+              {
+                "fileName": "MKPProcess A1 mini 0.4 0.20.json",
+                "type": "bbs_Process",
+                "url": "/presets/bbs/Process/0.4mm/MKPProcess%20A1%20mini%200.4%200.20.json"
+              },
+              {
+                "fileName": "MKPProcess A1 mini 0.2 0.10.json",
+                "type": "bbs_Process",
+                "url": "/presets/bbs/Process/0.2mm/MKPProcess%20A1%20mini%200.2%200.10.json"
+              }
+            ],
+            "id": "FASTV3.3",
+            "machineKey": "A1MINI:FASTV3.3",
+            "name": "快拆版260628",
+            "presetFile": "A1MF_260628.toml",
+            "tag": "最新"
+          }
+        ]
+      },
+      {
+        "compatible": "P1;P1SC;P1P;P1C",
+        "display": "P1S",
+        "id": "P1S",
+        "image": "p1s.webp",
+        "versions": [
+          {
+            "description": "精简配置，适合轻量使用",
+            "downloads": [
+              {
+                "fileName": "P1.toml",
+                "type": "mkp",
+                "url": "/presets/mkp/P1.toml"
+              },
+              {
+                "fileName": "MKPProcess P1S 0.4 0.24.json",
+                "type": "bbs_Process",
+                "url": "/presets/bbs/Process/0.4mm/MKPProcess%20P1S%200.4%200.24.json"
+              },
+              {
+                "fileName": "MKPProcess P1S 0.2 0.10.json",
+                "type": "bbs_Process",
+                "url": "/presets/bbs/Process/0.2mm/MKPProcess%20P1S%200.2%200.10.json"
+              }
+            ],
+            "id": "LITE",
+            "machineKey": "P1:LITE",
+            "name": "lite版",
+            "presetFile": "P1.toml",
+            "tag": "推荐"
+          }
+        ]
+      },
+      {
+        "compatible": "P2",
+        "display": "P2S",
+        "id": "P2S",
+        "image": "p2s.webp",
+        "versions": [
+          {
+            "description": "标准配置",
+            "downloads": [
+              {
+                "fileName": "P2.toml",
+                "type": "mkp",
+                "url": "/presets/mkp/P2.toml"
+              },
+              {
+                "fileName": "MKPProcess P2S 0.4 0.24.json",
+                "type": "bbs_Process",
+                "url": "/presets/bbs/Process/0.4mm/MKPProcess%20P2S%200.4%200.24.json"
+              }
+            ],
+            "id": "STANDARD",
+            "machineKey": "P2:STANDARD",
+            "name": "标准版",
+            "presetFile": "P2.toml",
+            "tag": "推荐"
+          }
+        ]
+      },
+      {
+        "compatible": "X1;X1S;X1E;X1 Carbon;X1CARBON",
+        "display": "X1C",
+        "id": "X1C",
+        "image": "x1.webp",
+        "versions": [
+          {
+            "description": "精简配置，适合轻量使用",
+            "downloads": [
+              {
+                "fileName": "X1.toml",
+                "type": "mkp",
+                "url": "/presets/mkp/X1.toml"
+              },
+              {
+                "fileName": "MKPProcess X1 0.4 0.24.json",
+                "type": "bbs_Process",
+                "url": "/presets/bbs/Process/0.4mm/MKPProcess%20X1%200.4%200.24.json"
+              },
+              {
+                "fileName": "MKPProcess X1 0.2 0.10.json",
+                "type": "bbs_Process",
+                "url": "/presets/bbs/Process/0.2mm/MKPProcess%20X1%200.2%200.10.json"
+              }
+            ],
+            "id": "LITE",
+            "machineKey": "X1:LITE",
+            "name": "lite版",
+            "presetFile": "X1.toml",
+            "tag": "推荐"
+          }
+        ]
+      },
+      {
+        "compatible": "A2L",
+        "display": "A2L",
+        "id": "A2L",
+        "image": "",
+        "versions": [
+          {
+            "description": "",
+            "downloads": [],
+            "id": "STANDARD",
+            "machineKey": "A2L:STANDARD",
+            "name": "标准版",
+            "presetFile": "",
+            "tag": ""
+          }
+        ]
+      }
+    ]
+  }
+}
