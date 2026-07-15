@@ -1,0 +1,6 @@
+id = 'x1c_bbs_mkpprocess_x1_04_024'
+resourceType = 'bbs_profile'
+category = 'process'
+machineId = 'X1C'
+fileName = 'MKPProcess X1 0.4 0.24.json'
+relativePath = 'presets/bbs/Process/0.4mm/MKPProcess X1 0.4 0.24.json'

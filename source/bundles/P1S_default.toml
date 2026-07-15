@@ -1,0 +1,5 @@
+id = 'P1S_default'
+display = '官方推荐'
+machineId = 'P1S'
+assetRefs = ['p1s_bbs_mkpprocess_p1s_04_024']
+updatedAt = '2026-07-12'

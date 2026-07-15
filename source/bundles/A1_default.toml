@@ -1,0 +1,5 @@
+id = 'A1_default'
+display = '官方推荐'
+machineId = 'A1'
+assetRefs = ['a1_bbs_mkpprocess_a1_04_020']
+updatedAt = '2026-07-12'

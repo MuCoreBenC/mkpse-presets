@@ -11,8 +11,8 @@
     "coreIndex": 0,
     "list": [
       {
-        "avatarCloudPath": "assets/avatars/jhmodel.webp",
-        "avatarAltCloudPath": "assets/avatars/mao.webp",
+        "avatarAltCloudPath": "assets/avatars/Avatar_Jhmodel喵~(alt).webp",
+        "avatarCloudPath": "assets/avatars/Avatar_Jhmodel喵~.webp",
         "contactHref": "mailto:Jhmodel01@outlook.com",
         "contactLabel": "联系作者",
         "description": "项目发起人，核心算法设计与实现，负责项目的技术方向与实现。",
@@ -20,7 +20,7 @@
         "role": "ORIGINAL CREATOR"
       },
       {
-        "avatarCloudPath": "assets/avatars/ziyang.webp",
+        "avatarCloudPath": "assets/avatars/Avatar_孜羊.webp",
         "description": "参与界面重构、模型优化和软件优化。",
         "name": "孜羊",
         "role": "CONTRIBUTOR"
@@ -39,7 +39,6 @@
   "ecosystemLinks": [
     {
       "iconKey": "bilibili",
-      "subtitle": "视频教程",
       "links": [
         {
           "href": "https://b23.tv/5zLmbGK",
@@ -51,11 +50,11 @@
           "name": "@孜羊",
           "qrText": "Bilibili：孜羊"
         }
-      ]
+      ],
+      "subtitle": "视频教程"
     },
     {
       "iconKey": "makerworld",
-      "subtitle": "模型库",
       "links": [
         {
           "href": "https://makerworld.com.cn/@ragdoll",
@@ -67,12 +66,11 @@
           "name": "孜羊的模型",
           "qrText": "MakerWorld：A1和mini快拆版"
         }
-      ]
+      ],
+      "subtitle": "模型库"
     },
     {
       "iconKey": "github",
-      "title": "代码仓库",
-      "subtitle": "开源代码",
       "links": [
         {
           "href": "https://gitee.com/Jhmodel/MKPSupport",
@@ -89,11 +87,12 @@
           "name": "孜羊 · Gitee",
           "qrText": "Gitee：孜羊"
         }
-      ]
+      ],
+      "subtitle": "开源代码",
+      "title": "代码仓库"
     },
     {
       "iconKey": "qq",
-      "subtitle": "交流群",
       "links": [
         {
           "href": "https://qm.qq.com/cgi-bin/qm/qr?k=E7uxnQYtC2bd9wc80AspywhZ7UuW5L1m\u0026jump_from=webapi\u0026authKey=CWLLJzLNargoCYg3cOo2LMm1TkyFEXjqsyOCyK27bBPzUueJe0AdCdBC4ulbwfqp",
@@ -105,7 +104,8 @@
           "name": "组装指导群1074343340",
           "qrText": "组装指导群1074343340"
         }
-      ]
+      ],
+      "subtitle": "交流群"
     }
   ],
   "footer": {

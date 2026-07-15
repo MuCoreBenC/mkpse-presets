@@ -3,8 +3,7 @@
     "advanced||Z轴抬升": 30,
     "advanced||机型专属": 40,
     "advanced||涂胶参数": 20,
-    "advanced||润笔": 10,
-    "advanced||禁区": 50
+    "advanced||润笔": 10
   },
   "params": [
     {
@@ -20,16 +19,16 @@
         "tab": "偏移",
         "tabId": "offset"
       },
-      "machineFilter": "A1,A1MINI,A2L,P1,P2,X1",
+      "machineFilter": "A1,A1_MINI,A2L,P1S,P2S,X1C",
       "machineMaxVariants": {
-        "P1:lite": 50,
-        "P2:standard": 50,
-        "X1:lite": 50
+        "P1S:lite": 50,
+        "P2S:standard": 50,
+        "X1C:lite": 50
       },
       "machineMinVariants": {
-        "P1:lite": -50,
-        "P2:standard": -50,
-        "X1:lite": -50
+        "P1S:lite": -50,
+        "P2S:standard": -50,
+        "X1C:lite": -50
       },
       "machineVariants": {
         "A1:FAST": "-0.7",
@@ -38,18 +37,18 @@
         "A1:fast": -0.7,
         "A1:fastv3.3": -0.7,
         "A1:standard": -1,
-        "A1MINI:FAST": "-0.5",
-        "A1MINI:FASTV3.3": "-0.5",
-        "A1MINI:STANDARD": "-0.3",
-        "A1MINI:fast": -0.5,
-        "A1MINI:fastv3.3": -0.5,
-        "A1MINI:standard": -0.3,
-        "P1:LITE": "-25.9",
-        "P1:lite": -25.9,
-        "P2:STANDARD": "-25.9",
-        "P2:standard": -25.9,
-        "X1:LITE": "-25.9",
-        "X1:lite": -25.9
+        "A1_MINI:FAST": "-0.5",
+        "A1_MINI:FASTV3.3": "-0.5",
+        "A1_MINI:STANDARD": "-0.3",
+        "A1_MINI:fast": -0.5,
+        "A1_MINI:fastv3.3": -0.5,
+        "A1_MINI:standard": -0.3,
+        "P1S:LITE": "-25.9",
+        "P1S:lite": -25.9,
+        "P2S:STANDARD": "-25.9",
+        "P2S:standard": -25.9,
+        "X1C:LITE": "-25.9",
+        "X1C:lite": -25.9
       },
       "max": 50,
       "mergeGroup": "offset",
@@ -80,16 +79,16 @@
         "tab": "偏移",
         "tabId": "offset"
       },
-      "machineFilter": "A1,A1MINI,A2L,P1,P2,X1",
+      "machineFilter": "A1,A1_MINI,A2L,P1S,P2S,X1C",
       "machineMaxVariants": {
-        "P1:lite": 50,
-        "P2:standard": 50,
-        "X1:lite": 50
+        "P1S:lite": 50,
+        "P2S:standard": 50,
+        "X1C:lite": 50
       },
       "machineMinVariants": {
-        "P1:lite": -50,
-        "P2:standard": -50,
-        "X1:lite": -50
+        "P1S:lite": -50,
+        "P2S:standard": -50,
+        "X1C:lite": -50
       },
       "machineVariants": {
         "A1:FAST": "26.3",
@@ -98,18 +97,18 @@
         "A1:fast": 26.3,
         "A1:fastv3.3": 25,
         "A1:standard": 18.6,
-        "A1MINI:FAST": "24",
-        "A1MINI:FASTV3.3": "23.2",
-        "A1MINI:STANDARD": "18.1",
-        "A1MINI:fast": 24,
-        "A1MINI:fastv3.3": 23.2,
-        "A1MINI:standard": 18.1,
-        "P1:LITE": "14",
-        "P1:lite": 14,
-        "P2:STANDARD": "14",
-        "P2:standard": 14,
-        "X1:LITE": "14",
-        "X1:lite": 14
+        "A1_MINI:FAST": "24",
+        "A1_MINI:FASTV3.3": "23.2",
+        "A1_MINI:STANDARD": "18.1",
+        "A1_MINI:fast": 24,
+        "A1_MINI:fastv3.3": 23.2,
+        "A1_MINI:standard": 18.1,
+        "P1S:LITE": "14",
+        "P1S:lite": 14,
+        "P2S:STANDARD": "14",
+        "P2S:standard": 14,
+        "X1C:LITE": "14",
+        "X1C:lite": 14
       },
       "max": 50,
       "mergeGroup": "offset",
@@ -140,24 +139,24 @@
         "tab": "偏移",
         "tabId": "offset"
       },
-      "machineFilter": "A1,P1,A2L,X1,P2,A1MINI",
+      "machineFilter": "A1,A1_MINI,A2L,P1S,P2S,X1C",
       "machineMaxVariants": {
-        "P1:lite": 20,
-        "P2:standard": 20,
-        "X1:lite": 20
+        "P1S:lite": 20,
+        "P2S:standard": 20,
+        "X1C:lite": 20
       },
       "machineMinVariants": {
-        "P1:lite": 0,
-        "P2:standard": 0,
-        "X1:lite": 0
+        "P1S:lite": 0,
+        "P2S:standard": 0,
+        "X1C:lite": 0
       },
       "machineVariants": {
-        "P1": "1.1",
-        "P1:lite": 1.1,
-        "P2": "1.1",
-        "P2:standard": 1.1,
-        "X1": "1.1",
-        "X1:lite": 1.1
+        "P1S": "1.1",
+        "P1S:lite": 1.1,
+        "P2S": "1.1",
+        "P2S:standard": 1.1,
+        "X1C": "1.1",
+        "X1C:lite": 1.1
       },
       "max": 20,
       "mergeGroup": "offset",
@@ -173,11 +172,11 @@
       "uiComponent": "number",
       "unit": "mm",
       "valueType": "float",
-      "variantMode": "shared"
+      "variantMode": "per_variant"
     },
     {
       "configKey": "MaxSpeed",
-      "defaultValue": 70,
+      "defaultValue": 75,
       "desc": "涂胶笔的最大移动速度 (mm/s)，过高可能导致涂胶不均匀或丢步",
       "jsonKey": "speed_limit",
       "key": "toolhead.speed_limit",
@@ -189,7 +188,6 @@
         "tabId": "offset"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 500,
       "mergeGroup": "",
       "mergeable": true,
@@ -219,7 +217,6 @@
         "tabId": "offset"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 50,
       "mergeGroup": "",
       "mergeable": true,
@@ -258,11 +255,8 @@
         "tabId": "advanced"
       },
       "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "scope": "universal",
       "section": "toolhead",
       "selectable": true,
@@ -290,17 +284,15 @@
         "A1:fast": "G92 E0\nG1 E-5 F1800\nG92 E0\nL801\nM204 S10000\nG1 X256 F42000\nG1 X261 F10000\nG1 X267 F10000\nG1 X256 F42000\nG1 F42000",
         "A1:fastv3.3": "G92 E0\nG1 E-5 F1800\nG92 E0\nL801\nM204 S10000\nG1 X256 F42000\nG1 X261 F10000\nG1 X267 F10000\nG1 X256 F42000\nG1 F42000",
         "A1:standard": "G92 E0\nG1 E-5 F1800\nG92 E0\nL801\nM204 S10000\nG1 X256 F42000\nG1 X261 F10000\nG1 X267 F10000\nG1 X256 F42000\nG1 F42000",
-        "A1MINI:fast": "G92 E0\nG1 E-5 F1800\nG92 E0\nL801\nM204 S10000\nG1 X168 F30000\nG1 X175 F10000\nG1 X185 F10000\nG1 X168 F30000\nG1 F30000",
-        "A1MINI:fastv3.3": "G92 E0\nG1 E-5 F1800\nG92 E0\nL801\nM204 S10000\nG1 X168 F30000\nG1 X175 F10000\nG1 X185 F10000\nG1 X168 F30000\nG1 F30000",
-        "A1MINI:standard": "G92 E0\nG1 E-5 F1800\nG92 E0\nL801\nM204 S10000\nG1 X168 F30000\nG1 X175 F10000\nG1 X185 F10000\nG1 X168 F30000\nG1 F30000",
-        "P1:lite": "L803;此处使喷嘴降温\nG92 E0;挤出机归零\nG1 E-10;长回抽\nG92 E0\nL801\nM204 S10000\nG1 X20 Y7 F30000;到驻点\nG1 X1 F300;推到X0，笔尖下落\nG1 X20 Y7 F30000;向左离开\nG1 F30000",
-        "P2:standard": "L803;此处使喷嘴降温\nG92 E0;挤出机归零\nG1 E-10;长回抽\nG92 E0\nL801\nM204 S10000\nG1 X20 Y7 F30000;到驻点\nG1 X1 F300;推到X0，笔尖下落\nG1 X20 Y7 F30000;向左离开\nG1 F30000",
-        "X1:lite": "L803;此处使喷嘴降温\nG92 E0;挤出机归零\nG1 E-10;长回抽\nG92 E0\nL801\nM204 S10000\nG1 X20 Y7 F30000;到驻点\nG1 X1 F300;推到X0，笔尖下落\nG1 X20 Y7 F30000;向左离开\nG1 F30000"
+        "A1_MINI:fast": "G92 E0\nG1 E-5 F1800\nG92 E0\nL801\nM204 S10000\nG1 X168 F30000\nG1 X175 F10000\nG1 X185 F10000\nG1 X168 F30000\nG1 F30000",
+        "A1_MINI:fastv3.3": "G92 E0\nG1 E-5 F1800\nG92 E0\nL801\nM204 S10000\nG1 X168 F30000\nG1 X175 F10000\nG1 X185 F10000\nG1 X168 F30000\nG1 F30000",
+        "A1_MINI:standard": "G92 E0\nG1 E-5 F1800\nG92 E0\nL801\nM204 S10000\nG1 X168 F30000\nG1 X175 F10000\nG1 X185 F10000\nG1 X168 F30000\nG1 F30000",
+        "P1S:lite": "L803;此处使喷嘴降温\nG92 E0;挤出机归零\nG1 E-10;长回抽\nG92 E0\nL801\nM204 S10000\nG1 X20 Y7 F30000;到驻点\nG1 X1 F300;推到X0，笔尖下落\nG1 X20 Y7 F30000;向左离开\nG1 F30000",
+        "P2S:standard": "L803;此处使喷嘴降温\nG92 E0;挤出机归零\nG1 E-10;长回抽\nG92 E0\nL801\nM204 S10000\nG1 X20 Y7 F30000;到驻点\nG1 X1 F300;推到X0，笔尖下落\nG1 X20 Y7 F30000;向左离开\nG1 F30000",
+        "X1C:lite": "L803;此处使喷嘴降温\nG92 E0;挤出机归零\nG1 E-10;长回抽\nG92 E0\nL801\nM204 S10000\nG1 X20 Y7 F30000;到驻点\nG1 X1 F300;推到X0，笔尖下落\nG1 X20 Y7 F30000;向左离开\nG1 F30000"
       },
-      "max": null,
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "scope": "machine_specific",
       "section": "toolhead",
       "selectable": true,
@@ -329,17 +321,15 @@
         "A1:fast": "M106 S[AUTO]\nG1 X256 F42000\nG1 X261 F10000\nG1 X271 F10000\nG1 X256 F5000\nG1 F42000\nL802\nG92 E0\nG1 E5.5 F1000\nG92 E0\nG1 F30000",
         "A1:fastv3.3": "M106 S[AUTO]\nG1 X256 F42000\nG1 X261 F10000\nG1 X271 F10000\nG1 X256 F5000\nG1 F42000\nL802\nG92 E0\nG1 E5.5 F1000\nG92 E0\nG1 F30000",
         "A1:standard": "M106 S[AUTO]\nG1 X256 F42000\nG1 X261 F10000\nG1 X271 F10000\nG1 X256 F5000\nG1 F42000\nL802\nG92 E0\nG1 E5.5 F1000\nG92 E0\nG1 F30000",
-        "A1MINI:fast": "M106 S[AUTO]\nG1 X168 F30000\nG1 X175 F10000\nG1 X189 F10000\nG1 X168 F6000\nG1 F30000\nL802\nG92 E0\nG1 E5.5 F1500\nG92 E0\nG1 F30000",
-        "A1MINI:fastv3.3": "M106 S[AUTO]\nG1 X168 F30000\nG1 X175 F10000\nG1 X189 F10000\nG1 X168 F6000\nG1 F30000\nL802\nG92 E0\nG1 E5.5 F1500\nG92 E0\nG1 F30000",
-        "A1MINI:standard": "M106 S[AUTO]\nG1 X168 F30000\nG1 X175 F10000\nG1 X189 F10000\nG1 X168 F6000\nG1 F30000\nL802\nG92 E0\nG1 E5.5 F1500\nG92 E0\nG1 F30000",
-        "P1:lite": "G92 E0\nG1 F30000\nG1 X246 Y0 ;到驻点\nG1 X256 F6000 ; 收笔\nG1 F30000\nL802\nG1 F1500\nG1 E10.7;填充回抽\nG1 F30000\nM106 P1 S[AUTO] ; 风扇\n;M106 P2 S100\nG1 X70 Y265 F30000;Wipe\nG1 E6;Wipe\nG1 X90 F30000;Wipe\nG1 X120 F30000;Wipe\nG1 X90 F30000;Wipe",
-        "P2:standard": "G92 E0\nG1 F30000\nG1 X246 Y0 ;到驻点\nG1 X256 F6000 ; 收笔\nG1 F30000\nL802\nG1 F1500\nG1 E10.7;填充回抽\nG1 F30000\nM106 P1 S[AUTO] ; 风扇\n;M106 P2 S100\nG1 X70 Y265 F30000;Wipe\nG1 E6;Wipe\nG1 X90 F30000;Wipe\nG1 X120 F30000;Wipe\nG1 X90 F30000;Wipe",
-        "X1:lite": "G92 E0\nG1 F30000\nG1 X246 Y0 ;到驻点\nG1 X256 F6000 ; 收笔\nG1 F30000\nL802\nG1 F1500\nG1 E10.7;填充回抽\nG1 F30000\nM106 P1 S[AUTO] ; 风扇\n;M106 P2 S100\nG1 X70 Y265 F30000;Wipe\nG1 E6;Wipe\nG1 X90 F30000;Wipe\nG1 X120 F30000;Wipe\nG1 X90 F30000;Wipe"
+        "A1_MINI:fast": "M106 S[AUTO]\nG1 X168 F30000\nG1 X175 F10000\nG1 X189 F10000\nG1 X168 F6000\nG1 F30000\nL802\nG92 E0\nG1 E5.5 F1500\nG92 E0\nG1 F30000",
+        "A1_MINI:fastv3.3": "M106 S[AUTO]\nG1 X168 F30000\nG1 X175 F10000\nG1 X189 F10000\nG1 X168 F6000\nG1 F30000\nL802\nG92 E0\nG1 E5.5 F1500\nG92 E0\nG1 F30000",
+        "A1_MINI:standard": "M106 S[AUTO]\nG1 X168 F30000\nG1 X175 F10000\nG1 X189 F10000\nG1 X168 F6000\nG1 F30000\nL802\nG92 E0\nG1 E5.5 F1500\nG92 E0\nG1 F30000",
+        "P1S:lite": "G92 E0\nG1 F30000\nG1 X246 Y0 ;到驻点\nG1 X256 F6000 ; 收笔\nG1 F30000\nL802\nG1 F1500\nG1 E10.7;填充回抽\nG1 F30000\nM106 P1 S[AUTO] ; 风扇\n;M106 P2 S100\nG1 X70 Y265 F30000;Wipe\nG1 E6;Wipe\nG1 X90 F30000;Wipe\nG1 X120 F30000;Wipe\nG1 X90 F30000;Wipe",
+        "P2S:standard": "G92 E0\nG1 F30000\nG1 X246 Y0 ;到驻点\nG1 X256 F6000 ; 收笔\nG1 F30000\nL802\nG1 F1500\nG1 E10.7;填充回抽\nG1 F30000\nM106 P1 S[AUTO] ; 风扇\n;M106 P2 S100\nG1 X70 Y265 F30000;Wipe\nG1 E6;Wipe\nG1 X90 F30000;Wipe\nG1 X120 F30000;Wipe\nG1 X90 F30000;Wipe",
+        "X1C:lite": "G92 E0\nG1 F30000\nG1 X246 Y0 ;到驻点\nG1 X256 F6000 ; 收笔\nG1 F30000\nL802\nG1 F1500\nG1 E10.7;填充回抽\nG1 F30000\nM106 P1 S[AUTO] ; 风扇\n;M106 P2 S100\nG1 X70 Y265 F30000;Wipe\nG1 E6;Wipe\nG1 X90 F30000;Wipe\nG1 X120 F30000;Wipe\nG1 X90 F30000;Wipe"
       },
-      "max": null,
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "scope": "machine_specific",
       "section": "toolhead",
       "selectable": true,
@@ -364,7 +354,6 @@
         "tabId": "advanced"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 5,
       "mergeGroup": "",
       "mergeable": true,
@@ -393,7 +382,6 @@
         "tabId": "advanced"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 500,
       "mergeGroup": "",
       "mergeable": true,
@@ -438,11 +426,8 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "scope": "universal",
       "section": "wiping",
       "selectable": true,
@@ -469,24 +454,23 @@
       "machineMaxVariants": {
         "A1:fast": 226,
         "A1:standard": 226,
-        "A1MINI:fast": 150,
-        "A1MINI:fastv3.3": 150,
-        "A1MINI:standard": 150,
-        "P1:lite": 226,
-        "P2:standard": 226,
-        "X1:lite": 226
+        "A1_MINI:fast": 150,
+        "A1_MINI:fastv3.3": 150,
+        "A1_MINI:standard": 150,
+        "P1S:lite": 226,
+        "P2S:standard": 226,
+        "X1C:lite": 226
       },
       "machineMinVariants": {
         "A1:fast": 10,
         "A1:standard": 10,
-        "A1MINI:fast": 10,
-        "A1MINI:fastv3.3": 10,
-        "A1MINI:standard": 10,
-        "P1:lite": 10,
-        "P2:standard": 10,
-        "X1:lite": 10
+        "A1_MINI:fast": 10,
+        "A1_MINI:fastv3.3": 10,
+        "A1_MINI:standard": 10,
+        "P1S:lite": 10,
+        "P2S:standard": 10,
+        "X1C:lite": 10
       },
-      "machineVariants": null,
       "max": 226,
       "mergeGroup": "wiper",
       "mergeable": true,
@@ -524,23 +508,22 @@
       "machineFilter": "",
       "machineMaxVariants": {
         "A1:fast": 226,
-        "A1MINI:fast": 150,
-        "A1MINI:fastv3.3": 150,
-        "A1MINI:standard": 150,
-        "P1:lite": 226,
-        "P2:standard": 226,
-        "X1:lite": 226
+        "A1_MINI:fast": 150,
+        "A1_MINI:fastv3.3": 150,
+        "A1_MINI:standard": 150,
+        "P1S:lite": 226,
+        "P2S:standard": 226,
+        "X1C:lite": 226
       },
       "machineMinVariants": {
         "A1:fast": 10,
-        "A1MINI:fast": 10,
-        "A1MINI:fastv3.3": 10,
-        "A1MINI:standard": 10,
-        "P1:lite": 10,
-        "P2:standard": 10,
-        "X1:lite": 10
+        "A1_MINI:fast": 10,
+        "A1_MINI:fastv3.3": 10,
+        "A1_MINI:standard": 10,
+        "P1S:lite": 10,
+        "P2S:standard": 10,
+        "X1C:lite": 10
       },
-      "machineVariants": null,
       "max": 226,
       "mergeGroup": "wiper",
       "mergeable": true,
@@ -576,7 +559,6 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 500,
       "mergeGroup": "",
       "mergeable": true,
@@ -611,7 +593,6 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 3,
       "mergeGroup": "",
       "mergeable": true,
@@ -646,11 +627,8 @@
         "tabId": "fan"
       },
       "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "scope": "universal",
       "section": "wiping",
       "selectable": true,
@@ -674,7 +652,6 @@
         "tabId": "fan"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 255,
       "mergeGroup": "",
       "mergeable": true,
@@ -703,7 +680,6 @@
         "tabId": "fan"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 300,
       "mergeGroup": "",
       "mergeable": true,
@@ -732,7 +708,6 @@
         "tabId": "fan"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 200,
       "mergeGroup": "",
       "mergeable": true,
@@ -761,7 +736,6 @@
         "tabId": "glue"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 3,
       "mergeGroup": "",
       "mergeable": true,
@@ -790,7 +764,6 @@
         "tabId": "advanced"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 2,
       "mergeGroup": "",
       "mergeable": true,
@@ -820,7 +793,6 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 20,
       "mergeGroup": "",
       "mergeable": true,
@@ -856,7 +828,6 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 3,
       "mergeGroup": "",
       "mergeable": true,
@@ -892,7 +863,6 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 300,
       "mergeGroup": "",
       "mergeable": true,
@@ -928,7 +898,6 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 200,
       "mergeGroup": "",
       "mergeable": true,
@@ -977,11 +946,8 @@
         "tabId": "glue"
       },
       "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "scope": "universal",
       "section": "wiping",
       "selectable": true,
@@ -1005,7 +971,6 @@
         "tabId": "glue"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 100,
       "mergeGroup": "",
       "mergeable": true,
@@ -1050,11 +1015,8 @@
         "tabId": "glue"
       },
       "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "scope": "universal",
       "section": "wiping",
       "selectable": true,
@@ -1092,7 +1054,6 @@
         "tabId": "glue"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 100,
       "mergeGroup": "",
       "mergeable": true,
@@ -1121,7 +1082,6 @@
         "tabId": "glue"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 20,
       "mergeGroup": "",
       "mergeable": true,
@@ -1160,11 +1120,8 @@
         "tabId": "glue"
       },
       "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "parentKey": "wiping.ironing_suppress_expand",
       "scope": "universal",
       "section": "wiping",
@@ -1194,11 +1151,8 @@
         "tabId": "advanced"
       },
       "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "scope": "universal",
       "section": "wiping",
       "selectable": true,
@@ -1222,7 +1176,6 @@
         "tabId": "advanced"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 999,
       "mergeGroup": "",
       "mergeable": true,
@@ -1271,11 +1224,8 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "parentKey": "wiping.have_wiping_components",
       "scope": "universal",
       "section": "wiping",
@@ -1305,7 +1255,6 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 30,
       "mergeGroup": "",
       "mergeable": true,
@@ -1340,7 +1289,6 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 90,
       "mergeGroup": "",
       "mergeable": true,
@@ -1385,11 +1333,8 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "parentKey": "wiping.disk_stagger_mode",
       "scope": "universal",
       "section": "wiping",
@@ -1419,7 +1364,6 @@
         "tabId": "advanced"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 10,
       "mergeGroup": "",
       "mergeable": true,
@@ -1448,7 +1392,6 @@
         "tabId": "advanced"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 10,
       "mergeGroup": "",
       "mergeable": true,
@@ -1477,7 +1420,6 @@
         "tabId": "advanced"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 10,
       "mergeGroup": "",
       "mergeable": true,
@@ -1512,7 +1454,6 @@
         "tabId": "advanced"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 5,
       "mergeGroup": "",
       "mergeable": true,
@@ -1541,7 +1482,6 @@
         "tabId": "advanced"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 100,
       "mergeGroup": "",
       "mergeable": true,
@@ -1586,11 +1526,8 @@
         "tabId": "advanced"
       },
       "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "parentKey": "wiping.prime_enabled",
       "scope": "universal",
       "section": "wiping",
@@ -1630,11 +1567,8 @@
         "tabId": "advanced"
       },
       "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "parentKey": "wiping.prime_enabled",
       "scope": "universal",
       "section": "wiping",
@@ -1664,7 +1598,6 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 300,
       "mergeGroup": "",
       "mergeable": true,
@@ -1699,7 +1632,6 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 300,
       "mergeGroup": "",
       "mergeable": true,
@@ -1734,11 +1666,8 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "parentKey": "wiping.outer_structure",
       "scope": "universal",
       "section": "wiping",
@@ -1768,12 +1697,9 @@
         "tab": "更多",
         "tabId": "advanced"
       },
-      "machineFilter": "P1,P2,X1",
-      "machineVariants": null,
-      "max": null,
+      "machineFilter": "P1S,P2S,X1C",
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "scope": "machine_specific",
       "section": "wiping",
       "selectable": true,
@@ -1797,12 +1723,9 @@
         "tab": "更多",
         "tabId": "advanced"
       },
-      "machineFilter": "A1,A1MINI,A2L",
-      "machineVariants": null,
-      "max": null,
+      "machineFilter": "A1,A1_MINI,A2L",
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "scope": "machine_specific",
       "section": "wiping",
       "selectable": true,
@@ -1826,12 +1749,9 @@
         "tab": "更多",
         "tabId": "advanced"
       },
-      "machineFilter": "A1,A1MINI,A2L",
-      "machineVariants": null,
-      "max": null,
+      "machineFilter": "A1,A1_MINI,A2L",
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "scope": "machine_specific",
       "section": "wiping",
       "selectable": true,
@@ -1866,11 +1786,8 @@
         "tabId": "advanced"
       },
       "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "scope": "universal",
       "section": "wiping",
       "selectable": true,
@@ -1904,11 +1821,8 @@
         "tabId": "advanced"
       },
       "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "scope": "universal",
       "section": "wiping",
       "selectable": true,
@@ -1942,11 +1856,8 @@
         "tabId": "glue"
       },
       "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "scope": "universal",
       "section": "wiping",
       "selectable": true,
@@ -1970,7 +1881,6 @@
         "tabId": "glue"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 100,
       "mergeGroup": "",
       "mergeable": true,
@@ -1999,7 +1909,6 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 2,
       "mergeGroup": "",
       "mergeable": true,
@@ -2048,11 +1957,8 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "parentKey": "wiping.have_wiping_components",
       "scope": "universal",
       "section": "wiping",
@@ -2082,7 +1988,6 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 200,
       "mergeGroup": "",
       "mergeable": true,
@@ -2118,7 +2023,6 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 200,
       "mergeGroup": "",
       "mergeable": true,
@@ -2163,11 +2067,8 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "parentKey": "wiping.outer_structure",
       "scope": "universal",
       "section": "wiping",
@@ -2197,7 +2098,6 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 200,
       "mergeGroup": "",
       "mergeable": true,
@@ -2246,11 +2146,8 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "parentKey": "wiping.fast_tower_mode",
       "scope": "universal",
       "section": "wiping",
@@ -2294,11 +2191,8 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "parentKey": "wiping.fast_tower_mode",
       "scope": "universal",
       "section": "wiping",
@@ -2328,7 +2222,6 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 5,
       "mergeGroup": "",
       "mergeable": true,
@@ -2363,7 +2256,6 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 500,
       "mergeGroup": "",
       "mergeable": true,
@@ -2413,11 +2305,8 @@
         "tabId": "wiping"
       },
       "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "parentKey": "wiping.have_wiping_components",
       "scope": "universal",
       "section": "wiping",
@@ -2447,11 +2336,8 @@
         "tabId": "glue"
       },
       "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "scope": "universal",
       "section": "wiping",
       "selectable": true,
@@ -2485,11 +2371,8 @@
         "tabId": "glue"
       },
       "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
       "mergeGroup": "",
       "mergeable": true,
-      "min": null,
       "parentKey": "wiping.glue_z_compensation_enabled",
       "scope": "universal",
       "section": "wiping",
@@ -2519,7 +2402,6 @@
         "tabId": "glue"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 0.2,
       "mergeGroup": "",
       "mergeable": true,
@@ -2554,7 +2436,6 @@
         "tabId": "glue"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 0.2,
       "mergeGroup": "",
       "mergeable": true,
@@ -2589,7 +2470,6 @@
         "tabId": "glue"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 0.2,
       "mergeGroup": "",
       "mergeable": true,
@@ -2624,7 +2504,6 @@
         "tabId": "glue"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 0.2,
       "mergeGroup": "",
       "mergeable": true,
@@ -2659,7 +2538,6 @@
         "tabId": "glue"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 0.1,
       "mergeGroup": "",
       "mergeable": true,
@@ -2694,7 +2572,6 @@
         "tabId": "glue"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 0.1,
       "mergeGroup": "",
       "mergeable": true,
@@ -2729,7 +2606,6 @@
         "tabId": "glue"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 0.1,
       "mergeGroup": "",
       "mergeable": true,
@@ -2764,7 +2640,6 @@
         "tabId": "glue"
       },
       "machineFilter": "",
-      "machineVariants": null,
       "max": 0.1,
       "mergeGroup": "",
       "mergeable": true,
@@ -2784,34 +2659,6 @@
       "uiComponent": "number",
       "unit": "mm",
       "valueType": "float"
-    },
-    {
-      "configKey": "ForbiddenZones",
-      "defaultValue": "[]",
-      "desc": "MKP 擦料塔放置时需避开的额外禁区多边形列表（凸多边形，最少3个点），按机型配置。仅 MKP 后处理使用，不写入 TOML 预设，不影响 BBS 切片。",
-      "key": "machine.forbidden_zones",
-      "label": "额外禁区",
-      "layout": {
-        "group": "禁区",
-        "order": 10,
-        "tab": "内部参数",
-        "tabId": "internal"
-      },
-      "machineFilter": "P1,P2,X1,A1MINI,A1,A2L",
-      "machineVariants": null,
-      "max": null,
-      "mergeGroup": "",
-      "mergeable": false,
-      "min": null,
-      "scope": "machine_specific",
-      "section": "machine",
-      "selectable": true,
-      "tomlComment": "",
-      "tomlKey": "",
-      "uiComponent": "zone-editor",
-      "unit": "",
-      "valueType": "string",
-      "variantMode": "shared"
     }
   ],
   "tabMeta": {

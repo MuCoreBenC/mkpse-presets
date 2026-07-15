@@ -1,7 +1,7 @@
 {
   "items": [
     {
-      "answer": "\u003cp\u003e在关于软件页面有对应的网站和链接，有视频教程和图文教程。\u003c/p\u003e\u003cp\u003e以下仅展示常用链接\u003c/p\u003e\u003cp\u003e\u003ca target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://space.bilibili.com/1475765743\"\u003e\u003cem\u003e\u003cu\u003e江汉模型的个人空间-江汉模型个人主页-哔哩哔哩视频\u003c/u\u003e\u003c/em\u003e\u003c/a\u003e\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq57_1.webp\"\u003e\u003cp\u003e\u003ca target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.bilibili.com/video/BV1rBRJB8EfJ/?vd_source=3acd5988b97df248a1d6d7fe2766764f\"\u003e\u003cem\u003e\u003cu\u003eMKP\u0026nbsp;support教程（3D打印改善支撑面）「快拆版260326」_哔哩哔哩_bilibili\u003c/u\u003e\u003c/em\u003e\u003c/a\u003e\u003c/p\u003e\u003cp\u003e\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq57_2.webp\"\u003e\u003cp\u003e\u003ca target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://makerworld.com.cn/zh/@ragdoll\"\u003e\u003cem\u003e\u003cu\u003e布偶猫\u0026nbsp;|\u0026nbsp;Home\u0026nbsp;-\u0026nbsp;MakerWorld\u003c/u\u003e\u003c/em\u003e\u003c/a\u003e\u003c/p\u003e\u003cp\u003e\u003ca target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://makerworld.com.cn/zh/models/2059552-kuai-chai-ban-mkp-support-a1he-mini-gai-shan-zhi-c#profileId-2644229\"\u003e\u003cem\u003e\u003cu\u003e快拆版MKP\u0026nbsp;support（A1和mini）改善支撑面，顶部Z距离为0，20260326版\u0026nbsp;-\u0026nbsp;免费\u0026nbsp;3D\u0026nbsp;打印模型\u0026nbsp;-\u0026nbsp;MakerWorld\u003c/u\u003e\u003c/em\u003e\u003c/a\u003e\u003c/p\u003e",
+      "answer": "\u003cp\u003e在关于软件页面有对应的网站和链接，有视频教程和图文教程。\u003c/p\u003e\u003cp\u003e以下仅展示常用链接\u003c/p\u003e\u003cp\u003e\u003ca target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://space.bilibili.com/1475765743\"\u003e\u003cem\u003e\u003cu\u003e江汉模型的个人空间-江汉模型个人主页-哔哩哔哩视频\u003c/u\u003e\u003c/em\u003e\u003c/a\u003e\u003c/p\u003e\u003cimg src=\"assets/faq/faq1_1.webp\"\u003e\u003cp\u003e\u003ca target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.bilibili.com/video/BV1rBRJB8EfJ/?vd_source=3acd5988b97df248a1d6d7fe2766764f\"\u003e\u003cem\u003e\u003cu\u003eMKP\u0026nbsp;support教程（3D打印改善支撑面）「快拆版260326」_哔哩哔哩_bilibili\u003c/u\u003e\u003c/em\u003e\u003c/a\u003e\u003c/p\u003e\u003cp\u003e\u003c/p\u003e\u003cimg src=\"assets/faq/faq1_2.webp\"\u003e\u003cp\u003e\u003ca target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://makerworld.com.cn/zh/@ragdoll\"\u003e\u003cem\u003e\u003cu\u003e布偶猫\u0026nbsp;|\u0026nbsp;Home\u0026nbsp;-\u0026nbsp;MakerWorld\u003c/u\u003e\u003c/em\u003e\u003c/a\u003e\u003c/p\u003e\u003cp\u003e\u003ca target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://makerworld.com.cn/zh/models/2059552-kuai-chai-ban-mkp-support-a1he-mini-gai-shan-zhi-c#profileId-2644229\"\u003e\u003cem\u003e\u003cu\u003e快拆版MKP\u0026nbsp;support（A1和mini）改善支撑面，顶部Z距离为0，20260326版\u0026nbsp;-\u0026nbsp;免费\u0026nbsp;3D\u0026nbsp;打印模型\u0026nbsp;-\u0026nbsp;MakerWorld\u003c/u\u003e\u003c/em\u003e\u003c/a\u003e\u003c/p\u003e",
       "category": "基础入门",
       "categoryColor": "#3B82F6",
       "id": "faq_1779194717623",
@@ -9,7 +9,7 @@
       "question": "\u003cp\u003e有教程吗？\u003c/p\u003e"
     },
     {
-      "answer": "\u003cp\u003eMKP\u0026nbsp;Support\u0026nbsp;是一个\u003cstrong\u003e开源项目\u003c/strong\u003e，核心功能是在3D打印的支撑面自动涂胶，创始人为\u003ca target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://space.bilibili.com/1475765743\"\u003e\u003cspan style=\"color: rgb(239, 68, 68);\"\u003e\u003cu\u003e@Jhmodel喵\u003c/u\u003e\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"color: rgb(239, 68, 68);\"\u003e\u003cu\u003e~\u003c/u\u003e\u003c/span\u003e\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq57_4.webp\"\u003e\u003cp\u003eMKP\u0026nbsp;SupportE\u0026nbsp;即该软件为群友（孜羊调味粉）根据开源代码重构的程序，拥有较为现代化的页面、极致的体积以及一些新增功能（比如涂胶z方向补偿四角双线性插值）。\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq57_3.webp\"\u003e\u003cp\u003e涂胶后胶水干透形成薄膜，阻碍耗材之间粘连，降低层间结合力，从而让支撑接触面\u003cstrong\u003e光滑平整\u003c/strong\u003e，支撑轻松易拆，对比双头的优势：\u003c/p\u003e\u003cp\u003e1、无需购买新机器，旧机器也可以安装。\u003c/p\u003e\u003cp\u003e2、比双料支撑更粘，减少翘边概率\u003c/p\u003e\u003cp\u003e缺点：\u003c/p\u003e\u003cp\u003e1、和多头一样也需要擦料塔\u003c/p\u003e\u003cp\u003e2、不能说很稳定，可能有很多小问题\u003c/p\u003e",
+      "answer": "\u003cp\u003eMKP\u0026nbsp;Support\u0026nbsp;是一个\u003cstrong\u003e开源项目\u003c/strong\u003e，核心功能是在3D打印的支撑面自动涂胶，创始人为\u003ca target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://space.bilibili.com/1475765743\"\u003e\u003cspan style=\"color: rgb(239, 68, 68);\"\u003e\u003cu\u003e@Jhmodel喵\u003c/u\u003e\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"color: rgb(239, 68, 68);\"\u003e\u003cu\u003e~\u003c/u\u003e\u003c/span\u003e\u003c/p\u003e\u003cimg src=\"assets/faq/faq2_1.webp\"\u003e\u003cp\u003eMKP\u0026nbsp;SupportE\u0026nbsp;即该软件为群友（孜羊调味粉）根据开源代码重构的程序，拥有较为现代化的页面、极致的体积以及一些新增功能（比如涂胶z方向补偿四角双线性插值）。\u003c/p\u003e\u003cimg src=\"assets/faq/faq2_2.webp\"\u003e\u003cp\u003e涂胶后胶水干透形成薄膜，阻碍耗材之间粘连，降低层间结合力，从而让支撑接触面\u003cstrong\u003e光滑平整\u003c/strong\u003e，支撑轻松易拆，对比双头的优势：\u003c/p\u003e\u003cp\u003e1、无需购买新机器，旧机器也可以安装。\u003c/p\u003e\u003cp\u003e2、比双料支撑更粘，减少翘边概率\u003c/p\u003e\u003cp\u003e缺点：\u003c/p\u003e\u003cp\u003e1、和多头一样也需要擦料塔\u003c/p\u003e\u003cp\u003e2、不能说很稳定，可能有很多小问题\u003c/p\u003e",
       "category": "基础入门",
       "categoryColor": "#3B82F6",
       "id": "faq-001",
@@ -41,7 +41,7 @@
       "question": "需要全程联网吗？"
     },
     {
-      "answer": "\u003cp\u003e各机型支持情况如下：\u003c/p\u003e\u003cp\u003e\u003cspan style=\"color: rgb(29, 78, 216);\"\u003e\u003cstrong\u003e•\u0026nbsp;A1\u0026nbsp;/\u0026nbsp;A1\u0026nbsp;mini\u0026nbsp;—\u0026nbsp;支持（相关的bom在群文件获取，注意A1和mini的打印件不一样）\u003c/strong\u003e\u003c/span\u003e\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq57_5.webp\"\u003e\u003cp\u003e\u003cspan style=\"color: rgb(29, 78, 216);\"\u003e\u003cstrong\u003e•\u0026nbsp;P1\u0026nbsp;/\u0026nbsp;X1\u0026nbsp;系列\u0026nbsp;—\u0026nbsp;支持（相关的bom在群文件获取，注意P1和X1的打印件不一样）\u003c/strong\u003e\u003c/span\u003e\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq57_6.webp\"\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq57_8.webp\"\u003e\u003cp\u003e\u003cspan style=\"color: rgb(249, 115, 22);\"\u003e•\u0026nbsp;P2S\u0026nbsp;—\u0026nbsp;即将支持（无限期搁置）\u003c/span\u003e\u003c/p\u003e",
+      "answer": "\u003cp\u003e各机型支持情况如下：\u003c/p\u003e\u003cp\u003e\u003cspan style=\"color: rgb(29, 78, 216);\"\u003e\u003cstrong\u003e•\u0026nbsp;A1\u0026nbsp;/\u0026nbsp;A1\u0026nbsp;mini\u0026nbsp;—\u0026nbsp;支持（相关的bom在群文件获取，注意A1和mini的打印件不一样）\u003c/strong\u003e\u003c/span\u003e\u003c/p\u003e\u003cimg src=\"assets/faq/faq6_1.webp\"\u003e\u003cp\u003e\u003cspan style=\"color: rgb(29, 78, 216);\"\u003e\u003cstrong\u003e•\u0026nbsp;P1\u0026nbsp;/\u0026nbsp;X1\u0026nbsp;系列\u0026nbsp;—\u0026nbsp;支持（相关的bom在群文件获取，注意P1和X1的打印件不一样）\u003c/strong\u003e\u003c/span\u003e\u003c/p\u003e\u003cimg src=\"assets/faq/faq6_2.webp\"\u003e\u003cimg src=\"assets/faq/faq6_3.webp\"\u003e\u003cp\u003e\u003cspan style=\"color: rgb(249, 115, 22);\"\u003e•\u0026nbsp;P2S\u0026nbsp;—\u0026nbsp;即将支持（无限期搁置）\u003c/span\u003e\u003c/p\u003e",
       "category": "基础入门",
       "categoryColor": "#3B82F6",
       "id": "faq-006",
@@ -73,7 +73,7 @@
       "question": "\u003cp\u003e磁铁怎么装？极性怎么判断？\u003c/p\u003e"
     },
     {
-      "answer": "\u003cp\u003e常见原因及解决方法：\u003c/p\u003e\u003cp\u003e1.\u0026nbsp;磁极装反\u0026nbsp;—\u0026nbsp;最常见原因，检查磁铁极性\u003c/p\u003e\u003cp\u003e标准版：\u003c/p\u003e\u003cp\u003e2.\u0026nbsp;磁铁突出\u0026nbsp;—\u0026nbsp;重新安装使磁铁平齐\u003c/p\u003e\u003cp\u003e3.\u0026nbsp;间隙太小\u0026nbsp;—\u0026nbsp;打磨夹具间距\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq57_9.webp\"\u003e\u003cp\u003e快拆版：\u003c/p\u003e\u003cp\u003e\u003cs\u003e4.\u0026nbsp;快拆版的挡片卡住，需要打磨象脚和锐边\u003c/s\u003e\u003cspan style=\"color: rgb(239, 68, 68);\"\u003e260628版本已经解决了不再需要挡片。\u003c/span\u003e\u003c/p\u003e",
+      "answer": "\u003cp\u003e常见原因及解决方法：\u003c/p\u003e\u003cp\u003e1.\u0026nbsp;磁极装反\u0026nbsp;—\u0026nbsp;最常见原因，检查磁铁极性\u003c/p\u003e\u003cp\u003e标准版：\u003c/p\u003e\u003cp\u003e2.\u0026nbsp;磁铁突出\u0026nbsp;—\u0026nbsp;重新安装使磁铁平齐\u003c/p\u003e\u003cp\u003e3.\u0026nbsp;间隙太小\u0026nbsp;—\u0026nbsp;打磨夹具间距\u003c/p\u003e\u003cimg src=\"assets/faq/faq10_1.webp\"\u003e\u003cp\u003e快拆版：\u003c/p\u003e\u003cp\u003e\u003cs\u003e4.\u0026nbsp;快拆版的挡片卡住，需要打磨象脚和锐边\u003c/s\u003e\u003cspan style=\"color: rgb(239, 68, 68);\"\u003e260628版本已经解决了不再需要挡片。\u003c/span\u003e\u003c/p\u003e",
       "category": "硬件装配",
       "categoryColor": "#22C55E",
       "id": "faq-010",
@@ -113,7 +113,7 @@
       "question": "\u003cp\u003eP系列为什么总是报\u003cspan style=\"color: rgb(239, 68, 68);\"\u003e前盖脱落？\u003c/span\u003e\u003c/p\u003e"
     },
     {
-      "answer": "\u003cp\u003e标准版的管子接好之后可以绑在电线也可以悬垂着\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq56_16.webp\"\u003e\u003cp\u003e快拆版的管子有软支撑，管子可以成一个拱形\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq56_17.webp\"\u003e\u003cp\u003e管子连接方法：将软管直接套在笔芯和胶箱上。\u003c/p\u003e\u003cp\u003e长度建议：\u003cstrong\u003e30-50cm\u003c/strong\u003e，不要太长也不要挂太高，可能影响出胶。\u003c/p\u003e\u003cp\u003eA1快拆版还有软支撑，厚一点的凸起那边插进笔芯夹具。\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq56_4.webp\"\u003e",
+      "answer": "\u003cp\u003e标准版的管子接好之后可以绑在电线也可以悬垂着\u003c/p\u003e\u003cimg src=\"assets/faq/faq15_1.webp\"\u003e\u003cp\u003e快拆版的管子有软支撑，管子可以成一个拱形\u003c/p\u003e\u003cimg src=\"assets/faq/faq15_2.webp\"\u003e\u003cp\u003e管子连接方法：将软管直接套在笔芯和胶箱上。\u003c/p\u003e\u003cp\u003e长度建议：\u003cstrong\u003e30-50cm\u003c/strong\u003e，不要太长也不要挂太高，可能影响出胶。\u003c/p\u003e\u003cp\u003eA1快拆版还有软支撑，厚一点的凸起那边插进笔芯夹具。\u003c/p\u003e\u003cimg src=\"assets/faq/faq15_3.webp\"\u003e",
       "category": "硬件装配",
       "categoryColor": "#22C55E",
       "id": "faq-015",
@@ -121,7 +121,7 @@
       "question": "\u003cp\u003e管子多长合适？怎么用？\u003c/p\u003e"
     },
     {
-      "answer": "\u003cp\u003e安装要点：\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq56_1.webp\"\u003e\u003cp\u003e1.\u0026nbsp;快拆版软管要套进第一个凸起的环再压紧拧紧\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq56_2.webp\"\u003e\u003cp\u003e2.\u0026nbsp;要用钳子夹着拧，别用手拧，小心受伤\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq56_3.webp\"\u003e\u003cp\u003e3.\u0026nbsp;安装好后\u003cstrong\u003e用力拔也拔不出\u003c/strong\u003e才算安装到位\u003c/p\u003e\u003cp\u003e4.\u0026nbsp;未套到位会导致漏胶或脱落\u003c/p\u003e\u003cp\u003e\u003c/p\u003e",
+      "answer": "\u003cp\u003e安装要点：\u003c/p\u003e\u003cimg src=\"assets/faq/faq16_1.webp\"\u003e\u003cp\u003e1.\u0026nbsp;快拆版软管要套进第一个凸起的环再压紧拧紧\u003c/p\u003e\u003cimg src=\"assets/faq/faq16_2.webp\"\u003e\u003cp\u003e2.\u0026nbsp;要用钳子夹着拧，别用手拧，小心受伤\u003c/p\u003e\u003cimg src=\"assets/faq/faq16_3.webp\"\u003e\u003cp\u003e3.\u0026nbsp;安装好后\u003cstrong\u003e用力拔也拔不出\u003c/strong\u003e才算安装到位\u003c/p\u003e\u003cp\u003e4.\u0026nbsp;未套到位会导致漏胶或脱落\u003c/p\u003e\u003cp\u003e\u003c/p\u003e",
       "category": "硬件装配",
       "categoryColor": "#22C55E",
       "id": "faq-016",
@@ -153,7 +153,7 @@
       "question": "胶水太少/不出胶怎么办？"
     },
     {
-      "answer": "\u003cp\u003e可能原因及解决方法：\u003c/p\u003e\u003cp\u003e1. 胶水太多 — \u003cstrong\u003e提高涂胶速度\u003c/strong\u003e减少出胶量\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq57_13.webp\"\u003e\u003cp\u003e2. 风吹问题 — 风会把胶水吹到边缘聚集，导致局部不干\u003c/p\u003e\u003cp\u003e3. 涂完需要等待干燥，不要急于打印下一层，加几秒等待时间\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq57_12.webp\"\u003e",
+      "answer": "\u003cp\u003e可能原因及解决方法：\u003c/p\u003e\u003cp\u003e1. 胶水太多 — \u003cstrong\u003e提高涂胶速度\u003c/strong\u003e减少出胶量\u003c/p\u003e\u003cimg src=\"assets/faq/faq20_1.webp\"\u003e\u003cp\u003e2. 风吹问题 — 风会把胶水吹到边缘聚集，导致局部不干\u003c/p\u003e\u003cp\u003e3. 涂完需要等待干燥，不要急于打印下一层，加几秒等待时间\u003c/p\u003e\u003cimg src=\"assets/faq/faq20_2.webp\"\u003e",
       "category": "胶水相关",
       "categoryColor": "#8B5CF6",
       "id": "faq-022",
@@ -185,7 +185,7 @@
       "question": "涂胶速度参数是什么意思？"
     },
     {
-      "answer": "\u003cp\u003e在\u0026nbsp;Bambu\u0026nbsp;Studio\u0026nbsp;或\u0026nbsp;OrcaSlicer\u0026nbsp;中：\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq56_6.webp\"\u003e\u003cp\u003e1.\u0026nbsp;打开切片软件，进入工艺\u0026nbsp;→\u0026nbsp;其他\u003c/p\u003e\u003cp\u003e2.\u0026nbsp;找到后处理脚本选项框\u003c/p\u003e\u003cp\u003e3.\u0026nbsp;点击本软件右上角的复制按钮，将命令粘贴进去\u003c/p\u003e\u003cp\u003e4.\u0026nbsp;重新切片即可生效\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq56_7.webp\"\u003e",
+      "answer": "\u003cp\u003e在\u0026nbsp;Bambu\u0026nbsp;Studio\u0026nbsp;或\u0026nbsp;OrcaSlicer\u0026nbsp;中：\u003c/p\u003e\u003cimg src=\"assets/faq/faq24_1.webp\"\u003e\u003cp\u003e1.\u0026nbsp;打开切片软件，进入工艺\u0026nbsp;→\u0026nbsp;其他\u003c/p\u003e\u003cp\u003e2.\u0026nbsp;找到后处理脚本选项框\u003c/p\u003e\u003cp\u003e3.\u0026nbsp;点击本软件右上角的复制按钮，将命令粘贴进去\u003c/p\u003e\u003cp\u003e4.\u0026nbsp;重新切片即可生效\u003c/p\u003e\u003cimg src=\"assets/faq/faq24_2.webp\"\u003e",
       "category": "软件配置",
       "categoryColor": "#F97316",
       "id": "faq-027",
@@ -193,7 +193,7 @@
       "question": "后处理脚本如何配置？"
     },
     {
-      "answer": "\u003cp\u003e如果您使用的是 Bambu Studio，请确保已经开启了\u003cstrong\u003e\"高级（Advanced）\"\u003c/strong\u003e或\u003cstrong\u003e\"开发者模式\"\u003c/strong\u003e开关（通常位于参数设置面板的右上角）。\u003c/p\u003e\u003cp\u003e只有在高级模式下，底部的\"其他\"选项卡才会显示后处理脚本输入框。\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq56_9.webp\"\u003e",
+      "answer": "\u003cp\u003e如果您使用的是 Bambu Studio，请确保已经开启了\u003cstrong\u003e\"高级（Advanced）\"\u003c/strong\u003e或\u003cstrong\u003e\"开发者模式\"\u003c/strong\u003e开关（通常位于参数设置面板的右上角）。\u003c/p\u003e\u003cp\u003e只有在高级模式下，底部的\"其他\"选项卡才会显示后处理脚本输入框。\u003c/p\u003e\u003cimg src=\"assets/faq/faq25_1.webp\"\u003e",
       "category": "软件配置",
       "categoryColor": "#F97316",
       "id": "faq-028",
@@ -225,7 +225,7 @@
       "question": "如何切换MKP预设？"
     },
     {
-      "answer": "\u003cp\u003e直接看图，改了需要重新切片。\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq56_8.webp\"\u003e\u003cp\u003e\u003c/p\u003e",
+      "answer": "\u003cp\u003e直接看图，改了需要重新切片。\u003c/p\u003e\u003cimg src=\"assets/faq/faq29_1.webp\"\u003e\u003cp\u003e\u003c/p\u003e",
       "category": "软件配置",
       "categoryColor": "#F97316",
       "id": "faq-032",
@@ -233,7 +233,7 @@
       "question": "\u003cp\u003e\u003cspan style=\"color: rgb(239, 68, 68);\"\u003e为什么校准改了值没变化？\u003c/span\u003e\u003c/p\u003e"
     },
     {
-      "answer": "\u003cp\u003e\u003cstrong\u003e不是必须的\u003c/strong\u003e，新版软件可以不用，已经在后处理可以屏蔽第三层的裹头检测了。\u003c/p\u003e\u003cp\u003e下方工艺预设是必须的，支撑这一页的参数最好不要改，其他的可以改\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq56_10.webp\"\u003e",
+      "answer": "\u003cp\u003e\u003cstrong\u003e不是必须的\u003c/strong\u003e，新版软件可以不用，已经在后处理可以屏蔽第三层的裹头检测了。\u003c/p\u003e\u003cp\u003e下方工艺预设是必须的，支撑这一页的参数最好不要改，其他的可以改\u003c/p\u003e\u003cimg src=\"assets/faq/faq30_1.webp\"\u003e",
       "category": "软件配置",
       "categoryColor": "#F97316",
       "id": "faq-034",
@@ -265,7 +265,7 @@
       "question": "校准顺序是什么？"
     },
     {
-      "answer": "\u003cp\u003e可能是\u003cspan style=\"color: rgb(230, 0, 0);\"\u003e没重新切片\u003c/span\u003e\u003c/p\u003e\u003cp\u003e在BBS里面更改热床类型，再改回去重新切片就行了\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq56_11.webp\"\u003e",
+      "answer": "\u003cp\u003e可能是\u003cspan style=\"color: rgb(230, 0, 0);\"\u003e没重新切片\u003c/span\u003e\u003c/p\u003e\u003cp\u003e在BBS里面更改热床类型，再改回去重新切片就行了\u003c/p\u003e\u003cimg src=\"assets/faq/faq34_1.webp\"\u003e",
       "category": "校准指南",
       "categoryColor": "#EC4899",
       "id": "faq-039",
@@ -281,7 +281,7 @@
       "question": "Z校准涂胶只能涂一半怎么办？"
     },
     {
-      "answer": "\u003cp\u003e可能是由于操作不当被覆盖了\u003c/p\u003e\u003cp\u003e在校准偏移页面点击校准记录\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq56_12.webp\"\u003e\u003cp\u003e可以看到以前使用的XYZ偏移\u003c/p\u003e\u003cp\u003e可以在预设管理页面的回收站看一看\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq56_13.webp\"\u003e\u003cp\u003e还可以在修改参数页面的修改历史里面找\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq56_14.webp\"\u003e\u003cp\u003e建议自己截图保存下来xyz的值，或者另存为\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq56_15.webp\"\u003e",
+      "answer": "\u003cp\u003e可能是由于操作不当被覆盖了\u003c/p\u003e\u003cp\u003e在校准偏移页面点击校准记录\u003c/p\u003e\u003cimg src=\"assets/faq/faq36_1.webp\"\u003e\u003cp\u003e可以看到以前使用的XYZ偏移\u003c/p\u003e\u003cp\u003e可以在预设管理页面的回收站看一看\u003c/p\u003e\u003cimg src=\"assets/faq/faq36_2.webp\"\u003e\u003cp\u003e还可以在修改参数页面的修改历史里面找\u003c/p\u003e\u003cimg src=\"assets/faq/faq36_3.webp\"\u003e\u003cp\u003e建议自己截图保存下来xyz的值，或者另存为\u003c/p\u003e\u003cimg src=\"assets/faq/faq36_4.webp\"\u003e",
       "category": "校准指南",
       "categoryColor": "#EC4899",
       "id": "faq-041",
@@ -329,7 +329,7 @@
       "question": "擦料塔怎么关？棒棒糖模式是什么？"
     },
     {
-      "answer": "\u003cp\u003e高模型打印时擦料塔容易倒。\u003c/p\u003e\u003cp\u003e解决方法：\u003c/p\u003e\u003cp\u003e\u003cs\u003e1.\u0026nbsp;打开护套模式，加固擦料塔底座\u003c/s\u003e\u003cspan style=\"color: rgb(239, 68, 68);\"\u003e效果不够，该软件已经弃用（可能群主的原版还在使用）\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq57_10.webp\"\u003e\u003cp\u003e2. 该软件已经引入斜肋外墙，更稳定\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq57_11.webp\"\u003e\u003cp\u003e3.\u0026nbsp;给热床喷胶水让擦料塔粘的更牢固\u003c/p\u003e",
+      "answer": "\u003cp\u003e高模型打印时擦料塔容易倒。\u003c/p\u003e\u003cp\u003e解决方法：\u003c/p\u003e\u003cp\u003e\u003cs\u003e1.\u0026nbsp;打开护套模式，加固擦料塔底座\u003c/s\u003e\u003cspan style=\"color: rgb(239, 68, 68);\"\u003e效果不够，该软件已经弃用（可能群主的原版还在使用）\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003c/p\u003e\u003cimg src=\"assets/faq/faq42_1.webp\"\u003e\u003cp\u003e2. 该软件已经引入斜肋外墙，更稳定\u003c/p\u003e\u003cimg src=\"assets/faq/faq42_2.webp\"\u003e\u003cp\u003e3.\u0026nbsp;给热床喷胶水让擦料塔粘的更牢固\u003c/p\u003e",
       "category": "打印实战",
       "categoryColor": "#3B82F6",
       "id": "faq-047",

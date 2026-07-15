@@ -1,0 +1,17 @@
+id = 'A2L'
+name = ''
+display = 'A2L'
+brand = 'Bambu Lab'
+machineKey = ''
+externalAliases = []
+image = ''
+icon = 'gantry'
+
+[[versions]]
+id = 'STANDARD'
+name = '标准版'
+machineKey = 'A2L:STANDARD'
+presetFile = ''
+recommendedBundle = ''
+tag = ''
+description = ''

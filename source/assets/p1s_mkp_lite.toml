@@ -1,0 +1,6 @@
+id = 'p1s_mkp_lite'
+resourceType = 'mkp_preset'
+category = ''
+machineId = 'P1S'
+fileName = 'P1.toml'
+relativePath = 'presets/mkp/P1.toml'

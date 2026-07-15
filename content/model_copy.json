@@ -1,121 +1,121 @@
 {
-  "models": [
-    {
-      "order": 1,
-      "modelFile": "MKP_support_test_models.3mf",
-      "title": "平面Z轴测试",
-      "subtitle": "Z-Axis Calib",
-      "description": "基础平面涂胶验证，检验涂胶笔基础功能与 Z 轴偏移精度，确认笔尖出胶状态与高度定位是否正常。",
-      "image": "assets/models/MKP_support_test_models_1.webp",
-      "time": "8m",
-      "weight": "3.2g",
-      "tag": {
-        "label": "基础验证",
-        "color": "#EF4444"
-      }
-    },
-    {
-      "order": 2,
-      "modelFile": "MKP_support_test_models.3mf",
-      "title": "半圆XY校准",
-      "subtitle": "XY Calibration",
-      "description": "高精度测试 X/Y/Z 轴基础偏移量，精确检测校准状态与笔尖质量，验证半圆弧面的涂胶轨迹精度。",
-      "image": "assets/models/MKP_support_test_models_2.webp",
-      "time": "12m",
-      "weight": "4.5g",
-      "tag": {
-        "label": "尺寸校准",
-        "color": "#F97316"
-      }
-    },
-    {
-      "order": 3,
-      "modelFile": "MKP_support_test_models.3mf",
-      "title": "鱼尾曲面测试",
-      "subtitle": "Overhang Quality",
-      "description": "进阶测试涂胶均匀性与小面积涂胶处理能力，检验鱼尾结构悬垂面的涂胶覆盖质量与边缘一致性。",
-      "image": "assets/models/MKP_support_test_models_3.webp",
-      "time": "18m",
-      "weight": "6.2g",
-      "tag": {
-        "label": "曲面质量",
-        "color": "#EAB308"
-      }
-    },
-    {
-      "order": 4,
-      "modelFile": "MKP_support_test_models.3mf",
-      "title": "综合测试阵列",
-      "subtitle": "Multi Benchmark",
-      "description": "多模型组合阵列测试，全面评估涂胶系统的各项核心指标与参数配合，综合检验不同结构间的涂胶衔接。",
-      "image": "assets/models/MKP_support_test_models_4.webp",
-      "time": "1h 5m",
-      "weight": "21.7g",
-      "tag": {
-        "label": "综合评估",
-        "color": "#22C55E"
-      }
-    },
-    {
-      "order": 5,
-      "modelFile": "MKP_support_test_models.3mf",
-      "title": "无支撑大平面",
-      "subtitle": "No-Support Test",
-      "description": "单支撑面与大面积涂胶专项测试，验证无辅助支撑条件下大平面涂胶的均匀性、边缘覆盖与胶量控制。",
-      "image": "assets/models/MKP_support_test_models_5.webp",
-      "time": "47m",
-      "weight": "15.5g",
-      "tag": {
-        "label": "进阶组合",
-        "color": "#06B6D4"
-      }
-    },
-    {
-      "order": 6,
-      "modelFile": "MKP_support_test_models.3mf",
-      "title": "极限综合测试",
-      "subtitle": "Ultimate Clearance",
-      "description": "全结构整合的极限测试，深度检验整体涂胶效果与长时间作业稳定性，评估系统在复杂工况下的性能边界。",
-      "image": "assets/models/MKP_support_test_models_6.webp",
-      "time": "35m",
-      "weight": "11g",
-      "tag": {
-        "label": "极限测试",
-        "color": "#3B82F6"
-      }
-    },
-    {
-      "order": 7,
-      "modelFile": "Precise_Calibration.3mf",
-      "title": "BMCU冲刷测试",
-      "subtitle": "Flow Test",
-      "description": "一个较高、支撑面较多的模型可以充分测试使用BMCU时是否冲刷",
-      "image": "assets/models/MKP_support_test_models_7.webp",
-      "time": "",
-      "weight": "",
-      "tag": {
-        "label": "冲刷测试",
-        "color": "#8B5CF6"
-      },
-      "isNew": true
-    },
-    {
-      "order": 8,
-      "modelFile": "ZOffset_Calibration.3mf",
-      "title": "擦料塔测试",
-      "description": "",
-      "image": "assets/models/MKP_support_test_models_8.webp",
-      "time": "",
-      "weight": "",
-      "tag": {
-        "label": "料塔测试",
-        "color": "#3B82F6"
-      },
-      "isNew": true
-    }
-  ],
   "modelLinks": {
     "testModelMakerWorld": "https://makerworld.com.cn/zh/models/2395687-yu-wei-ce-shi-shuang-tou-yi-liao-zhi-cheng-mkp-sup#profileId-2722483"
   },
+  "models": [
+    {
+      "description": "基础平面涂胶验证，检验涂胶笔基础功能与 Z 轴偏移精度，确认笔尖出胶状态与高度定位是否正常。",
+      "image": "assets/models/model_平面z轴测试.webp",
+      "modelFile": "MKP_support_test_models.3mf",
+      "order": 1,
+      "subtitle": "Z-Axis Calib",
+      "tag": {
+        "color": "#EF4444",
+        "label": "基础验证"
+      },
+      "time": "8m",
+      "title": "平面Z轴测试",
+      "weight": "3.2g"
+    },
+    {
+      "description": "高精度测试 X/Y/Z 轴基础偏移量，精确检测校准状态与笔尖质量，验证半圆弧面的涂胶轨迹精度。",
+      "image": "assets/models/model_半圆xy校准.webp",
+      "modelFile": "MKP_support_test_models.3mf",
+      "order": 2,
+      "subtitle": "XY Calibration",
+      "tag": {
+        "color": "#F97316",
+        "label": "尺寸校准"
+      },
+      "time": "12m",
+      "title": "半圆XY校准",
+      "weight": "4.5g"
+    },
+    {
+      "description": "进阶测试涂胶均匀性与小面积涂胶处理能力，检验鱼尾结构悬垂面的涂胶覆盖质量与边缘一致性。",
+      "image": "assets/models/model_鱼尾曲面测试.webp",
+      "modelFile": "MKP_support_test_models.3mf",
+      "order": 3,
+      "subtitle": "Overhang Quality",
+      "tag": {
+        "color": "#EAB308",
+        "label": "曲面质量"
+      },
+      "time": "18m",
+      "title": "鱼尾曲面测试",
+      "weight": "6.2g"
+    },
+    {
+      "description": "多模型组合阵列测试，全面评估涂胶系统的各项核心指标与参数配合，综合检验不同结构间的涂胶衔接。",
+      "image": "assets/models/model_综合测试阵列.webp",
+      "modelFile": "MKP_support_test_models.3mf",
+      "order": 4,
+      "subtitle": "Multi Benchmark",
+      "tag": {
+        "color": "#22C55E",
+        "label": "综合评估"
+      },
+      "time": "1h 5m",
+      "title": "综合测试阵列",
+      "weight": "21.7g"
+    },
+    {
+      "description": "单支撑面与大面积涂胶专项测试，验证无辅助支撑条件下大平面涂胶的均匀性、边缘覆盖与胶量控制。",
+      "image": "assets/models/model_无支撑大平面.webp",
+      "modelFile": "MKP_support_test_models.3mf",
+      "order": 5,
+      "subtitle": "No-Support Test",
+      "tag": {
+        "color": "#06B6D4",
+        "label": "进阶组合"
+      },
+      "time": "47m",
+      "title": "无支撑大平面",
+      "weight": "15.5g"
+    },
+    {
+      "description": "全结构整合的极限测试，深度检验整体涂胶效果与长时间作业稳定性，评估系统在复杂工况下的性能边界。",
+      "image": "assets/models/model_极限综合测试.webp",
+      "modelFile": "MKP_support_test_models.3mf",
+      "order": 6,
+      "subtitle": "Ultimate Clearance",
+      "tag": {
+        "color": "#3B82F6",
+        "label": "极限测试"
+      },
+      "time": "35m",
+      "title": "极限综合测试",
+      "weight": "11g"
+    },
+    {
+      "description": "一个较高、支撑面较多的模型可以充分测试使用BMCU时是否冲刷",
+      "image": "assets/models/model_bmcu冲刷测试.webp",
+      "isNew": true,
+      "modelFile": "Precise_Calibration.3mf",
+      "order": 7,
+      "subtitle": "Flow Test",
+      "tag": {
+        "color": "#8B5CF6",
+        "label": "冲刷测试"
+      },
+      "time": "",
+      "title": "BMCU冲刷测试",
+      "weight": ""
+    },
+    {
+      "description": "",
+      "image": "assets/models/model_擦料塔测试.webp",
+      "isNew": true,
+      "modelFile": "ZOffset_Calibration.3mf",
+      "order": 8,
+      "tag": {
+        "color": "#3B82F6",
+        "label": "料塔测试"
+      },
+      "time": "",
+      "title": "擦料塔测试",
+      "weight": ""
+    }
+  ],
   "updated": "2026-07-07 21:23:21"
 }

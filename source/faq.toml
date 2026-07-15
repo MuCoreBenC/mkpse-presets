@@ -1,0 +1,439 @@
+[[items]]
+answer = '<p>在关于软件页面有对应的网站和链接，有视频教程和图文教程。</p><p>以下仅展示常用链接</p><p><a target="_blank" rel="noopener noreferrer" href="https://space.bilibili.com/1475765743"><em><u>江汉模型的个人空间-江汉模型个人主页-哔哩哔哩视频</u></em></a></p><img src="assets/faq/faq1_1.webp"><p><a target="_blank" rel="noopener noreferrer" href="https://www.bilibili.com/video/BV1rBRJB8EfJ/?vd_source=3acd5988b97df248a1d6d7fe2766764f"><em><u>MKP&nbsp;support教程（3D打印改善支撑面）「快拆版260326」_哔哩哔哩_bilibili</u></em></a></p><p></p><img src="assets/faq/faq1_2.webp"><p><a target="_blank" rel="noopener noreferrer" href="https://makerworld.com.cn/zh/@ragdoll"><em><u>布偶猫&nbsp;|&nbsp;Home&nbsp;-&nbsp;MakerWorld</u></em></a></p><p><a target="_blank" rel="noopener noreferrer" href="https://makerworld.com.cn/zh/models/2059552-kuai-chai-ban-mkp-support-a1he-mini-gai-shan-zhi-c#profileId-2644229"><em><u>快拆版MKP&nbsp;support（A1和mini）改善支撑面，顶部Z距离为0，20260326版&nbsp;-&nbsp;免费&nbsp;3D&nbsp;打印模型&nbsp;-&nbsp;MakerWorld</u></em></a></p>'
+category = '基础入门'
+categoryColor = '#3B82F6'
+id = 'faq_1779194717623'
+order = 1.0
+question = '<p>有教程吗？</p>'
+
+[[items]]
+answer = '<p>MKP&nbsp;Support&nbsp;是一个<strong>开源项目</strong>，核心功能是在3D打印的支撑面自动涂胶，创始人为<a target="_blank" rel="noopener noreferrer" href="https://space.bilibili.com/1475765743"><span style="color: rgb(239, 68, 68);"><u>@Jhmodel喵</u></span></a><span style="color: rgb(239, 68, 68);"><u>~</u></span></p><img src="assets/faq/faq2_1.webp"><p>MKP&nbsp;SupportE&nbsp;即该软件为群友（孜羊调味粉）根据开源代码重构的程序，拥有较为现代化的页面、极致的体积以及一些新增功能（比如涂胶z方向补偿四角双线性插值）。</p><img src="assets/faq/faq2_2.webp"><p>涂胶后胶水干透形成薄膜，阻碍耗材之间粘连，降低层间结合力，从而让支撑接触面<strong>光滑平整</strong>，支撑轻松易拆，对比双头的优势：</p><p>1、无需购买新机器，旧机器也可以安装。</p><p>2、比双料支撑更粘，减少翘边概率</p><p>缺点：</p><p>1、和多头一样也需要擦料塔</p><p>2、不能说很稳定，可能有很多小问题</p>'
+category = '基础入门'
+categoryColor = '#3B82F6'
+id = 'faq-001'
+order = 2.0
+question = '<p>MKP Support是什么？有什么用？</p>'
+
+[[items]]
+answer = '<p>标准版：换笔芯需要拧螺丝，建议<a target="_blank" rel="noopener noreferrer" href="https://m.tb.cn/h.R1AvlyJ?tk=kgdy5spOuNX"><span style="color: rgb(239, 68, 68);"><u>直接买标准版成品</u></span></a>划算，自己组装的话多买一些磁铁都试试。</p><p>快拆版：外观好看，设计风格更统一，可以<a target="_blank" rel="noopener noreferrer" href="https://m.tb.cn/h.RX34omy?tk=DRRl5spNjzX"><span style="color: rgb(239, 68, 68);"><u>买快拆版成品</u></span></a>支持一下作者。换笔芯很方便，多次迭代更新，不干涉自动换盘的板夹，做了更稳的收笔，第三层的裹头检测也不会影响打印。</p><p></p><p>但是一些通病无法避免</p><p>（笔尖质量不行，可能遇到漏胶水，回流，不出胶等问题，跟打印件版本无关）</p>'
+category = '基础入门'
+categoryColor = '#3B82F6'
+id = 'faq-002'
+order = 3.0
+question = '<p>标准版和快拆版有什么区别？</p>'
+
+[[items]]
+answer = '<p>目前软件支持 <strong>Windows 10/11 (64位)</strong> 以及 <strong>macOS 12.0 及以上版本</strong>（包含 Intel 与 Apple Silicon M系列芯片）。</p>'
+category = '基础入门'
+categoryColor = '#3B82F6'
+id = 'faq-003'
+order = 4.0
+question = '软件支持哪些操作系统？'
+
+[[items]]
+answer = '<p><strong>不需要。</strong></p><p>核心处理引擎完全在本地离线运行，不会上传您的任何模型数据。仅在下载云端预设、检查版本更新时需要短暂联网。</p>'
+category = '基础入门'
+categoryColor = '#3B82F6'
+id = 'faq-004'
+order = 5.0
+question = '需要全程联网吗？'
+
+[[items]]
+answer = '<p>各机型支持情况如下：</p><p><span style="color: rgb(29, 78, 216);"><strong>•&nbsp;A1&nbsp;/&nbsp;A1&nbsp;mini&nbsp;—&nbsp;支持（相关的bom在群文件获取，注意A1和mini的打印件不一样）</strong></span></p><img src="assets/faq/faq6_1.webp"><p><span style="color: rgb(29, 78, 216);"><strong>•&nbsp;P1&nbsp;/&nbsp;X1&nbsp;系列&nbsp;—&nbsp;支持（相关的bom在群文件获取，注意P1和X1的打印件不一样）</strong></span></p><img src="assets/faq/faq6_2.webp"><img src="assets/faq/faq6_3.webp"><p><span style="color: rgb(249, 115, 22);">•&nbsp;P2S&nbsp;—&nbsp;即将支持（无限期搁置）</span></p>'
+category = '基础入门'
+categoryColor = '#3B82F6'
+id = 'faq-006'
+order = 6.0
+question = '我的机型支持吗？'
+
+[[items]]
+answer = '<p>新手可以买标准版成品，便宜性价比高，群主负责售后。</p><p>快拆版也有成品，稍贵，建议自己组装，<strong>多余的材料可以尝试两种版本。</strong></p>'
+category = '基础入门'
+categoryColor = '#3B82F6'
+id = 'faq-007'
+order = 7.0
+question = '<p>A1新手应该选标准版还是快拆版？</p>'
+
+[[items]]
+answer = '<p>在后处理的时候，先找出支撑面和支撑熨烫面，插入一段切换的代码和偏移后的去掉挤出的路径。</p><p>让打印机在打印完支撑面（支撑熨烫面）之后执行插入的路径，执行涂胶。</p><p>胶水干透后在支撑接触面形成一层薄膜，<span style="color: rgb(239, 68, 68);"><strong><em>阻碍耗材之间的粘连</em></strong></span>，降低层间结合力。</p><p>这样支撑与模型之间的表现更好，接触面光滑平整。</p>'
+category = '基础入门'
+categoryColor = '#3B82F6'
+id = 'faq-008'
+order = 8.0
+question = '<p>MKP涂胶的原理是什么？</p>'
+
+[[items]]
+answer = '<p>磁铁安装规则：</p><p>A系列：</p><p>标准版</p><p>•&nbsp;<strong>N35</strong>&nbsp;装外壳</p><p>•&nbsp;<strong>N52</strong>&nbsp;装夹具</p><p>判断极性：夹具和外壳上的磁铁应该相互吸引。</p><p><span style="color: rgb(239, 68, 68);">快拆版</span></p><p><span style="color: rgb(239, 68, 68);">只需要<strong>N52</strong>，同样是夹具和前盖相互吸引。</span></p><p>P和X系列：</p><p>根据工具头上磁铁的极性判断，外壳与工具头相互吸引即可。</p>'
+category = '硬件装配'
+categoryColor = '#22C55E'
+id = 'faq-009'
+order = 9.0
+question = '<p>磁铁怎么装？极性怎么判断？</p>'
+
+[[items]]
+answer = '<p>常见原因及解决方法：</p><p>1.&nbsp;磁极装反&nbsp;—&nbsp;最常见原因，检查磁铁极性</p><p>标准版：</p><p>2.&nbsp;磁铁突出&nbsp;—&nbsp;重新安装使磁铁平齐</p><p>3.&nbsp;间隙太小&nbsp;—&nbsp;打磨夹具间距</p><img src="assets/faq/faq10_1.webp"><p>快拆版：</p><p><s>4.&nbsp;快拆版的挡片卡住，需要打磨象脚和锐边</s><span style="color: rgb(239, 68, 68);">260628版本已经解决了不再需要挡片。</span></p>'
+category = '硬件装配'
+categoryColor = '#22C55E'
+id = 'faq-010'
+order = 10.0
+question = 'A1笔压不下去/抬不起来怎么办？'
+
+[[items]]
+answer = '<p>排查步骤：</p><p>1.&nbsp;检查磁铁是否<strong>突出或松动</strong></p><p>2.&nbsp;笔芯夹具和外壳之间涂润滑脂</p><p></p>'
+category = '硬件装配'
+categoryColor = '#22C55E'
+id = 'faq-011'
+order = 11.0
+question = 'A1上下活动不流畅怎么办？'
+
+[[items]]
+answer = '<p>笔尖脱落的常见原因：</p><p>1.&nbsp;小面积细长条区域快速振荡，笔尖被甩脱</p><p><span style="color: rgb(239, 68, 68);">2.&nbsp;Z轴太低，撞到外墙导致笔尖脱落</span></p>'
+category = '硬件装配'
+categoryColor = '#22C55E'
+id = 'faq-012'
+order = 12.0
+question = '<p>A系列笔尖为什么会掉？</p>'
+
+[[items]]
+answer = '<p>可能原因：</p><p>P1/X1：</p><p>1.&nbsp;可能是管子压到框架导致的，也可能是没收笔就打印导致的</p><p>2.&nbsp;磁铁脱落</p><p>A1/A1&nbsp;mini：</p><p>1.&nbsp;笔尖XYZ偏移不准撞掉的</p>'
+category = '硬件装配'
+categoryColor = '#22C55E'
+id = 'faq-013'
+order = 13.0
+question = '前盖会被撞掉怎么办？'
+
+[[items]]
+answer = '<p>P系列采用推杆结构，前盖脱落报警的常见原因：</p><p>1.&nbsp;P系列传感器较为敏感，轻微位移就会报警</p><p>2.&nbsp;确保磁铁吸附牢固</p><p><span style="color: rgb(239, 68, 68);">2.&nbsp;打开软件里面的防误报开关（即使真的脱落也没有警报，打印失败风险增加）</span></p>'
+category = '硬件装配'
+categoryColor = '#22C55E'
+id = 'faq-014'
+order = 14.0
+question = '<p>P系列为什么总是报<span style="color: rgb(239, 68, 68);">前盖脱落？</span></p>'
+
+[[items]]
+answer = '<p>标准版的管子接好之后可以绑在电线也可以悬垂着</p><img src="assets/faq/faq15_1.webp"><p>快拆版的管子有软支撑，管子可以成一个拱形</p><img src="assets/faq/faq15_2.webp"><p>管子连接方法：将软管直接套在笔芯和胶箱上。</p><p>长度建议：<strong>30-50cm</strong>，不要太长也不要挂太高，可能影响出胶。</p><p>A1快拆版还有软支撑，厚一点的凸起那边插进笔芯夹具。</p><img src="assets/faq/faq15_3.webp">'
+category = '硬件装配'
+categoryColor = '#22C55E'
+id = 'faq-015'
+order = 15.0
+question = '<p>管子多长合适？怎么用？</p>'
+
+[[items]]
+answer = '<p>安装要点：</p><img src="assets/faq/faq16_1.webp"><p>1.&nbsp;快拆版软管要套进第一个凸起的环再压紧拧紧</p><img src="assets/faq/faq16_2.webp"><p>2.&nbsp;要用钳子夹着拧，别用手拧，小心受伤</p><img src="assets/faq/faq16_3.webp"><p>3.&nbsp;安装好后<strong>用力拔也拔不出</strong>才算安装到位</p><p>4.&nbsp;未套到位会导致漏胶或脱落</p><p></p>'
+category = '硬件装配'
+categoryColor = '#22C55E'
+id = 'faq-016'
+order = 16.0
+question = '管子安装要注意什么？'
+
+[[items]]
+answer = '<p>K90胶水配比：<strong>1:20</strong>（K90&nbsp;:&nbsp;水）</p><p>注意事项：</p><p>1.&nbsp;用水配制，不是酒精</p><p>2.&nbsp;加少量<strong>洗洁精</strong>作为润湿剂，帮助胶水均匀涂布</p><p></p><p>参考配比：（质量比）单位g</p><p>水：K90：洗洁精：甘油100：5：2：2</p><p></p><p></p>'
+category = '胶水相关'
+categoryColor = '#8B5CF6'
+id = 'faq-019'
+order = 17.0
+question = 'K90胶水怎么配？'
+
+[[items]]
+answer = '<p>胶水过多的解决方法：</p><p>1. <strong>提高涂胶速度</strong> — 默认约70，可调到120-140</p><p>2. 胶箱不要装太满</p><p>3. 胶箱不要放太高</p>'
+category = '胶水相关'
+categoryColor = '#8B5CF6'
+id = 'faq-020'
+order = 18.0
+question = '胶水太多怎么办？'
+
+[[items]]
+answer = '<p>排查步骤：</p><p>1. 检查笔尖是否<span style="color: rgb(239, 68, 68);">堵塞或损坏</span></p><p>2. 检查管内是否有气泡阻断出胶</p><p>3. 检查胶箱<strong>液位</strong>是否充足</p><p>4. 可以把盖子打开，不用拧紧，松几圈</p><p>5. 可以把胶箱垫高一点</p>'
+category = '胶水相关'
+categoryColor = '#8B5CF6'
+id = 'faq-021'
+order = 19.0
+question = '胶水太少/不出胶怎么办？'
+
+[[items]]
+answer = '<p>可能原因及解决方法：</p><p>1. 胶水太多 — <strong>提高涂胶速度</strong>减少出胶量</p><img src="assets/faq/faq20_1.webp"><p>2. 风吹问题 — 风会把胶水吹到边缘聚集，导致局部不干</p><p>3. 涂完需要等待干燥，不要急于打印下一层，加几秒等待时间</p><img src="assets/faq/faq20_2.webp">'
+category = '胶水相关'
+categoryColor = '#8B5CF6'
+id = 'faq-022'
+order = 20.0
+question = '胶水不干/干不了？'
+
+[[items]]
+answer = '<p>少量小气泡<strong>不影响使用</strong>，气泡会聚集在顶部只要不影响出胶可以不管。</p><p>如果气泡太多影响出胶，可以排一下气泡。</p>'
+category = '胶水相关'
+categoryColor = '#8B5CF6'
+id = 'faq-023'
+order = 21.0
+question = '笔头涂胶时慢慢进小气泡？'
+
+[[items]]
+answer = '<p>长时间不用后笔尖胶水干涸凝固导致不出胶。</p><p>解决方法：</p><p>1.&nbsp;用<strong>水或酒精</strong>泡一会笔尖，再在纸上划几下恢复出胶。</p><p>2.&nbsp;换新的笔尖。</p><p>3.很久不用的话可以取下套笔帽存放。</p>'
+category = '胶水相关'
+categoryColor = '#8B5CF6'
+id = 'faq-024'
+order = 22.0
+question = '很久不用就不出胶了怎么办？'
+
+[[items]]
+answer = '<p>涂胶速度参数的含义：</p><p>• 数字<strong>越大</strong> → 涂胶越快 → <span class="text-blue-600 font-medium">出胶越少</span></p><p>• 数字<strong>越小</strong> → 涂胶越慢 → 出胶越多</p><p>默认值约 <code>69-70</code>，胶水太多可调到 <code>120-200</code>。</p>'
+category = '胶水相关'
+categoryColor = '#8B5CF6'
+id = 'faq-025'
+order = 23.0
+question = '涂胶速度参数是什么意思？'
+
+[[items]]
+answer = '<p>在&nbsp;Bambu&nbsp;Studio&nbsp;或&nbsp;OrcaSlicer&nbsp;中：</p><img src="assets/faq/faq24_1.webp"><p>1.&nbsp;打开切片软件，进入工艺&nbsp;→&nbsp;其他</p><p>2.&nbsp;找到后处理脚本选项框</p><p>3.&nbsp;点击本软件右上角的复制按钮，将命令粘贴进去</p><p>4.&nbsp;重新切片即可生效</p><img src="assets/faq/faq24_2.webp">'
+category = '软件配置'
+categoryColor = '#F97316'
+id = 'faq-027'
+order = 24.0
+question = '后处理脚本如何配置？'
+
+[[items]]
+answer = '<p>如果您使用的是 Bambu Studio，请确保已经开启了<strong>"高级（Advanced）"</strong>或<strong>"开发者模式"</strong>开关（通常位于参数设置面板的右上角）。</p><p>只有在高级模式下，底部的"其他"选项卡才会显示后处理脚本输入框。</p><img src="assets/faq/faq25_1.webp">'
+category = '软件配置'
+categoryColor = '#F97316'
+id = 'faq-028'
+order = 25.0
+question = '找不到切片软件的后处理脚本选项？'
+
+[[items]]
+answer = '<p>这通常是因为路径解析错误导致的，请检查以下几点：</p><p>1. 软件安装路径中是否包含<strong>中文或特殊符号</strong>？建议移动到全英文路径下（如 <code>D:\MKPSupportE</code>）。</p><p>2. 检查切片软件填写的路径两端是否遗漏了英文双引号 <code>""</code>。</p>'
+category = '软件配置'
+categoryColor = '#F97316'
+id = 'faq-029'
+order = 26.0
+question = '切片后提示找不到脚本文件？'
+
+[[items]]
+answer = '<p>填了后处理脚本再选预设会导致BBS闪退，这是已知问题。</p><p>解决方法：</p><p>1.&nbsp;选预设前<span style="color: rgb(230, 0, 0);">先点击后处理脚本旁边的刷新圆圈按钮</span></p><p>2.&nbsp;再点击刷新预设的圆圈按钮</p>'
+category = '软件配置'
+categoryColor = '#F97316'
+id = 'faq-030'
+order = 27.0
+question = '选工艺预设时BBS闪退怎么办？'
+
+[[items]]
+answer = '<p>切换预设步骤：</p><p>1.&nbsp;选预设前<span style="color: rgb(230, 0, 0);">先点击后处理脚本旁边的刷新圆圈按钮</span></p><p>2.&nbsp;点击内置工艺预设旁的弧形箭头/刷新圆圈按钮</p><p>3.&nbsp;点击下拉菜单选择MKP选项即可</p>'
+category = '软件配置'
+categoryColor = '#F97316'
+id = 'faq-031'
+order = 28.0
+question = '如何切换MKP预设？'
+
+[[items]]
+answer = '<p>直接看图，改了需要重新切片。</p><img src="assets/faq/faq29_1.webp"><p></p>'
+category = '软件配置'
+categoryColor = '#F97316'
+id = 'faq-032'
+order = 29.0
+question = '<p><span style="color: rgb(239, 68, 68);">为什么校准改了值没变化？</span></p>'
+
+[[items]]
+answer = '<p><strong>不是必须的</strong>，新版软件可以不用，已经在后处理可以屏蔽第三层的裹头检测了。</p><p>下方工艺预设是必须的，支撑这一页的参数最好不要改，其他的可以改</p><img src="assets/faq/faq30_1.webp">'
+category = '软件配置'
+categoryColor = '#F97316'
+id = 'faq-034'
+order = 30.0
+question = '打印机预设是必须的吗？'
+
+[[items]]
+answer = '<p>Z轴偏移校准用于<strong>微调笔芯与支撑面的距离</strong>。</p><p>•&nbsp;距离合适：支撑接触面完美粘附并容易拆除</p><p>•&nbsp;距离过近：导致撞支撑，前盖脱落</p><p>•&nbsp;距离过远：涂不上胶水</p><p>警告：Z值无论如何不能小于0！</p>'
+category = '校准指南'
+categoryColor = '#EC4899'
+id = 'faq-035'
+order = 31.0
+question = 'Z轴偏移校准的作用？'
+
+[[items]]
+answer = '<p>XY轴偏移校准用于调整笔芯<strong>水平精确度</strong>。</p><p>主要作用：</p><p>1.&nbsp;确保涂胶路径准确</p><p>2.&nbsp;确保不涂到模型</p><p>3.&nbsp;确保不偏离支撑面撞到外墙</p>'
+category = '校准指南'
+categoryColor = '#EC4899'
+id = 'faq-036'
+order = 32.0
+question = 'XY轴偏移校准有什么作用？'
+
+[[items]]
+answer = '<p>必须先校准Z，再校准XY。</p><p>Z轴偏移是基础，XY偏移依赖Z轴的正确值。如果Z轴不准，XY校准会比较难。</p><p>重要：Z值无论如何不能小于0！</p>'
+category = '校准指南'
+categoryColor = '#EC4899'
+id = 'faq-037'
+order = 33.0
+question = '校准顺序是什么？'
+
+[[items]]
+answer = '<p>可能是<span style="color: rgb(230, 0, 0);">没重新切片</span></p><p>在BBS里面更改热床类型，再改回去重新切片就行了</p><img src="assets/faq/faq34_1.webp">'
+category = '校准指南'
+categoryColor = '#EC4899'
+id = 'faq-039'
+order = 34.0
+question = '校准保存后数值没生效怎么办？'
+
+[[items]]
+answer = '<p>排查步骤：</p><p>看看是不是标准版但用了快拆版的</p><p>或者快拆版用了标准版的预设文件</p><p>其实这是正常的，可能默认参考的XY不准</p><p>只要中间方块能均匀的涂上一点就行了</p><p>如果看不到涂胶效果可以用手摸一下看看粘不粘</p><p>校准好Z轴之后，再去校准XY</p>'
+category = '校准指南'
+categoryColor = '#EC4899'
+id = 'faq-040'
+order = 35.0
+question = 'Z校准涂胶只能涂一半怎么办？'
+
+[[items]]
+answer = '<p>可能是由于操作不当被覆盖了</p><p>在校准偏移页面点击校准记录</p><img src="assets/faq/faq36_1.webp"><p>可以看到以前使用的XYZ偏移</p><p>可以在预设管理页面的回收站看一看</p><img src="assets/faq/faq36_2.webp"><p>还可以在修改参数页面的修改历史里面找</p><img src="assets/faq/faq36_3.webp"><p>建议自己截图保存下来xyz的值，或者另存为</p><img src="assets/faq/faq36_4.webp">'
+category = '校准指南'
+categoryColor = '#EC4899'
+id = 'faq-041'
+order = 36.0
+question = '重新下载预设后坐标变了怎么办？'
+
+[[items]]
+answer = '<p>支撑难拆的排查步骤：</p><p>1.&nbsp;检查<strong>出胶量</strong>是否充足</p><p>2.&nbsp;检查<strong>XYZ轴偏移</strong>是否校准</p><p>3.&nbsp;建议使用擦嘴塔而非棒棒糖模式</p><p>4. 普通支撑确实难拆一点，但是支撑面效果好一点。</p><p>5. 树状支撑好拆但是效果可能差一点（而且要用混合树）</p>'
+category = '打印实战'
+categoryColor = '#3B82F6'
+id = 'faq-042'
+order = 37.0
+question = '支撑难拆怎么办？'
+
+[[items]]
+answer = '<p>解决方法：</p><p>1.&nbsp;<strong>关闭移除小悬空</strong>选项</p><p>2.&nbsp;更新到最新版本，打开支撑熨烫</p><p>3.&nbsp;增加接触面层数&nbsp;—&nbsp;顶部设为2-3层</p>'
+category = '打印实战'
+categoryColor = '#3B82F6'
+id = 'faq-043'
+order = 38.0
+question = '支撑边缘下垂/有波浪纹？'
+
+[[items]]
+answer = '<p>MKP对树状支撑的支持有限，因为树状支撑的支撑面太小了不方便涂胶，建议使用普通支撑。</p><p>实在要用树状支撑，要用<span style="color: rgb(230, 0, 0);">混合树</span>，并且开支撑熨烫。</p><p></p>'
+category = '打印实战'
+categoryColor = '#3B82F6'
+id = 'faq-044'
+order = 39.0
+question = '树状支撑效果不好？'
+
+[[items]]
+answer = '<p>棒棒糖模式下这是正常现象，停顿是升降温程序在运行。</p><p>擦嘴塔模式不会停这么久，可能是设置了额外干燥时间，改成0秒即可。</p>'
+category = '打印实战'
+categoryColor = '#3B82F6'
+id = 'faq-045'
+order = 40.0
+question = '涂胶时停顿十几秒？'
+
+[[items]]
+answer = '<p><strong>关闭擦料塔就是棒棒糖模式</strong>。</p><p>棒棒糖模式暂时不完善。新手建议使用擦嘴塔模式，涂胶更稳定。</p>'
+category = '打印实战'
+categoryColor = '#3B82F6'
+id = 'faq-046'
+order = 41.0
+question = '擦料塔怎么关？棒棒糖模式是什么？'
+
+[[items]]
+answer = '<p>高模型打印时擦料塔容易倒。</p><p>解决方法：</p><p><s>1.&nbsp;打开护套模式，加固擦料塔底座</s><span style="color: rgb(239, 68, 68);">效果不够，该软件已经弃用（可能群主的原版还在使用）</span></p><p></p><img src="assets/faq/faq42_1.webp"><p>2. 该软件已经引入斜肋外墙，更稳定</p><img src="assets/faq/faq42_2.webp"><p>3.&nbsp;给热床喷胶水让擦料塔粘的更牢固</p>'
+category = '打印实战'
+categoryColor = '#3B82F6'
+id = 'faq-047'
+order = 42.0
+question = '擦料塔倒了怎么办？'
+
+[[items]]
+answer = '<p>可能是由于XYZ没校准，撞到了支撑的错层，也有可能是程序bug</p>'
+category = '打印实战'
+categoryColor = '#3B82F6'
+id = 'faq-049'
+order = 43.0
+question = '涂胶层表面错层？'
+
+[[items]]
+answer = '<p>涂胶时终止打印会导致笔杆处于伸出状态，下次打印直接撞断。</p><p>处理步骤：</p><p>1.&nbsp;更换新笔杆</p><p>2.&nbsp;换杆后需<strong>重新校准Z轴</strong></p><p>警告：涂胶时绝对不要终止打印！</p><p>每次打印之前，如果发现笔芯是伸出来的状态，记得手动归位</p>'
+category = '故障排查'
+categoryColor = '#22C55E'
+id = 'faq-050'
+order = 44.0
+question = '笔杆撞断了怎么办？'
+
+[[items]]
+answer = '<p>最常见原因：<span class="text-red-600 font-medium">之前涂胶时终止了打印</span>，笔杆一直处于伸出状态没有收回。</p><p>下次打印时笔杆未收回就直接犁板子。</p><p class="text-red-500 font-medium mt-1">警告：涂胶时绝对不要终止打印！</p>'
+category = '故障排查'
+categoryColor = '#22C55E'
+id = 'faq-051'
+order = 45.0
+question = '突然开始犁板子是怎么回事？'
+
+[[items]]
+answer = '<p>堵头的解决方法：</p><p>1. 调整<strong>回抽距离</strong>（伸笔代码中的E值）</p><p>2. <span class="text-yellow-600 font-medium">丝绸料</span>特别容易堵头，建议使用普通PLA</p>'
+category = '故障排查'
+categoryColor = '#22C55E'
+id = 'faq-052'
+order = 46.0
+question = '打印中涂胶头堵头？'
+
+[[items]]
+answer = '<p>处理超大模型时，生成的 G-code 可能达到数千万行。传统软件在加载、解析和渲染过程中需要占用大量内存，因此可能出现卡顿、响应缓慢甚至内存不足的情况。</p><p><strong>本软件采用 Go + Wails 技术栈开发，针对大文件场景进行了优化：</strong></p><ul><li><p>高性能 Go 后端，充分利用现代多核 CPU</p></li><li><p>流式解析 G-code，避免一次性加载全部数据</p></li><li><p>更低的内存占用，减少大文件处理压力</p></li><li><p>前后端分离架构，界面响应更流畅</p></li></ul><p><strong>如果遇到卡顿，可尝试：</strong></p><ol><li><p>在切片软件中适当降低模型复杂度</p></li><li><p>减少过细的层高或不必要的细节</p></li><li><p>关闭其他占用内存较高的软件</p></li><li><p>增加系统可用内存或虚拟内存</p></li></ol>'
+category = '故障排查'
+categoryColor = '#22C55E'
+id = 'faq-053'
+order = 47.0
+question = '切片后软件卡死/内存不足？'
+
+[[items]]
+answer = '<p>默认情况下，处理后的 G-code 会直接覆盖原本的，在bbs的临时目录下。</p><p>如果找不到文件，请检查：</p><ol><li><p>导出目录是否具有写入权限</p></li><li><p>磁盘剩余空间是否充足</p></li></ol>'
+category = '故障排查'
+categoryColor = '#22C55E'
+id = 'faq-054'
+order = 48.0
+question = '<p><span style="color: rgb(0, 0, 0);">处理后找不到 G-code 文件？</span></p>'
+
+[[items]]
+answer = '<p>后处理过程中，软件可能会为 G-code 添加额外的控制指令、注释信息或设备兼容代码，因此文件体积略有增加属于正常现象。</p><p>通常不会影响打印速度和打印质量。</p>'
+category = '故障排查'
+categoryColor = '#22C55E'
+id = 'faq-055'
+order = 49.0
+question = '<p><span style="color: rgb(0, 0, 0);">为什么处理后的 G-code 文件体积变大了？</span></p>'
+
+[[items]]
+answer = '<p>后处理会在 G-code 中增加额外的运动指令，例如空驶移动、涂胶路径以及换笔动作，因此实际打印时间通常会比切片软件预估时间更长。</p><p>具体增加的时间取决于模型复杂度、换笔次数和涂胶量。一般情况下，实际打印时间比切片软件预估时间增加约 <strong>10%～30%</strong> 属于正常现象。</p>'
+category = '故障排查'
+categoryColor = '#22C55E'
+id = 'faq-056'
+order = 50.0
+question = '处理后打印速度明显变慢？'
+
+[[items]]
+answer = '<p>一般只是A系列才会遇到</p><p>第二层结束后拓竹固件会<strong>强制裹头检测</strong>，而MKP机器预设会自动关闭此检测。</p><p>如果不用MKP机器预设打印，建议取下笔芯，避免裹头检测时碰到笔芯导致卡住。</p><p>快拆版取下笔芯，标准版取下整个前盖。</p>'
+category = '故障排查'
+categoryColor = '#22C55E'
+id = 'faq-057'
+order = 51.0
+question = '不用MKP正常打印时第三层裹头检测卡住？'
+
+[[items]]
+answer = '<p>支撑界面间距由<strong>切片软件</strong>控制，不是MKP软件的参数。</p><p>如果没开熨烫，默认使用支撑面的间距无法调整。如果需要调整涂胶间距，可以打开熨烫功能</p><p>在切片软件的"支撑"设置中，打开“支撑熨烫”修改“支撑熨烫间距”。</p>'
+category = '进阶技巧'
+categoryColor = '#8B5CF6'
+id = 'faq-058'
+order = 52.0
+question = '如何自定义支撑面涂胶间距？'
+
+[[items]]
+answer = '<p><strong>MKP 与切片软件生成的擦料塔并不冲突，无需关闭擦料塔功能。</strong></p><p>对于多色打印，建议保留切片软件默认的擦料塔设置。换色时产生的排料、冲刷和颜色过渡仍由擦料塔负责完成，而 MKP 仅负责额外的涂胶、换笔等后处理动作。</p>'
+category = '进阶技巧'
+categoryColor = '#8B5CF6'
+id = 'faq-059'
+order = 53.0
+question = '多色打印下的支撑策略建议？'
+
+[[items]]
+answer = '<p>一种说法是管子阻力过大导致BMCU的<strong>霍尔传感器误判卡料</strong>，从而不断冲刷。</p><p>建议使用外挂耗材替代BMCU，避免传感器误判问题。</p><p>MKP 在打印过程中会增加额外的回抽、冲刷和换笔动作。</p><p>在部分 BMCU 设备上，频繁的耗材正反向运动可能触发异常检测机制，导致打印机重复执行冲刷流程。</p>'
+category = '进阶技巧'
+categoryColor = '#8B5CF6'
+id = 'faq-060'
+order = 54.0
+question = 'BMCU+MKP一直冲刷怎么办？'
+
+[[items]]
+answer = '<p>该程序没有此功能。</p><p>群主可能有<strong>Klipper专用版本</strong>，具体使用方法请咨询群主获取详细指导。</p>'
+category = '进阶技巧'
+categoryColor = '#8B5CF6'
+id = 'faq-062'
+order = 55.0
+question = '有Klipper版本吗？'

@@ -1,0 +1,317 @@
+[[tabs]]
+id = 'offset'
+label = '偏移'
+
+[[tabs.sections]]
+id = '空间偏移'
+title = '空间偏移'
+
+[[tabs.sections.items]]
+paramKey = 'toolhead.offset.y'
+
+[[tabs.sections.items]]
+paramKey = 'toolhead.offset.x'
+
+[[tabs.sections.items]]
+paramKey = 'toolhead.offset.z'
+
+[[tabs.sections]]
+id = '运动与挤出'
+title = '运动与挤出'
+
+[[tabs.sections.items]]
+paramKey = 'toolhead.speed_limit'
+
+[[tabs.sections.items]]
+paramKey = 'toolhead.MKP_retract'
+
+[[tabs]]
+id = 'wiping'
+label = '擦料'
+
+[[tabs.sections]]
+id = '擦料方式'
+title = '擦料方式'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.have_wiping_components'
+
+[[tabs.sections]]
+id = '擦料塔位置与打印'
+title = '擦料塔位置与打印'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.wiper_x'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.wiper_y'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.tower_extrude_ratio'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.tower_travel_speed'
+
+[[tabs.sections]]
+id = '安全与高级参数'
+title = '安全与高级参数'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.tower_first_layer_flow'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.fast_tower_mode'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.wipetower_speed'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.tower_glue_layer_speed'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.tower_custom_layer_height'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.tower_wipe_mode'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.tower_safe_z_offset'
+
+[[tabs.sections]]
+id = '塔结构加强'
+title = '塔结构加强'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.outer_structure'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.tower_rib_speed'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.tower_rib_speed_value'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.rib_extra_length'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.rib_width'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.rib_fillet_wall'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.tower_sheath_speed'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.sheath_enable_height'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.sheath_base_expand'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.sheath_wall_width'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.sheath_converge_layers'
+
+[[tabs.sections]]
+id = '圆盘动作控制'
+title = '圆盘动作控制'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.disk_stagger_mode'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.disk_stagger_angle'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.disk_stagger_max_angle'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.disk_stagger_swing_mode'
+
+[[tabs]]
+id = 'fan'
+label = '风扇'
+
+[[tabs.sections]]
+id = '温控与风扇'
+title = '温控与风扇'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.nozzle_cooling_flag'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.fan_speed'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.user_dry_time'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.part_drying_speed'
+
+[[tabs]]
+id = 'glue'
+label = '涂胶'
+
+[[tabs.sections]]
+id = '高级运动调控'
+title = '高级运动调控'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.support_extrusion_multiplier'
+
+[[tabs.sections]]
+id = '支撑面熨烫'
+title = '支撑面熨烫'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.ironing_mode'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.ironing_e_sum_threshold'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.use_ironing_path'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.ironing_coverage_threshold'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.ironing_suppress_expand'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.ironing_suppress_expand_mode'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.min_support_interface_enabled'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.glue_sparse_ratio'
+
+[[tabs.sections]]
+id = '涂胶方向补偿'
+title = '涂胶方向补偿'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.glue_z_compensation_enabled'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.glue_z_compensation_mode'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.glue_z_compensation_bed_fl'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.glue_z_compensation_bed_fr'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.glue_z_compensation_bed_bl'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.glue_z_compensation_bed_br'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.glue_z_compensation_patch_fl'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.glue_z_compensation_patch_fr'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.glue_z_compensation_patch_bl'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.glue_z_compensation_patch_br'
+
+[[tabs]]
+id = 'gcode'
+label = '切换'
+
+[[tabs.sections]]
+id = '自定义G-code'
+title = '自定义G-code'
+
+[[tabs.sections.items]]
+paramKey = 'toolhead.custom_mount_gcode'
+
+[[tabs.sections.items]]
+paramKey = 'toolhead.custom_unmount_gcode'
+
+[[tabs]]
+id = 'advanced'
+label = '更多'
+
+[[tabs.sections]]
+id = '润笔'
+title = '润笔'
+
+[[tabs.sections.items]]
+paramKey = 'toolhead.first_pen_revitalization_flag'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.prime_enabled'
+
+[[tabs.sections.items]]
+paramKey = 'toolhead.prime_length'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.prime_min_path_length'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.prime_trigger_layers'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.prime_per_model'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.prime_every_layer'
+
+[[tabs.sections]]
+id = '涂胶参数'
+title = '涂胶参数'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.small_feature_factor'
+
+[[tabs.sections.items]]
+paramKey = 'toolhead.glue_z_offset'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.glue_pass_count'
+
+[[tabs.sections]]
+id = 'Z轴抬升'
+title = 'Z轴抬升'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.glue_z_lift_height'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.glue_z_lift_height_first_layers'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.glue_inter_model_lift_height'
+
+[[tabs.sections]]
+id = '机型专属'
+title = '机型专属'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.disable_front_cover_alarm'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.disable_3rd_layer_clog_detect'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.disable_timelapse'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.xy_calibration_mode'
+
+[[tabs.sections.items]]
+paramKey = 'wiping.z_calibration_mode'
+
+[[tabs]]
+id = 'internal'
+label = '内部参数'
+sections = []

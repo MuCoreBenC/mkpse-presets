@@ -1,12 +1,232 @@
 {
-  "manifestVersion": 1,
-  "updated": "2026-07-10T15:00:00Z",
+  "manifestVersion": 2,
+  "updated": "2026-07-15T17:19:58Z",
   "channel": "stable",
+  "bundles": [
+    {
+      "id": "A1_MINI_default",
+      "display": "官方推荐",
+      "machineId": "A1_MINI",
+      "assetRefs": [
+        "a1_mini_bbs_mkpprocess_a1_mini_04_020"
+      ]
+    },
+    {
+      "id": "A1_default",
+      "display": "官方推荐",
+      "machineId": "A1",
+      "assetRefs": [
+        "a1_bbs_mkpprocess_a1_04_020"
+      ]
+    },
+    {
+      "id": "P1S_default",
+      "display": "官方推荐",
+      "machineId": "P1S",
+      "assetRefs": [
+        "p1s_bbs_mkpprocess_p1s_04_024"
+      ]
+    },
+    {
+      "id": "P2S_default",
+      "display": "官方推荐",
+      "machineId": "P2S",
+      "assetRefs": [
+        "p2s_bbs_mkpprocess_p2s_04_024"
+      ]
+    },
+    {
+      "id": "X1C_default",
+      "display": "官方推荐",
+      "machineId": "X1C",
+      "assetRefs": [
+        "x1c_bbs_mkpprocess_x1_04_024"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "a1_mkp_standard",
+      "resourceType": "mkp_preset",
+      "category": "",
+      "machineId": "A1",
+      "fileName": "A1.toml",
+      "relativePath": "presets/mkp/A1.toml",
+      "sha256": "cb4f9f142adbb5a93c29562ee1e4d1c6e2421790b0590d3da6a1626f1729a97a",
+      "size": 4475,
+      "updatedAt": "2026-07-10T09:47:51Z"
+    },
+    {
+      "id": "a1_mkp_fast",
+      "resourceType": "mkp_preset",
+      "category": "",
+      "machineId": "A1",
+      "fileName": "A1F.toml",
+      "relativePath": "presets/mkp/A1F.toml",
+      "sha256": "79f169eb265bc6fb29aedf209273cfe89d92553f6d1f7a28831ca3d8b9d77c0b",
+      "size": 4473,
+      "updatedAt": "2026-07-10T09:47:51Z"
+    },
+    {
+      "id": "a1_mkp_fastv3.3",
+      "resourceType": "mkp_preset",
+      "category": "",
+      "machineId": "A1",
+      "fileName": "A1F_260628.toml",
+      "relativePath": "presets/mkp/A1F_260628.toml",
+      "sha256": "098cc4c61ba637c9139e0d8a3259aeab77147f9b01d06543400ee87a9ea0c8ba",
+      "size": 4477,
+      "updatedAt": "2026-07-10T09:47:51Z"
+    },
+    {
+      "id": "a1_mini_mkp_standard",
+      "resourceType": "mkp_preset",
+      "category": "",
+      "machineId": "A1_MINI",
+      "fileName": "A1M.toml",
+      "relativePath": "presets/mkp/A1M.toml",
+      "sha256": "a3f3efdaadf9a23bdf76bed0c4a8a06e4dcc50352bd956f9d077d1784af06026",
+      "size": 4482,
+      "updatedAt": "2026-07-10T09:47:51Z"
+    },
+    {
+      "id": "a1_mini_mkp_fast",
+      "resourceType": "mkp_preset",
+      "category": "",
+      "machineId": "A1_MINI",
+      "fileName": "A1MF.toml",
+      "relativePath": "presets/mkp/A1MF.toml",
+      "sha256": "2215c2ecf90e277ec373ec4452acddf9ce6e34f963c5b2b216b1faec2d0f39c6",
+      "size": 4476,
+      "updatedAt": "2026-07-10T09:47:51Z"
+    },
+    {
+      "id": "a1_mini_mkp_fastv3.3",
+      "resourceType": "mkp_preset",
+      "category": "",
+      "machineId": "A1_MINI",
+      "fileName": "A1MF_260628.toml",
+      "relativePath": "presets/mkp/A1MF_260628.toml",
+      "sha256": "fd8381a95e3de1d965b6487373535cb3594c0aaa6395c234d4873b2756520cca",
+      "size": 4482,
+      "updatedAt": "2026-07-10T09:47:51Z"
+    },
+    {
+      "id": "p1s_mkp_lite",
+      "resourceType": "mkp_preset",
+      "category": "",
+      "machineId": "P1S",
+      "fileName": "P1.toml",
+      "relativePath": "presets/mkp/P1.toml",
+      "sha256": "463ea16f555edd4ad7a4c5c003f981859ee0cc8553535c03e55c62792965a62d",
+      "size": 4536,
+      "updatedAt": "2026-07-10T09:47:51Z"
+    },
+    {
+      "id": "p2s_mkp_standard",
+      "resourceType": "mkp_preset",
+      "category": "",
+      "machineId": "P2S",
+      "fileName": "P2.toml",
+      "relativePath": "presets/mkp/P2.toml",
+      "sha256": "b3ddf4b150a360ea2845815c92dd01704eec8d9871b29d7bd224329596fcf770",
+      "size": 4540,
+      "updatedAt": "2026-07-10T09:47:51Z"
+    },
+    {
+      "id": "x1c_mkp_lite",
+      "resourceType": "mkp_preset",
+      "category": "",
+      "machineId": "X1C",
+      "fileName": "X1.toml",
+      "relativePath": "presets/mkp/X1.toml",
+      "sha256": "575839dd2aa6b8f667b9bcbb6dc640e3328c88deb21fe9c93610bc87f2bd7f3e",
+      "size": 4535,
+      "updatedAt": "2026-07-10T09:47:51Z"
+    },
+    {
+      "id": "a1_bbs_mkpprocess_a1_02_010",
+      "resourceType": "bbs_profile",
+      "category": "process",
+      "machineId": "A1",
+      "fileName": "MKPProcess A1 0.2 0.10.json",
+      "relativePath": "presets/bbs/Process/0.2mm/MKPProcess A1 0.2 0.10.json",
+      "sha256": "2ba10a2d873744f97e75a1697fa9a054b58aacb772993d6d05e973f04fda5004",
+      "size": 1308,
+      "updatedAt": "2026-07-10T09:47:51Z"
+    },
+    {
+      "id": "a1_bbs_mkpprocess_a1_mini_02_010",
+      "resourceType": "bbs_profile",
+      "category": "process",
+      "machineId": "A1",
+      "fileName": "MKPProcess A1 mini 0.2 0.10.json",
+      "relativePath": "presets/bbs/Process/0.2mm/MKPProcess A1 mini 0.2 0.10.json",
+      "sha256": "e6e66f5c8eb73d3b07efd8bc956df3fb25561431e40fecebc9fbe6ce6ff492db",
+      "size": 1318,
+      "updatedAt": "2026-07-10T09:47:51Z"
+    },
+    {
+      "id": "p1s_bbs_mkpprocess_p1s_02_010",
+      "resourceType": "bbs_profile",
+      "category": "process",
+      "machineId": "P1S",
+      "fileName": "MKPProcess P1S 0.2 0.10.json",
+      "relativePath": "presets/bbs/Process/0.2mm/MKPProcess P1S 0.2 0.10.json",
+      "sha256": "810d4441deef000106366220010d7ca48ae586ac52936af53c84dcb1b3dca8e1",
+      "size": 1906,
+      "updatedAt": "2026-07-10T09:47:51Z"
+    },
+    {
+      "id": "a1_bbs_mkpprocess_a1_04_020",
+      "resourceType": "bbs_profile",
+      "category": "process",
+      "machineId": "A1",
+      "fileName": "MKPProcess A1 0.4 0.20.json",
+      "relativePath": "presets/bbs/Process/0.4mm/MKPProcess A1 0.4 0.20.json",
+      "sha256": "e4696732236194d4035635adce6abc01fe3efb01847249745f4a36c4f6d5977f",
+      "size": 1332,
+      "updatedAt": "2026-07-10T09:47:51Z"
+    },
+    {
+      "id": "a1_bbs_mkpprocess_a1_mini_04_020",
+      "resourceType": "bbs_profile",
+      "category": "process",
+      "machineId": "A1",
+      "fileName": "MKPProcess A1 mini 0.4 0.20.json",
+      "relativePath": "presets/bbs/Process/0.4mm/MKPProcess A1 mini 0.4 0.20.json",
+      "sha256": "1ae5318f97eeb95a3e804619d5102d1d851d06860e53a9a4899dad0db4d717ca",
+      "size": 1301,
+      "updatedAt": "2026-07-10T09:47:51Z"
+    },
+    {
+      "id": "p1s_bbs_mkpprocess_p1s_04_024",
+      "resourceType": "bbs_profile",
+      "category": "process",
+      "machineId": "P1S",
+      "fileName": "MKPProcess P1S 0.4 0.24.json",
+      "relativePath": "presets/bbs/Process/0.4mm/MKPProcess P1S 0.4 0.24.json",
+      "sha256": "264addc551633c553828492580eef74fc51f2690a127919ed8da051634d8bc2d",
+      "size": 1872,
+      "updatedAt": "2026-07-10T09:47:51Z"
+    },
+    {
+      "id": "p2s_bbs_mkpprocess_p2s_04_024",
+      "resourceType": "bbs_profile",
+      "category": "process",
+      "machineId": "P2S",
+      "fileName": "MKPProcess P2S 0.4 0.24.json",
+      "relativePath": "presets/bbs/Process/0.4mm/MKPProcess P2S 0.4 0.24.json",
+      "sha256": "124f8290aa007567af78d6058f95095e4787c02a30371acb56f489029168499e",
+      "size": 1264,
+      "updatedAt": "2026-07-10T09:47:51Z"
+    }
+  ],
   "brands": [
     {
       "id": "Bambu Lab",
-      "name": "拓竹 (Bambu Lab)",
-      "logo": "bambu-logo.png"
+      "logo": "bambu-logo.png",
+      "name": "拓竹 (Bambu Lab)"
     }
   ],
   "machines": {
@@ -14,13 +234,13 @@
       "id": "A1",
       "display": "A1",
       "image": "a1.webp",
+      "icon": "gantry",
       "brand": "Bambu Lab",
-      "compatible": ["A1", "A1C", "A1F", "A1S"],
       "dimensions": {
-        "bedSize": { "width": 260, "depth": 255 },
-        "movementRange": { "minX": -40, "minY": 0, "maxX": 260, "maxY": 255, "maxZ": 999 },
-        "edgeZone": 10,
-        "glueArea": { "glueMaxY": 225, "wipeX": 252 },
+        "bedSize": {
+          "depth": 255,
+          "width": 260
+        },
         "calibration": {
           "lShapeBaseX": 68.21,
           "lShapeBaseY": 126.373,
@@ -33,9 +253,24 @@
           "zStartX": 68.21,
           "zStartY": 126.373
         },
+        "edgeZone": 10,
         "flags": {
           "gcodeMarker": ";===== machine: A1",
           "hasSecondFan": false
+        },
+        "glueArea": {
+          "glueMaxX": 260,
+          "glueMaxY": 225,
+          "glueMinX": -40,
+          "glueMinY": 0,
+          "wipeX": 252
+        },
+        "movementRange": {
+          "maxX": 260,
+          "maxY": 255,
+          "maxZ": 999,
+          "minX": -40,
+          "minY": 0
         }
       },
       "versions": [
@@ -43,37 +278,375 @@
           "id": "STANDARD",
           "name": "标准版",
           "machineKey": "A1:STANDARD",
-          "presetFile": "A1.toml",
           "tag": "推荐",
           "description": "官方标准配置，适合大多数用户",
-          "downloads": [
-            {
-              "fileName": "A1.toml",
-              "type": "mkp_toml",
-              "relativePath": "presets/mkp/A1.toml",
-              "sha256": "a8e4c1413431f6d5790261d66d2906f88d25825b21482823c650150b52b997d7",
-              "size": 4476,
-              "releaseTime": "2026-07-05T11:50:49Z"
-            },
-            {
-              "fileName": "MKPProcess A1 0.4 0.20.json",
-              "type": "bbs_process",
-              "relativePath": "presets/bbs/Process/0.4mm/MKPProcess A1 0.4 0.20.json",
-              "sha256": "c11e8a29dd872f7a11d09cfa7019e100f49eec647681018bdee4baf12e1b0d33",
-              "size": 1329,
-              "releaseTime": "2026-05-25T03:30:54Z"
-            }
-          ]
+          "mkpPresetAssetId": "a1_mkp_standard",
+          "recommendedBundle": "A1_default"
+        },
+        {
+          "id": "FAST",
+          "name": "快拆版6月以前",
+          "machineKey": "A1:FAST",
+          "tag": "热门",
+          "description": "支持快拆配件的改装配置",
+          "mkpPresetAssetId": "a1_mkp_fast",
+          "recommendedBundle": "A1_default"
+        },
+        {
+          "id": "FASTV3.3",
+          "name": "快拆版260628",
+          "machineKey": "A1:FASTV3.3",
+          "tag": "最新",
+          "description": "6月以后闲鱼购买的，以及6月28开源的快拆260628版本",
+          "mkpPresetAssetId": "a1_mkp_fastv3.3",
+          "recommendedBundle": "A1_default"
+        }
+      ]
+    },
+    "A1_MINI": {
+      "id": "A1_MINI",
+      "display": "A1 mini",
+      "image": "a1_mini.webp",
+      "icon": "cantilever",
+      "brand": "Bambu Lab",
+      "dimensions": {
+        "bedSize": {
+          "depth": 180,
+          "width": 180
+        },
+        "calibration": {
+          "lShapeBaseX": 30.21,
+          "lShapeBaseY": 88.373,
+          "xLineX": 76.523,
+          "xLineY": 66.83,
+          "xLineYEnd": 76.83,
+          "yLineX": 66.523,
+          "yLineXEnd": 76.523,
+          "yLineY": 76.83,
+          "zStartX": 30.21,
+          "zStartY": 88.373
+        },
+        "edgeZone": 10,
+        "flags": {
+          "gcodeMarker": ";===== machine: A1 mini",
+          "hasSecondFan": false
+        },
+        "glueArea": {
+          "glueMaxX": 180,
+          "glueMaxY": 155,
+          "glueMinX": -10,
+          "glueMinY": 0,
+          "wipeX": 160
+        },
+        "movementRange": {
+          "maxX": 180,
+          "maxY": 180,
+          "maxZ": 999,
+          "minX": -10,
+          "minY": 0
+        }
+      },
+      "versions": [
+        {
+          "id": "STANDARD",
+          "name": "标准版",
+          "machineKey": "A1_MINI:STANDARD",
+          "tag": "推荐",
+          "description": "官方标准配置",
+          "mkpPresetAssetId": "a1_mini_mkp_standard",
+          "recommendedBundle": "A1_MINI_default"
+        },
+        {
+          "id": "FAST",
+          "name": "快拆版6月以前",
+          "machineKey": "A1_MINI:FAST",
+          "tag": "热门",
+          "description": "支持快拆配件的改装配置",
+          "mkpPresetAssetId": "a1_mini_mkp_fast",
+          "recommendedBundle": "A1_MINI_default"
+        },
+        {
+          "id": "FASTV3.3",
+          "name": "快拆版260628",
+          "machineKey": "A1_MINI:FASTV3.3",
+          "tag": "最新",
+          "description": "6月以后闲鱼购买的，以及6月28开源的快拆260628版本",
+          "mkpPresetAssetId": "a1_mini_mkp_fastv3.3",
+          "recommendedBundle": "A1_MINI_default"
+        }
+      ]
+    },
+    "A2L": {
+      "id": "A2L",
+      "display": "A2L",
+      "image": "",
+      "icon": "gantry",
+      "brand": "Bambu Lab",
+      "dimensions": null,
+      "versions": [
+        {
+          "id": "STANDARD",
+          "name": "标准版",
+          "machineKey": "A2L:STANDARD",
+          "tag": "",
+          "description": "",
+          "mkpPresetAssetId": "",
+          "recommendedBundle": ""
+        }
+      ]
+    },
+    "P1S": {
+      "id": "P1S",
+      "display": "P1S",
+      "image": "p1s.webp",
+      "icon": "enclosed",
+      "brand": "Bambu Lab",
+      "dimensions": {
+        "bedSize": {
+          "depth": 256,
+          "width": 256
+        },
+        "calibration": {
+          "lShapeBaseX": 68.21,
+          "lShapeBaseY": 126.373,
+          "xLineX": 114.523,
+          "xLineY": 104.83,
+          "xLineYEnd": 114.83,
+          "yLineX": 104.53,
+          "yLineXEnd": 114.53,
+          "yLineY": 112.83,
+          "zStartX": 68.21,
+          "zStartY": 126.373
+        },
+        "edgeZone": 10,
+        "flags": {
+          "gcodeMarker": ";===== machine: P1",
+          "hasSecondFan": true
+        },
+        "glueArea": {
+          "glueMaxX": 255,
+          "glueMaxY": 265,
+          "glueMinX": 0,
+          "glueMinY": 0,
+          "wipeX": 20
+        },
+        "movementRange": {
+          "maxX": 255,
+          "maxY": 265,
+          "maxZ": 999,
+          "minX": 0,
+          "minY": 0
+        }
+      },
+      "versions": [
+        {
+          "id": "LITE",
+          "name": "lite版",
+          "machineKey": "P1S:LITE",
+          "tag": "推荐",
+          "description": "群里开源的最新lite",
+          "mkpPresetAssetId": "p1s_mkp_lite",
+          "recommendedBundle": "P1S_default"
+        }
+      ]
+    },
+    "P2S": {
+      "id": "P2S",
+      "display": "P2S",
+      "image": "p2s.webp",
+      "icon": "enclosed",
+      "brand": "Bambu Lab",
+      "dimensions": {
+        "bedSize": {
+          "depth": 256,
+          "width": 256
+        },
+        "calibration": {
+          "lShapeBaseX": 68.21,
+          "lShapeBaseY": 126.373,
+          "xLineX": 114.523,
+          "xLineY": 104.83,
+          "xLineYEnd": 114.83,
+          "yLineX": 104.53,
+          "yLineXEnd": 114.53,
+          "yLineY": 112.83,
+          "zStartX": 68.21,
+          "zStartY": 126.373
+        },
+        "edgeZone": 10,
+        "flags": {
+          "gcodeMarker": ";===== machine: P2",
+          "hasSecondFan": true
+        },
+        "glueArea": {
+          "glueMaxX": 256,
+          "glueMaxY": 265,
+          "glueMinX": 0,
+          "glueMinY": 0,
+          "wipeX": 20
+        },
+        "movementRange": {
+          "maxX": 256,
+          "maxY": 265,
+          "maxZ": 999,
+          "minX": 0,
+          "minY": 0
+        }
+      },
+      "versions": [
+        {
+          "id": "STANDARD",
+          "name": "标准版",
+          "machineKey": "P2S:STANDARD",
+          "tag": "推荐",
+          "description": "未完成，没有打印机",
+          "mkpPresetAssetId": "p2s_mkp_standard",
+          "recommendedBundle": "P2S_default"
+        }
+      ]
+    },
+    "X1C": {
+      "id": "X1C",
+      "display": "X1C",
+      "image": "x1c.webp",
+      "icon": "enclosed",
+      "brand": "Bambu Lab",
+      "dimensions": {
+        "bedSize": {
+          "depth": 256,
+          "width": 255
+        },
+        "calibration": {
+          "lShapeBaseX": 68.21,
+          "lShapeBaseY": 126.373,
+          "xLineX": 114.523,
+          "xLineY": 104.83,
+          "xLineYEnd": 114.83,
+          "yLineX": 104.53,
+          "yLineXEnd": 114.53,
+          "yLineY": 112.83,
+          "zStartX": 68.21,
+          "zStartY": 126.373
+        },
+        "edgeZone": 10,
+        "flags": {
+          "gcodeMarker": ";===== machine: X1",
+          "hasSecondFan": true
+        },
+        "glueArea": {
+          "glueMaxX": 255,
+          "glueMaxY": 265,
+          "glueMinX": 0,
+          "glueMinY": 0,
+          "wipeX": 20
+        },
+        "movementRange": {
+          "maxX": 255,
+          "maxY": 265,
+          "maxZ": 999,
+          "minX": 0,
+          "minY": 0
+        }
+      },
+      "versions": [
+        {
+          "id": "LITE",
+          "name": "lite版",
+          "machineKey": "X1C:LITE",
+          "tag": "推荐",
+          "description": "群里开源的最新lite",
+          "mkpPresetAssetId": "x1c_mkp_lite",
+          "recommendedBundle": "X1C_default"
         }
       ]
     }
   },
   "contentFiles": [
     {
+      "fileName": "param_registry.json",
+      "relativePath": "content/param_registry.json",
+      "sha256": "f16f6174813ef7ffeb2ce7e912ac744d676c52ac9e2e649bf8ae56d587dd27bc",
+      "size": 79191,
+      "ttl": "never",
+      "strategy": "never",
+      "prefetch": false,
+      "priority": "normal"
+    },
+    {
+      "fileName": "machine_catalog.json",
+      "relativePath": "content/machine_catalog.json",
+      "sha256": "130fdde64a61c49d0e3d686ee676834182b3372932c6ecefffd6f3a49c549781",
+      "size": 11118,
+      "ttl": "24h",
+      "strategy": "swr",
+      "prefetch": true,
+      "priority": "high",
+      "retry": 3
+    },
+    {
       "fileName": "faq.json",
       "relativePath": "content/faq.json",
-      "sha256": "1c604398b328fe86c9994ac0282f577888095acfbe0fb03978ed9bdf2e015905",
-      "size": 39805
+      "sha256": "6c9248868f1759bdc37ad631240e275fa0d5fea010b7ee82b632ceae875703da",
+      "size": 38330,
+      "ttl": "24h",
+      "strategy": "swr",
+      "prefetch": true,
+      "priority": "high",
+      "retry": 3
+    },
+    {
+      "fileName": "about.json",
+      "relativePath": "content/about.json",
+      "sha256": "c17dd0d22149b45ff9a9c4997fdb1e487cfee6322c8e22037f159598972154f1",
+      "size": 6750,
+      "ttl": "24h",
+      "strategy": "swr",
+      "prefetch": false,
+      "priority": "normal",
+      "retry": 1
+    },
+    {
+      "fileName": "layout_schema.json",
+      "relativePath": "content/layout_schema.json",
+      "sha256": "fddeb56330abfc4e61281d092ef9966635fcc9d0d1e6ce9cfa41f3332c095865",
+      "size": 8976,
+      "ttl": "never",
+      "strategy": "never",
+      "prefetch": false,
+      "priority": "normal"
+    },
+    {
+      "fileName": "release.json",
+      "relativePath": "content/release.json",
+      "sha256": "5f812f0ab87c3505916d43ef643fa354f7a9ffc9d6b66d07fa6fbaf0b961a8eb",
+      "size": 4352,
+      "ttl": "5m",
+      "strategy": "swr",
+      "prefetch": true,
+      "priority": "high",
+      "retry": 3
+    },
+    {
+      "fileName": "model_copy.json",
+      "relativePath": "content/model_copy.json",
+      "sha256": "cee520343f939a54647e0868a1cd83c36d020907152107c7225d35bf4463ffe3",
+      "size": 4023,
+      "ttl": "24h",
+      "strategy": "swr",
+      "prefetch": true,
+      "priority": "normal",
+      "retry": 1
+    },
+    {
+      "fileName": "assets_index.json",
+      "relativePath": "content/assets_index.json",
+      "sha256": "fb84cad86b4a67a227a9a9c442694cd5eef8bd1365fecad6a3b3ce795661fafd",
+      "size": 5840,
+      "ttl": "24h",
+      "strategy": "swr",
+      "prefetch": false,
+      "priority": "normal",
+      "retry": 1
     }
   ]
 }

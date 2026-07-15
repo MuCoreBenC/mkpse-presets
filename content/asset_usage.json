@@ -1,0 +1,346 @@
+{
+  "assets/avatars/Avatar_Jhmodel喵~(alt).webp": [
+    {
+      "type": "about",
+      "id": "authors",
+      "title": "Jhmodel喵~ (alt)"
+    }
+  ],
+  "assets/avatars/Avatar_Jhmodel喵~.webp": [
+    {
+      "type": "about",
+      "id": "authors",
+      "title": "Jhmodel喵~"
+    }
+  ],
+  "assets/avatars/Avatar_孜羊.webp": [
+    {
+      "type": "about",
+      "id": "authors",
+      "title": "孜羊"
+    }
+  ],
+  "assets/faq/faq10_1.webp": [
+    {
+      "type": "faq",
+      "id": "faq-010",
+      "title": "A1笔压不下去/抬不起来怎么办？"
+    }
+  ],
+  "assets/faq/faq15_1.webp": [
+    {
+      "type": "faq",
+      "id": "faq-015",
+      "title": "管子多长合适？怎么用？"
+    }
+  ],
+  "assets/faq/faq15_2.webp": [
+    {
+      "type": "faq",
+      "id": "faq-015",
+      "title": "管子多长合适？怎么用？"
+    }
+  ],
+  "assets/faq/faq15_3.webp": [
+    {
+      "type": "faq",
+      "id": "faq-015",
+      "title": "管子多长合适？怎么用？"
+    }
+  ],
+  "assets/faq/faq16_1.webp": [
+    {
+      "type": "faq",
+      "id": "faq-016",
+      "title": "管子安装要注意什么？"
+    }
+  ],
+  "assets/faq/faq16_2.webp": [
+    {
+      "type": "faq",
+      "id": "faq-016",
+      "title": "管子安装要注意什么？"
+    }
+  ],
+  "assets/faq/faq16_3.webp": [
+    {
+      "type": "faq",
+      "id": "faq-016",
+      "title": "管子安装要注意什么？"
+    }
+  ],
+  "assets/faq/faq1_1.webp": [
+    {
+      "type": "faq",
+      "id": "faq_1779194717623",
+      "title": "有教程吗？"
+    }
+  ],
+  "assets/faq/faq1_2.webp": [
+    {
+      "type": "faq",
+      "id": "faq_1779194717623",
+      "title": "有教程吗？"
+    }
+  ],
+  "assets/faq/faq20_1.webp": [
+    {
+      "type": "faq",
+      "id": "faq-022",
+      "title": "胶水不干/干不了？"
+    }
+  ],
+  "assets/faq/faq20_2.webp": [
+    {
+      "type": "faq",
+      "id": "faq-022",
+      "title": "胶水不干/干不了？"
+    }
+  ],
+  "assets/faq/faq24_1.webp": [
+    {
+      "type": "faq",
+      "id": "faq-027",
+      "title": "后处理脚本如何配置？"
+    }
+  ],
+  "assets/faq/faq24_2.webp": [
+    {
+      "type": "faq",
+      "id": "faq-027",
+      "title": "后处理脚本如何配置？"
+    }
+  ],
+  "assets/faq/faq25_1.webp": [
+    {
+      "type": "faq",
+      "id": "faq-028",
+      "title": "找不到切片软件的后处理脚本选项？"
+    }
+  ],
+  "assets/faq/faq29_1.webp": [
+    {
+      "type": "faq",
+      "id": "faq-032",
+      "title": "为什么校准改了值没变化？"
+    }
+  ],
+  "assets/faq/faq2_1.webp": [
+    {
+      "type": "faq",
+      "id": "faq-001",
+      "title": "MKP Support是什么？有什么用？"
+    }
+  ],
+  "assets/faq/faq2_2.webp": [
+    {
+      "type": "faq",
+      "id": "faq-001",
+      "title": "MKP Support是什么？有什么用？"
+    }
+  ],
+  "assets/faq/faq30_1.webp": [
+    {
+      "type": "faq",
+      "id": "faq-034",
+      "title": "打印机预设是必须的吗？"
+    }
+  ],
+  "assets/faq/faq34_1.webp": [
+    {
+      "type": "faq",
+      "id": "faq-039",
+      "title": "校准保存后数值没生效怎么办？"
+    }
+  ],
+  "assets/faq/faq36_1.webp": [
+    {
+      "type": "faq",
+      "id": "faq-041",
+      "title": "重新下载预设后坐标变了怎么办？"
+    }
+  ],
+  "assets/faq/faq36_2.webp": [
+    {
+      "type": "faq",
+      "id": "faq-041",
+      "title": "重新下载预设后坐标变了怎么办？"
+    }
+  ],
+  "assets/faq/faq36_3.webp": [
+    {
+      "type": "faq",
+      "id": "faq-041",
+      "title": "重新下载预设后坐标变了怎么办？"
+    }
+  ],
+  "assets/faq/faq36_4.webp": [
+    {
+      "type": "faq",
+      "id": "faq-041",
+      "title": "重新下载预设后坐标变了怎么办？"
+    }
+  ],
+  "assets/faq/faq42_1.webp": [
+    {
+      "type": "faq",
+      "id": "faq-047",
+      "title": "擦料塔倒了怎么办？"
+    }
+  ],
+  "assets/faq/faq42_2.webp": [
+    {
+      "type": "faq",
+      "id": "faq-047",
+      "title": "擦料塔倒了怎么办？"
+    }
+  ],
+  "assets/faq/faq6_1.webp": [
+    {
+      "type": "faq",
+      "id": "faq-006",
+      "title": "我的机型支持吗？"
+    }
+  ],
+  "assets/faq/faq6_2.webp": [
+    {
+      "type": "faq",
+      "id": "faq-006",
+      "title": "我的机型支持吗？"
+    }
+  ],
+  "assets/faq/faq6_3.webp": [
+    {
+      "type": "faq",
+      "id": "faq-006",
+      "title": "我的机型支持吗？"
+    }
+  ],
+  "assets/icons/machine/cantilever.svg": [
+    {
+      "type": "machine",
+      "id": "A1_MINI",
+      "title": "A1 mini"
+    }
+  ],
+  "assets/icons/machine/enclosed.svg": [
+    {
+      "type": "machine",
+      "id": "P1S",
+      "title": "P1S"
+    },
+    {
+      "type": "machine",
+      "id": "P2S",
+      "title": "P2S"
+    },
+    {
+      "type": "machine",
+      "id": "X1C",
+      "title": "X1C"
+    }
+  ],
+  "assets/icons/machine/gantry.svg": [
+    {
+      "type": "machine",
+      "id": "A1",
+      "title": "A1"
+    },
+    {
+      "type": "machine",
+      "id": "A2L",
+      "title": "A2L"
+    }
+  ],
+  "assets/machines/a1.webp": [
+    {
+      "type": "machine",
+      "id": "A1",
+      "title": "A1"
+    }
+  ],
+  "assets/machines/a1_mini.webp": [
+    {
+      "type": "machine",
+      "id": "A1_MINI",
+      "title": "A1 mini"
+    }
+  ],
+  "assets/machines/p1s.webp": [
+    {
+      "type": "machine",
+      "id": "P1S",
+      "title": "P1S"
+    }
+  ],
+  "assets/machines/p2s.webp": [
+    {
+      "type": "machine",
+      "id": "P2S",
+      "title": "P2S"
+    }
+  ],
+  "assets/machines/x1c.webp": [
+    {
+      "type": "machine",
+      "id": "X1C",
+      "title": "X1C"
+    }
+  ],
+  "assets/models/model_bmcu冲刷测试.webp": [
+    {
+      "type": "model",
+      "id": "7",
+      "title": "BMCU冲刷测试"
+    }
+  ],
+  "assets/models/model_半圆xy校准.webp": [
+    {
+      "type": "model",
+      "id": "2",
+      "title": "半圆XY校准"
+    }
+  ],
+  "assets/models/model_平面z轴测试.webp": [
+    {
+      "type": "model",
+      "id": "1",
+      "title": "平面Z轴测试"
+    }
+  ],
+  "assets/models/model_擦料塔测试.webp": [
+    {
+      "type": "model",
+      "id": "8",
+      "title": "擦料塔测试"
+    }
+  ],
+  "assets/models/model_无支撑大平面.webp": [
+    {
+      "type": "model",
+      "id": "5",
+      "title": "无支撑大平面"
+    }
+  ],
+  "assets/models/model_极限综合测试.webp": [
+    {
+      "type": "model",
+      "id": "6",
+      "title": "极限综合测试"
+    }
+  ],
+  "assets/models/model_综合测试阵列.webp": [
+    {
+      "type": "model",
+      "id": "4",
+      "title": "综合测试阵列"
+    }
+  ],
+  "assets/models/model_鱼尾曲面测试.webp": [
+    {
+      "type": "model",
+      "id": "3",
+      "title": "鱼尾曲面测试"
+    }
+  ]
+}

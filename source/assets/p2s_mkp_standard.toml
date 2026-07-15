@@ -1,0 +1,6 @@
+id = 'p2s_mkp_standard'
+resourceType = 'mkp_preset'
+category = ''
+machineId = 'P2S'
+fileName = 'P2.toml'
+relativePath = 'presets/mkp/P2.toml'

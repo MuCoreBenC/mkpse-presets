@@ -1,0 +1,6 @@
+id = 'x1c_mkp_lite'
+resourceType = 'mkp_preset'
+category = ''
+machineId = 'X1C'
+fileName = 'X1.toml'
+relativePath = 'presets/mkp/X1.toml'

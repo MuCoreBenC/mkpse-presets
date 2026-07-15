@@ -1,0 +1,5 @@
+id = 'X1C_default'
+display = '官方推荐'
+machineId = 'X1C'
+assetRefs = ['x1c_bbs_mkpprocess_x1_04_024']
+updatedAt = '2026-07-12'

@@ -1,0 +1,6 @@
+id = 'a1_mkp_fastv3.3'
+resourceType = 'mkp_preset'
+category = ''
+machineId = 'A1'
+fileName = 'A1F_260628.toml'
+relativePath = 'presets/mkp/A1F_260628.toml'

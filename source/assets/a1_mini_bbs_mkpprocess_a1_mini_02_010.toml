@@ -1,0 +1,6 @@
+id = 'a1_mini_bbs_mkpprocess_a1_mini_02_010'
+resourceType = 'bbs_profile'
+category = 'process'
+machineId = 'A1_MINI'
+fileName = 'MKPProcess A1 mini 0.2 0.10.json'
+relativePath = 'presets/bbs/Process/0.2mm/MKPProcess A1 mini 0.2 0.10.json'

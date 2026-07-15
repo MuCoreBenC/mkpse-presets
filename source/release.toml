@@ -1,0 +1,77 @@
+latest = '0.0.1'
+updated = '2026-07-11T13:00:00+08:00'
+
+[[versions]]
+date = '2026-07-11T13:00:00+08:00'
+en = ''
+isMajor = true
+summary = '## 架构重塑与发布流程 v0.0.1 (2026-07-11)'
+title = '## 架构重塑与发布流程 v0.0.1 (2026-07-11)'
+type = 'major'
+version = '0.0.1'
+zhCN = "## 架构重塑与发布流程 v0.0.1 (2026-07-11)\n\nmkpse-next 项目首个正式版本。基于 Source/Release 分离原则重构整体架构，建立 manifest.json 作为唯一发布产物，mkppanel 负责生成、mkpsupporte 只读消费。\n\n### 核心功能\n1. Source/Release 分离架构：mkpse-presets 子模块作为 SSOT（presets/content/assets/models），manifest.json 由 mkppanel 自动生成\n2. manifest.json 集中解析：internal/manifest/parser.go 提供 LoadManifest/ParseManifest/FindContent/FindDownload/FindMachine/FindVersion，所有模块统一调用\n3. mkppanel 发布流程：publish_flow + publish_status + manifest_generate + ManifestViewerPage，支持 asset schema 与构建产物管理\n4. mkpsupporte 下载流程重构：app_update 重写，内容服务器 URL 由 ldflags 编译时注入，无硬编码链接\n5. HTTP 代理支持统一：common/http_client.go 集中代理配置，updater/download/content 模块统一调用\n\n### 架构优化\n6. index_*.go 旧模块清理（index_sync/index_rebuild/index_preset/index_viewer），迁移至 manifest_generate/manifest_viewer\n7. ContentServerCard 移除，URL 不再暴露给用户编辑\n8. UI 主题统一：design-tokens 亮/暗模式，mkppanel 与 mkpsupporte 视觉风格对齐\n9. manifest service 层：asset/bundle/service 测试覆盖\n\n### 修复\n10. content_update URL 分支重复拼接导致 404（buildTagURL 替换而非追加分支段）\n11. FAQ 图片硬编码 Gitee URL 统一到内容服务器（14 处）\n\n### 体验优化\n12. FileActivity 重构为 FileDiagnosticCard 诊断页\n13. 前端组件主题色、文本色、圆角统一\n14. CustomTitleBar 双端统一\n"
+
+[versions.release]
+downloadUrl = ''
+fileName = ''
+fileSize = 0.0
+forceUpdate = false
+hasExe = false
+minAppVersion = '0.0.1'
+sha256 = ''
+
+[[versions.sections]]
+heading = '核心功能'
+item = 'Source/Release 分离架构：mkpse-presets 子模块作为 SSOT，manifest.json 由 mkppanel 自动生成'
+
+[[versions.sections]]
+heading = '核心功能'
+item = 'manifest.json 集中解析：internal/manifest/parser.go 提供 5 个 Find 函数，所有模块统一调用'
+
+[[versions.sections]]
+heading = '核心功能'
+item = 'mkppanel 发布流程：publish_flow + manifest_generate + ManifestViewerPage'
+
+[[versions.sections]]
+heading = '核心功能'
+item = 'mkpsupporte 下载流程重构：URL 由 ldflags 编译时注入，无硬编码链接'
+
+[[versions.sections]]
+heading = '核心功能'
+item = 'HTTP 代理支持统一：common/http_client.go 集中代理配置'
+
+[[versions.sections]]
+heading = '架构优化'
+item = 'index_*.go 旧模块清理，迁移至 manifest_generate/manifest_viewer'
+
+[[versions.sections]]
+heading = '架构优化'
+item = 'ContentServerCard 移除，URL 不再暴露给用户编辑'
+
+[[versions.sections]]
+heading = '架构优化'
+item = 'UI 主题统一：design-tokens 亮/暗模式，双端视觉风格对齐'
+
+[[versions.sections]]
+heading = '架构优化'
+item = 'manifest service 层：asset/bundle/service 测试覆盖'
+
+[[versions.sections]]
+heading = '修复'
+item = 'content_update URL 分支重复拼接导致 404'
+
+[[versions.sections]]
+heading = '修复'
+item = 'FAQ 图片硬编码 Gitee URL 统一到内容服务器（14 处）'
+
+[[versions.sections]]
+heading = '体验优化'
+item = 'FileActivity 重构为 FileDiagnosticCard 诊断页'
+
+[[versions.sections]]
+heading = '体验优化'
+item = '前端组件主题色、文本色、圆角统一'
+
+[[versions.sections]]
+heading = '体验优化'
+item = 'CustomTitleBar 双端统一'

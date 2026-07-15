@@ -1,0 +1,6 @@
+id = 'a1_mkp_standard'
+resourceType = 'mkp_preset'
+category = ''
+machineId = 'A1'
+fileName = 'A1.toml'
+relativePath = 'presets/mkp/A1.toml'
