@@ -6,10 +6,10 @@
       "isModified": false,
       "isRegistered": false,
       "relativePath": "presets/bbs/Process/0.2mm/MKPProcess A1 0.2 0.10.json",
-      "releaseTime": "2026-08-16T17:00:52Z",
+      "releaseTime": "2026-08-18T02:27:11Z",
       "sha256": "",
       "size": 0,
-      "updatedAt": "2026-07-10T09:47:51Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "category": "process",
@@ -17,10 +17,10 @@
       "isModified": false,
       "isRegistered": false,
       "relativePath": "presets/bbs/Process/0.4mm/MKPProcess A1 0.4 0.20.json",
-      "releaseTime": "2026-08-16T17:00:52Z",
+      "releaseTime": "2026-08-18T02:27:11Z",
       "sha256": "",
       "size": 0,
-      "updatedAt": "2026-07-10T09:47:51Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "category": "process",
@@ -28,10 +28,10 @@
       "isModified": false,
       "isRegistered": false,
       "relativePath": "presets/bbs/Process/0.2mm/MKPProcess A1 mini 0.2 0.10.json",
-      "releaseTime": "2026-08-16T17:00:52Z",
+      "releaseTime": "2026-08-18T02:27:11Z",
       "sha256": "",
       "size": 0,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "category": "process",
@@ -39,10 +39,10 @@
       "isModified": false,
       "isRegistered": false,
       "relativePath": "presets/bbs/Process/0.4mm/MKPProcess A1 mini 0.4 0.20.json",
-      "releaseTime": "2026-08-16T17:00:52Z",
+      "releaseTime": "2026-08-18T02:27:11Z",
       "sha256": "",
       "size": 0,
-      "updatedAt": "2026-07-10T09:47:51Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "category": "",
@@ -50,10 +50,10 @@
       "isModified": false,
       "isRegistered": false,
       "relativePath": "presets/mkp/A1MF.toml",
-      "releaseTime": "2026-08-16T17:00:52Z",
+      "releaseTime": "2026-08-18T02:27:11Z",
       "sha256": "",
       "size": 0,
-      "updatedAt": "2026-08-14T14:50:01Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "category": "",
@@ -61,10 +61,10 @@
       "isModified": false,
       "isRegistered": false,
       "relativePath": "presets/mkp/A1MF_260628.toml",
-      "releaseTime": "2026-08-16T17:00:52Z",
+      "releaseTime": "2026-08-18T02:27:11Z",
       "sha256": "",
       "size": 0,
-      "updatedAt": "2026-08-14T14:50:01Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "category": "",
@@ -72,10 +72,10 @@
       "isModified": false,
       "isRegistered": false,
       "relativePath": "presets/mkp/A1M.toml",
-      "releaseTime": "2026-08-16T17:00:52Z",
+      "releaseTime": "2026-08-18T02:27:11Z",
       "sha256": "",
       "size": 0,
-      "updatedAt": "2026-08-14T14:50:00Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "category": "",
@@ -83,10 +83,10 @@
       "isModified": false,
       "isRegistered": false,
       "relativePath": "presets/mkp/A1F.toml",
-      "releaseTime": "2026-08-16T17:00:52Z",
+      "releaseTime": "2026-08-18T02:27:11Z",
       "sha256": "",
       "size": 0,
-      "updatedAt": "2026-08-14T14:49:59Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "category": "",
@@ -94,10 +94,10 @@
       "isModified": false,
       "isRegistered": false,
       "relativePath": "presets/mkp/A1F_260628.toml",
-      "releaseTime": "2026-08-16T17:00:52Z",
+      "releaseTime": "2026-08-18T02:27:11Z",
       "sha256": "",
       "size": 0,
-      "updatedAt": "2026-08-14T14:49:59Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "category": "",
@@ -105,10 +105,10 @@
       "isModified": false,
       "isRegistered": false,
       "relativePath": "presets/mkp/A1.toml",
-      "releaseTime": "2026-08-16T17:00:52Z",
+      "releaseTime": "2026-08-18T02:27:11Z",
       "sha256": "",
       "size": 0,
-      "updatedAt": "2026-08-14T14:49:58Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "category": "process",
@@ -116,10 +116,10 @@
       "isModified": false,
       "isRegistered": false,
       "relativePath": "presets/bbs/Process/0.2mm/MKPProcess P1S 0.2 0.10.json",
-      "releaseTime": "2026-08-16T17:00:52Z",
+      "releaseTime": "2026-08-18T02:27:11Z",
       "sha256": "",
       "size": 0,
-      "updatedAt": "2026-07-10T09:47:51Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "category": "process",
@@ -127,10 +127,10 @@
       "isModified": false,
       "isRegistered": false,
       "relativePath": "presets/bbs/Process/0.4mm/MKPProcess P1S 0.4 0.24.json",
-      "releaseTime": "2026-08-16T17:00:52Z",
+      "releaseTime": "2026-08-18T02:27:11Z",
       "sha256": "",
       "size": 0,
-      "updatedAt": "2026-07-10T09:47:51Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "category": "",
@@ -138,10 +138,10 @@
       "isModified": false,
       "isRegistered": false,
       "relativePath": "presets/mkp/P1.toml",
-      "releaseTime": "2026-08-16T17:00:52Z",
+      "releaseTime": "2026-08-18T02:27:11Z",
       "sha256": "",
       "size": 0,
-      "updatedAt": "2026-08-14T14:50:02Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "category": "process",
@@ -149,10 +149,10 @@
       "isModified": false,
       "isRegistered": false,
       "relativePath": "presets/bbs/Process/0.4mm/MKPProcess P2S 0.4 0.24.json",
-      "releaseTime": "2026-08-16T17:00:52Z",
+      "releaseTime": "2026-08-18T02:27:11Z",
       "sha256": "",
       "size": 0,
-      "updatedAt": "2026-07-10T09:47:51Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "category": "",
@@ -160,10 +160,10 @@
       "isModified": false,
       "isRegistered": false,
       "relativePath": "presets/mkp/P2.toml",
-      "releaseTime": "2026-08-16T17:00:52Z",
+      "releaseTime": "2026-08-18T02:27:11Z",
       "sha256": "",
       "size": 0,
-      "updatedAt": "2026-08-14T14:50:02Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "category": "process",
@@ -171,10 +171,10 @@
       "isModified": false,
       "isRegistered": false,
       "relativePath": "presets/bbs/Process/0.2mm/MKPProcess X1 0.2 0.10.json",
-      "releaseTime": "2026-08-16T17:00:52Z",
+      "releaseTime": "2026-08-18T02:27:11Z",
       "sha256": "",
       "size": 0,
-      "updatedAt": "2026-07-10T09:47:51Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "category": "process",
@@ -182,10 +182,10 @@
       "isModified": false,
       "isRegistered": false,
       "relativePath": "presets/bbs/Process/0.4mm/MKPProcess X1 0.4 0.24.json",
-      "releaseTime": "2026-08-16T17:00:52Z",
+      "releaseTime": "2026-08-18T02:27:11Z",
       "sha256": "",
       "size": 0,
-      "updatedAt": "2026-07-10T09:47:51Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "category": "",
@@ -193,10 +193,10 @@
       "isModified": false,
       "isRegistered": false,
       "relativePath": "presets/mkp/X1.toml",
-      "releaseTime": "2026-08-16T17:00:52Z",
+      "releaseTime": "2026-08-18T02:27:11Z",
       "sha256": "",
       "size": 0,
-      "updatedAt": "2026-08-14T14:50:03Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     }
   ]
 }

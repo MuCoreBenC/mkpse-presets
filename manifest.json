@@ -9,7 +9,7 @@
       "relativePath": "presets/bbs/Process/0.2mm/MKPProcess A1 0.2 0.10.json",
       "sha256": "2ba10a2d873744f97e75a1697fa9a054b58aacb772993d6d05e973f04fda5004",
       "size": 1308,
-      "updatedAt": "2026-07-10T09:47:51Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "a1_bbs_mkpprocess_a1_04_020",
@@ -20,7 +20,7 @@
       "relativePath": "presets/bbs/Process/0.4mm/MKPProcess A1 0.4 0.20.json",
       "sha256": "e4696732236194d4035635adce6abc01fe3efb01847249745f4a36c4f6d5977f",
       "size": 1332,
-      "updatedAt": "2026-07-10T09:47:51Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "a1_mini_bbs_mkpprocess_a1_mini_02_010",
@@ -31,7 +31,7 @@
       "relativePath": "presets/bbs/Process/0.2mm/MKPProcess A1 mini 0.2 0.10.json",
       "sha256": "567a018e5d1c66a573a4ad32cea04c6524858a74bfd6af7bc1f0263c45626c6f",
       "size": 1315,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "a1_mini_bbs_mkpprocess_a1_mini_04_020",
@@ -42,7 +42,7 @@
       "relativePath": "presets/bbs/Process/0.4mm/MKPProcess A1 mini 0.4 0.20.json",
       "sha256": "1ae5318f97eeb95a3e804619d5102d1d851d06860e53a9a4899dad0db4d717ca",
       "size": 1301,
-      "updatedAt": "2026-07-10T09:47:51Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "a1_mini_mkp_fast",
@@ -53,7 +53,7 @@
       "relativePath": "presets/mkp/A1MF.toml",
       "sha256": "8867782ed7148c79036dd81a610bebb54332bf92237cf75b2da9c317c349ee71",
       "size": 4300,
-      "updatedAt": "2026-08-14T14:50:01Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "a1_mini_mkp_fastv3.3",
@@ -64,7 +64,7 @@
       "relativePath": "presets/mkp/A1MF_260628.toml",
       "sha256": "72ebb005fc5d680c095e74df7fbbd2508e1eab7f81c67225153d0065b2ef0eb2",
       "size": 4304,
-      "updatedAt": "2026-08-14T14:50:01Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "a1_mini_mkp_standard",
@@ -75,7 +75,7 @@
       "relativePath": "presets/mkp/A1M.toml",
       "sha256": "4da992793cdc1c73eb5f34ffca0485a07ac833ba0747bc5d830ebbdd4913a38f",
       "size": 4306,
-      "updatedAt": "2026-08-14T14:50:00Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "a1_mkp_fast",
@@ -86,7 +86,7 @@
       "relativePath": "presets/mkp/A1F.toml",
       "sha256": "3d186f90fedbc77714390d298e57e89d99667c434d93eaf47e41351865c5559e",
       "size": 4297,
-      "updatedAt": "2026-08-14T14:49:59Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "a1_mkp_fastv3.3",
@@ -97,7 +97,7 @@
       "relativePath": "presets/mkp/A1F_260628.toml",
       "sha256": "81cc460c04f4f4ea93cf8e93823229fdbb5f87e27d40e290fa705e1c293618c0",
       "size": 4300,
-      "updatedAt": "2026-08-14T14:49:59Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "a1_mkp_standard",
@@ -108,7 +108,7 @@
       "relativePath": "presets/mkp/A1.toml",
       "sha256": "924ac7855fb009a5d9fe693aeda2746fc419d633017d66a91e929cf2226af592",
       "size": 4299,
-      "updatedAt": "2026-08-14T14:49:58Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_avatars_avatar_jhmodel喵",
@@ -119,7 +119,7 @@
       "relativePath": "assets/avatars/avatar_Jhmodel喵.webp",
       "sha256": "96f115cd23db59cbf0a8bbbec3a4ccf238d02ef1a2c360fd88fcab60ff591203",
       "size": 3456,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_avatars_avatar_jhmodel喵_alt",
@@ -130,7 +130,7 @@
       "relativePath": "assets/avatars/avatar_Jhmodel喵_alt.webp",
       "sha256": "f3c0dc1ebb3cae162cc134c410037929228da2e0dfeea2b1dc2a46e30271965c",
       "size": 3308,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_avatars_avatar_孜羊",
@@ -141,7 +141,7 @@
       "relativePath": "assets/avatars/avatar_孜羊.webp",
       "sha256": "1bc0eb1c44b6a1c20ad20aeca3aaf1f4e07f28fb4c1985e9321ccefa8a0e34b3",
       "size": 7690,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq1000_1",
@@ -152,7 +152,7 @@
       "relativePath": "assets/faq/faq1000_1.webp",
       "sha256": "5a2e028959e9164bd6a416de3493f15ca8973b5d596dc55bca1aad09b218ff7b",
       "size": 220990,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq100_1",
@@ -163,7 +163,7 @@
       "relativePath": "assets/faq/faq100_1.webp",
       "sha256": "566052679a34275b4e30fa30087b77608b8d8cf772281890194ed31e05ec39d7",
       "size": 60984,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq100_2",
@@ -174,7 +174,7 @@
       "relativePath": "assets/faq/faq100_2.webp",
       "sha256": "3f32ed2f94e4cf2298f6d7d295438ac2ffa7ab546f9e6fb27bf7a21c4471d87c",
       "size": 124673,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq1500_1",
@@ -185,7 +185,7 @@
       "relativePath": "assets/faq/faq1500_1.webp",
       "sha256": "0d2fbe3b11c7382f02e008fa8f3a5dab4502a1470715cb9e1d4d2fac15378deb",
       "size": 369547,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq1500_2",
@@ -196,7 +196,7 @@
       "relativePath": "assets/faq/faq1500_2.webp",
       "sha256": "a3cf8c8d22fb5c886d6a4cf1e61b8315329b5f056d6ce83a2b222bbed67a7ac5",
       "size": 302626,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq1500_3",
@@ -207,7 +207,7 @@
       "relativePath": "assets/faq/faq1500_3.webp",
       "sha256": "9c1a2fa851c333f51305625a3dc26f712f114897b830a23e8411c9ed8f686955",
       "size": 421977,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq1600_1",
@@ -218,7 +218,7 @@
       "relativePath": "assets/faq/faq1600_1.webp",
       "sha256": "a76f85b8d610df8b6c46edbf32fb2dc5406598e92d5690210fff6a2ae7a72454",
       "size": 606788,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq1600_2",
@@ -229,7 +229,7 @@
       "relativePath": "assets/faq/faq1600_2.webp",
       "sha256": "29bad3e05d76c4c6ef3347c26165f1c75a683533dc76e76ecd3ae3f1ed855496",
       "size": 305665,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq1600_3",
@@ -240,7 +240,7 @@
       "relativePath": "assets/faq/faq1600_3.webp",
       "sha256": "c0955c8578a8bc319ee08e5322e2774d888d48e35665b950ba9a12c01bd0e6d3",
       "size": 393663,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq2000_1",
@@ -251,7 +251,7 @@
       "relativePath": "assets/faq/faq2000_1.webp",
       "sha256": "1c9da6b9f149b1b6c0c95be99a532f0872f3445abbc255fdc29d2b6d7bb7aa60",
       "size": 36703,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq2000_2",
@@ -262,7 +262,7 @@
       "relativePath": "assets/faq/faq2000_2.webp",
       "sha256": "8c31b0ff49869cbd396ba5372af94914d08059929debc6a4306db866c93ee1f5",
       "size": 43790,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq200_1",
@@ -273,7 +273,7 @@
       "relativePath": "assets/faq/faq200_1.webp",
       "sha256": "21da47ccd51111359771fd4650ad892c3b397f6a0b1fd50ba852c9b59aee6bfe",
       "size": 44084,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq200_2",
@@ -284,7 +284,7 @@
       "relativePath": "assets/faq/faq200_2.webp",
       "sha256": "9ccab17afa5e16e42574fbe965ef1ab05a65181fc1996efcbd3b80fcee179e11",
       "size": 16996,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq2400_1",
@@ -295,7 +295,7 @@
       "relativePath": "assets/faq/faq2400_1.webp",
       "sha256": "97597f13d34c56d7270f0b3acd5ac0a258ed6697304f259cbd7a75001f100432",
       "size": 51191,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq2400_2",
@@ -306,7 +306,7 @@
       "relativePath": "assets/faq/faq2400_2.webp",
       "sha256": "9d34479c38b66e4789178315e406193d203005ad2c4b18c9f29e7ed106300688",
       "size": 274787,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq2500_1",
@@ -317,7 +317,7 @@
       "relativePath": "assets/faq/faq2500_1.webp",
       "sha256": "1d8cfc9c68e6027f35aab67a62511a2135fe9db0e5b9d8b21e4d8edbfa329580",
       "size": 294732,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq2900_1",
@@ -328,7 +328,7 @@
       "relativePath": "assets/faq/faq2900_1.webp",
       "sha256": "9d34479c38b66e4789178315e406193d203005ad2c4b18c9f29e7ed106300688",
       "size": 274787,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq3000_1",
@@ -339,7 +339,7 @@
       "relativePath": "assets/faq/faq3000_1.webp",
       "sha256": "553530f2b6d4af770fd0afb6c3fa4f41b3b4e1d3faeaf8801b307ce14ba5dbdc",
       "size": 287398,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq3400_1",
@@ -350,7 +350,7 @@
       "relativePath": "assets/faq/faq3400_1.webp",
       "sha256": "9d34479c38b66e4789178315e406193d203005ad2c4b18c9f29e7ed106300688",
       "size": 274787,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq3600_1",
@@ -361,7 +361,7 @@
       "relativePath": "assets/faq/faq3600_1.webp",
       "sha256": "505c45ac20e153e313b80053292bc951ed4994860ea5bbacae61013e8e8afcb8",
       "size": 155140,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq3600_2",
@@ -372,7 +372,7 @@
       "relativePath": "assets/faq/faq3600_2.webp",
       "sha256": "19bd18e2278938707ba21a087d09945a6d876b099580f1ecfd40d3479e442906",
       "size": 171228,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq3600_3",
@@ -383,7 +383,7 @@
       "relativePath": "assets/faq/faq3600_3.webp",
       "sha256": "d29840b16019622ef230a0341a3106f2f92058765a44d83c6fdb84982557bf12",
       "size": 90494,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq3600_4",
@@ -394,7 +394,7 @@
       "relativePath": "assets/faq/faq3600_4.webp",
       "sha256": "05c68ce5ee5740bb262aee952128f6de449be399a2677ac66469cb5aa224b153",
       "size": 185017,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq4200_1",
@@ -405,7 +405,7 @@
       "relativePath": "assets/faq/faq4200_1.webp",
       "sha256": "4cbd564269a2bef69ddb875f9a57d23a3718f9e19495509ffe543bcd73295cd1",
       "size": 122139,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq4200_2",
@@ -416,7 +416,7 @@
       "relativePath": "assets/faq/faq4200_2.webp",
       "sha256": "b42a1bb5b9fff148dca8e2615f739424bed95dd8e49968c15cb9ad17928dbc48",
       "size": 199495,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq56_5",
@@ -427,7 +427,7 @@
       "relativePath": "assets/faq/faq56_5.webp",
       "sha256": "97597f13d34c56d7270f0b3acd5ac0a258ed6697304f259cbd7a75001f100432",
       "size": 51191,
-      "updatedAt": "2026-07-15T18:19:30Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq600_1",
@@ -438,7 +438,7 @@
       "relativePath": "assets/faq/faq600_1.webp",
       "sha256": "b47f96644476eaaf78571246aaafc4839384741f15f167a9c657676e1b43926b",
       "size": 42114,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq600_2",
@@ -449,7 +449,7 @@
       "relativePath": "assets/faq/faq600_2.webp",
       "sha256": "08b4836923ea63314dde276c429ee78b7f5056d66257aea3854252e05076b082",
       "size": 33721,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_faq_faq600_3",
@@ -460,7 +460,7 @@
       "relativePath": "assets/faq/faq600_3.webp",
       "sha256": "8e412fefc09e3aa37734a22d3bf607a21ee96c44c1d04dbba414a7032981bb0d",
       "size": 44965,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_icons_machine_a1",
@@ -471,7 +471,7 @@
       "relativePath": "assets/icons/machine/a1.svg",
       "sha256": "68024611b1c1aaf2ef0f0b3f2476f0e53ec78adade8770d89d6c8a350e0d9d83",
       "size": 386,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_icons_machine_a1_mini",
@@ -482,7 +482,7 @@
       "relativePath": "assets/icons/machine/a1_mini.svg",
       "sha256": "8cfe37d585d7604d2493a67469e11b4b699784120ff00989ef3338e45caa1046",
       "size": 363,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_icons_machine_p1s",
@@ -493,7 +493,7 @@
       "relativePath": "assets/icons/machine/p1s.svg",
       "sha256": "87604671835eeccb73ac11196253e360756e4196382d6b93b48bed1d046db2f7",
       "size": 324,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_machines_a1",
@@ -504,7 +504,7 @@
       "relativePath": "assets/machines/a1.webp",
       "sha256": "41ba8552907599c80e3e2a110e0898a7d6c39c5d3bca28ee83b20e22c2e6e3f4",
       "size": 21740,
-      "updatedAt": "2026-07-12T16:07:41Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_machines_a1_mini",
@@ -515,7 +515,7 @@
       "relativePath": "assets/machines/a1_mini.webp",
       "sha256": "b30a6db46e303287753755bfab4a01c0fb197eed0f173f716dc48e6571b9e431",
       "size": 19160,
-      "updatedAt": "2026-07-15T18:19:30Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_machines_anycubic_kobra_x",
@@ -526,7 +526,7 @@
       "relativePath": "assets/machines/anycubic_kobra_x.webp",
       "sha256": "a717f0e229de690ef3134a7d24323c15f94e2857f46874d7fa1c0ef17d81ad13",
       "size": 22398,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_machines_creality_sparkx_i7",
@@ -537,7 +537,7 @@
       "relativePath": "assets/machines/creality_sparkx_i7.webp",
       "sha256": "9790d66c11fa284e8d3c1ebba2c949e232f9002bca95de2d33d63baf808221c7",
       "size": 18572,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_machines_k1c",
@@ -548,7 +548,7 @@
       "relativePath": "assets/machines/k1c.webp",
       "sha256": "618067c10a03790cce94be1054046250c7de3c9da20a2a468ccbf933340ee491",
       "size": 16014,
-      "updatedAt": "2026-07-12T16:07:41Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_machines_k2c",
@@ -559,7 +559,7 @@
       "relativePath": "assets/machines/k2c.webp",
       "sha256": "638e41f45e58167df4f8c18ea22fb34bfa175057a76875b697c5f2e77c205063",
       "size": 8722,
-      "updatedAt": "2026-07-12T16:07:41Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_machines_p1s",
@@ -570,7 +570,7 @@
       "relativePath": "assets/machines/p1s.webp",
       "sha256": "0ceb9236e7c20999915a66c1d630cc18e9b648d1e2935039b244e00c0a5e7d84",
       "size": 12732,
-      "updatedAt": "2026-07-12T16:07:41Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_machines_p2s",
@@ -581,7 +581,7 @@
       "relativePath": "assets/machines/p2s.webp",
       "sha256": "9e6ebe2a9e4201958e3ba24a7618801035c85eda2a908afc1666025bcd739f3e",
       "size": 9180,
-      "updatedAt": "2026-07-12T16:07:41Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_machines_s1c",
@@ -592,7 +592,7 @@
       "relativePath": "assets/machines/s1c.webp",
       "sha256": "b592ce817e9c0827e43af0a3455551f84e709cd3f94febef6032e80874576aa5",
       "size": 40230,
-      "updatedAt": "2026-07-12T16:07:41Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_machines_voron24",
@@ -603,7 +603,7 @@
       "relativePath": "assets/machines/voron24.webp",
       "sha256": "23e98522a0c41540be532e92fd3be1c14ace3ac153bd248fad674090be866b2a",
       "size": 60720,
-      "updatedAt": "2026-07-12T16:07:41Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_machines_x1c",
@@ -614,7 +614,7 @@
       "relativePath": "assets/machines/x1c.webp",
       "sha256": "78abb42998fe139e4cdb709951097b6779842478bf546d56701dec8c8518f96a",
       "size": 24016,
-      "updatedAt": "2026-07-15T18:19:30Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_models_model_bmcu冲刷测试",
@@ -625,7 +625,7 @@
       "relativePath": "assets/models/model_BMCU冲刷测试.webp",
       "sha256": "1e0e0a09ace0bf5a8c821a8e2dc4872eadebdfb06749d573d60ef3e2c320cbfe",
       "size": 6296,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_models_model_半圆xy校准",
@@ -636,7 +636,7 @@
       "relativePath": "assets/models/model_半圆XY校准.webp",
       "sha256": "0b88145f1af013383756ad64b336dfe25d72477f86866f9ab7fe2aa024e02457",
       "size": 2540,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_models_model_平面z轴测试",
@@ -647,7 +647,7 @@
       "relativePath": "assets/models/model_平面Z轴测试.webp",
       "sha256": "fb8e6240e404c237f94efb5ce0615e309482526df38b850e5740ec0e7ab48760",
       "size": 3258,
-      "updatedAt": "2026-08-12T10:35:31Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_models_model_擦料塔测试",
@@ -658,7 +658,7 @@
       "relativePath": "assets/models/model_擦料塔测试.webp",
       "sha256": "d16020f01fdfcbdd46c53900b44b08ba53bbfea88698a6f358e82d33c4efbf76",
       "size": 4948,
-      "updatedAt": "2026-07-15T18:19:30Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_models_model_无支撑大平面",
@@ -669,7 +669,7 @@
       "relativePath": "assets/models/model_无支撑大平面.webp",
       "sha256": "a22f9e4d9bdf76a4e5c460b1c5d866062400f20dc753119b2594e6b3a690c599",
       "size": 3772,
-      "updatedAt": "2026-07-15T18:19:30Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_models_model_极限综合测试",
@@ -680,7 +680,7 @@
       "relativePath": "assets/models/model_极限综合测试.webp",
       "sha256": "c43f82ab557c8993b92fb78127307b84991656feeae2105519e2583442b79859",
       "size": 4294,
-      "updatedAt": "2026-07-15T18:19:30Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_models_model_综合测试阵列",
@@ -691,7 +691,7 @@
       "relativePath": "assets/models/model_综合测试阵列.webp",
       "sha256": "2d5f9e80b66ba36685f9deb5512e14ee23ba1af24ab3e796e550f01203c6f469",
       "size": 3640,
-      "updatedAt": "2026-07-15T18:19:30Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "image_models_model_鱼尾曲面测试",
@@ -702,7 +702,7 @@
       "relativePath": "assets/models/model_鱼尾曲面测试.webp",
       "sha256": "adfa9f2fa9642d66b6c3c3a7c216cf107460bb5956c861ac61ae7c0412319ae8",
       "size": 2860,
-      "updatedAt": "2026-07-15T18:19:30Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "p1s_bbs_mkpprocess_p1s_02_010",
@@ -713,7 +713,7 @@
       "relativePath": "presets/bbs/Process/0.2mm/MKPProcess P1S 0.2 0.10.json",
       "sha256": "810d4441deef000106366220010d7ca48ae586ac52936af53c84dcb1b3dca8e1",
       "size": 1906,
-      "updatedAt": "2026-07-10T09:47:51Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "p1s_bbs_mkpprocess_p1s_04_024",
@@ -724,7 +724,7 @@
       "relativePath": "presets/bbs/Process/0.4mm/MKPProcess P1S 0.4 0.24.json",
       "sha256": "264addc551633c553828492580eef74fc51f2690a127919ed8da051634d8bc2d",
       "size": 1872,
-      "updatedAt": "2026-07-10T09:47:51Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "p1s_mkp_lite",
@@ -735,7 +735,7 @@
       "relativePath": "presets/mkp/P1.toml",
       "sha256": "3d1be116efb3cd0559cf275f1f9cdb2a9ca8133ff6a98950721e753d7dc63dd4",
       "size": 4362,
-      "updatedAt": "2026-08-14T14:50:02Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "p2s_bbs_mkpprocess_p2s_04_024",
@@ -746,7 +746,7 @@
       "relativePath": "presets/bbs/Process/0.4mm/MKPProcess P2S 0.4 0.24.json",
       "sha256": "124f8290aa007567af78d6058f95095e4787c02a30371acb56f489029168499e",
       "size": 1264,
-      "updatedAt": "2026-07-10T09:47:51Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "p2s_mkp_standard",
@@ -757,7 +757,7 @@
       "relativePath": "presets/mkp/P2.toml",
       "sha256": "235c6c8e87209fcc0315f3337fa570a1a2f40f1e49eea5da8c58ee6a28152bad",
       "size": 4366,
-      "updatedAt": "2026-08-14T14:50:02Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "x1c_bbs_mkpprocess_x1_02_010",
@@ -768,7 +768,7 @@
       "relativePath": "presets/bbs/Process/0.2mm/MKPProcess X1 0.2 0.10.json",
       "sha256": "9d9737d18f8cea34d284031dd544b444a00e56c112a4d0ab74b0813f56e2e9ca",
       "size": 1904,
-      "updatedAt": "2026-07-10T09:47:51Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "x1c_bbs_mkpprocess_x1_04_024",
@@ -779,7 +779,7 @@
       "relativePath": "presets/bbs/Process/0.4mm/MKPProcess X1 0.4 0.24.json",
       "sha256": "1fe7377c92d0f67bb8ed1cda16edb12c32a56e3cb4d864983eaccb6ced0a8fa4",
       "size": 1925,
-      "updatedAt": "2026-07-10T09:47:51Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     },
     {
       "id": "x1c_mkp_lite",
@@ -790,7 +790,7 @@
       "relativePath": "presets/mkp/X1.toml",
       "sha256": "9e69056ed53653456f749d19fcaa06b6b79e1004e432e4a0c6444efca6cb8ab7",
       "size": 4362,
-      "updatedAt": "2026-08-14T14:50:03Z"
+      "updatedAt": "2026-08-18T02:04:59Z"
     }
   ],
   "brands": [
@@ -941,7 +941,7 @@
       "id": "",
       "fileName": "assets_index.json",
       "relativePath": "content/assets_index.json",
-      "sha256": "eba48144d3941b12466600f7f5a57382adc0af08d80cf335a991badbc829b6dc",
+      "sha256": "7fb9b691340e9eb4d375ac8686af80e64afefe42a4b17b5869bdc821e394cff7",
       "size": 5840,
       "ttl": "24h",
       "strategy": "swr",
@@ -988,8 +988,8 @@
       "id": "",
       "fileName": "notification.json",
       "relativePath": "content/notification.json",
-      "sha256": "f6cd646062c20c38867bff5b89172a949faa7849af1a32143ff8b7f34c2b59e7",
-      "size": 49782,
+      "sha256": "3878e4e6562c669c3fc38069809e4098a8484c2700787069e61f2dd1ad5b5b16",
+      "size": 49783,
       "ttl": "24h",
       "strategy": "swr",
       "prefetch": true,
@@ -1372,6 +1372,6 @@
     }
   ],
   "ttl": "0s",
-  "updated": "2026-08-16T17:00:53Z",
+  "updated": "2026-08-18T02:27:12Z",
   "version": ""
 }
