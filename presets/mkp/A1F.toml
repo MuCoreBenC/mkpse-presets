@@ -1,12 +1,12 @@
 # uuid: 4effcd9d-44c7-45e3-aedb-a9b1f6d06695
-# release_time: 2026-08-14 22:49:54
+# release_time: 2026-08-18 18:39:29
 # machine: A1
 # variant: fast
 #胶笔配置
 
 [toolhead]
 offset = { x = -0.7, y = 26.3, z = 4 } # 笔尖偏移
-speed_limit = 70 # 涂胶速度限制 (mm/s)
+speed_limit = 75 # 涂胶速度限制 (mm/s)
 # 自定义工具头获取 G-code
 custom_mount_gcode = """
 G92 E0

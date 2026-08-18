@@ -1,12 +1,12 @@
 # uuid: 4ee90c8e-8ab3-40f8-a240-7e6bb5c96984
-# release_time: 2026-08-14 22:49:54
+# release_time: 2026-08-18 18:39:29
 # machine: X1C
 # variant: lite
 #胶笔配置
 
 [toolhead]
 offset = { x = -25.9, y = 14, z = 1.1 } # 笔尖偏移
-speed_limit = 70 # 涂胶速度限制 (mm/s)
+speed_limit = 75 # 涂胶速度限制 (mm/s)
 # 自定义工具头获取 G-code
 custom_mount_gcode = """
 L803;此处使喷嘴降温

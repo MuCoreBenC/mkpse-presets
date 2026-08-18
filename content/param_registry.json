@@ -1685,7 +1685,7 @@
     },
     {
       "configKey": "MaxSpeed",
-      "defaultValue": 70,
+      "defaultValue": 75,
       "desc": "涂胶笔的最大移动速度 (mm/s)，过高可能导致涂胶不均匀或丢步",
       "jsonKey": "speed_limit",
       "key": "toolhead.speed_limit",
