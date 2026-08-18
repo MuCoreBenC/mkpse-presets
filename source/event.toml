@@ -1,0 +1,179 @@
+# event.toml — 业务事件 SSOT
+# 定义业务事件，将通知按业务场景分组。Event 是知识中心的核心对象。
+#
+# 五层领域模型：
+#   Event（业务事件）→ Notification（通知）→ Trigger（触发入口）→ Source（代码来源）→ Presentation（展示）
+#
+# 字段说明：
+#   title         - 事件标题
+#   description   - 事件描述（何时发生）
+#   category      - 分类层级路径（如 ['Preset', 'Download']）
+#   tags          - 标签
+#   notifications - 属于该事件的通知 ID 列表（双向引用：Notification.event 反向指向 Event ID）
+#   triggers/sources/related/description 本 spec 留空（架构就位，数据分阶段填充）
+#
+# Event ID 命名规则：event.<scenario>，scenario 与 notification ID 前缀对齐便于推导。
+# 14 个 seed events 从 notification.toml 现有 83 个 ID 分组推导。
+
+# ===== 预设模块事件（event.preset.*）=====
+
+[event.download]
+title = '下载预设'
+description = ''
+category = ['Preset', 'Download']
+notifications = [
+  'preset.download.success',
+  'preset.download.deployedToSlicers',
+  'preset.download.deployFailed',
+  'preset.download.deployFailedWithMsg',
+  'preset.download.alreadyLatest',
+  'preset.download.genericSuccess',
+  'preset.download.busy',
+]
+
+[event.apply]
+title = '应用预设'
+description = ''
+category = ['Preset', 'Apply']
+notifications = [
+  'preset.apply.unapplied',
+  'preset.apply.deployedToSlicers',
+  'preset.apply.nowUsing',
+  'preset.apply.updateFileGone',
+  'preset.apply.noParamUpdate',
+  'param.apply.applied',
+]
+
+[event.crud]
+title = '预设增删改'
+description = ''
+category = ['Preset', 'CRUD']
+notifications = [
+  'preset.crud.renamed',
+  'preset.crud.savedAs',
+  'preset.crud.restoredFromTrash',
+  'preset.crud.editing',
+  'preset.crud.permanentlyDeleted',
+  'preset.crud.trashEmptied',
+]
+
+[event.merge]
+title = '合并预设'
+description = ''
+category = ['Preset', 'Merge']
+notifications = [
+  'preset.merge.applied',
+  'preset.merge.appliedWithKept',
+  'preset.merge.discarded',
+  'preset.merge.restored',
+  'preset.merge.undoMerge',
+]
+
+[event.clipboard]
+title = '剪贴板操作'
+description = ''
+category = ['Preset', 'Clipboard']
+notifications = [
+  'preset.clipboard.pasted',
+  'preset.clipboard.copied',
+]
+
+[event.undo]
+title = '撤销/重做'
+description = ''
+category = ['Preset', 'Undo']
+notifications = [
+  'preset.undo.undoDelete',
+  'preset.undo.undoRename',
+  'preset.undo.redoDelete',
+  'preset.undo.redoRename',
+]
+
+[event.refresh]
+title = '刷新列表'
+description = ''
+category = ['Preset', 'Refresh']
+notifications = [
+  'preset.refresh.success',
+  'machine.catalog.refreshed',
+]
+
+# ===== 其他模块事件 =====
+
+[event.calibration]
+title = '校准操作'
+description = ''
+category = ['Calibration']
+notifications = [
+  'calibration.history.restored',
+  'calibration.history.offsetApplied',
+  'calibration.history.unpinned',
+  'calibration.history.pinned',
+  'calibration.history.unlocked',
+  'calibration.history.locked',
+  'calibration.history.nothingToClear',
+  'calibration.history.clearedWithProtected',
+  'calibration.history.clearedAll',
+  'calibration.history.batchDeleted',
+  'calibration.history.nothingToDelete',
+  'calibration.history.singleDeleted',
+  'calibration.complete.success',
+]
+
+[event.update]
+title = '应用更新'
+description = ''
+category = ['Update']
+notifications = [
+  'update.autoOnClose',
+  'update.available.info',
+]
+
+[event.config]
+title = '配置目录'
+description = ''
+category = ['Config']
+notifications = [
+  'config.dir.located',
+  'config.reset.success',
+]
+
+[event.startup]
+title = '启动初始化'
+description = ''
+category = ['Startup']
+notifications = [
+  'startup.cache.autoCleaned',
+  'startup.init.info',
+]
+
+[event.file]
+title = '文件操作'
+description = ''
+category = ['File']
+notifications = [
+  'file.operation.successToast',
+  'file.load.error',
+]
+
+[event.machine]
+title = '机型管理'
+description = ''
+category = ['Machine']
+notifications = [
+  'machine.mismatch.userCancelled',
+  'machine.mismatch.calibrationTimeout',
+  'machine.mismatch.waitTimeout',
+  'machine.mismatch.manuallyReset',
+  'machine.connect.success',
+  'machine.notfound.error',
+]
+
+[event.shadow]
+title = '阴影配置'
+description = ''
+category = ['Shadow']
+notifications = [
+  'shadow.config.loadFailed',
+  'shadow.config.saved',
+]

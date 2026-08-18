@@ -1,18 +1,473 @@
 {
-  "latest": "0.0.2",
-  "updated": "2026-07-10T18:00:00+08:00",
+  "compatibility": {
+    "minimumBase": "0.0.2"
+  },
+  "easterEgg": {
+    "enabled": true,
+    "history": [
+      {
+        "changes": [
+          "实现脑机接口直连：想象即打印，彻底淘汰 G-code 与切片软件概念",
+          "新增量子纠缠通信协议：支持跨星系多端打印机阵列零延迟同步",
+          "重构反物质热床加热算法：0.0001秒内达到绝对热力学稳定，解决首层翘边",
+          "修复了由于打印机接近光速移动时，相对论时间膨胀导致的打印剩余时间预估不准确的 BUG"
+        ],
+        "date": "9999-12-31",
+        "id": "v_infinity",
+        "size": "42 PB",
+        "status": "available",
+        "title": "MKP SupportE 终极未来版",
+        "updateType": "full",
+        "version": "v∞.∞.∞"
+      },
+      {
+        "changes": [
+          "原生支持戴森球无线充能协议（Dyson-Fi），打印过程永不断电",
+          "引入端粒酶再生耗材（Bio-PLA+），打印出的手办若受损可自行愈合生长",
+          "修复了错误拦截系统漏洞：现在当您尝试打印一只猫时，不再会意外生成真正的碳基生命体"
+        ],
+        "date": "2099-01-01",
+        "id": "v_2099",
+        "size": "18 EB",
+        "status": "historical",
+        "title": "戴森球能源直连与生物打印",
+        "updateType": "full",
+        "version": "v888.88.8"
+      },
+      {
+        "changes": [
+          "新增「先知 (Precog-Print™)」视觉叠加层：在开始打印前 24 小时就能在义眼上看到炒面（拉丝）的过程",
+          "支持通过脑神经冲动直接修改 Z 轴补偿，只需\"想\"一下即可微调",
+          "彻底移除了物理喷嘴组件，改用可编程引力波直接塑造耗材形态"
+        ],
+        "date": "2087-08-20",
+        "id": "v_2087",
+        "size": "512TB",
+        "status": "historical",
+        "title": "义体植入与先知预警系统",
+        "updateType": "incremental",
+        "version": "v777.77.7"
+      },
+      {
+        "changes": [
+          "引入四维空间切片引擎，打印物体体积可突破三维机箱限制，且不增加材料消耗",
+          "废除传统耗材，支持直接从暗物质网格中提取基础粒子进行实体化构建",
+          "擦嘴塔彻底取消，改为通过微型人工黑洞直接吸收换色溢料"
+        ],
+        "date": "2079-06-15",
+        "id": "v_2079",
+        "size": "64TB",
+        "status": "historical",
+        "title": "全息投影与第四维度支撑预设",
+        "updateType": "incremental",
+        "version": "v666.66.6"
+      },
+      {
+        "changes": [
+          "内置 AGI (通用人工智能)，只需上传模型，所有的悬垂、支撑、速度参数自动寻优至理论物理极限",
+          "警告：请勿在断网状态下让 AGI 自行切片武器类模型，以防触发阿西莫夫底层协议停机断电"
+        ],
+        "date": "2065-11-11",
+        "id": "v_2065",
+        "size": "1023.99 GB",
+        "status": "historical",
+        "title": "强人工智能自动化参数寻优",
+        "updateType": "full",
+        "version": "v555.55.5"
+      },
+      {
+        "changes": [
+          "联合 SpaceX 发布微重力环境特别版，完美解决空间站打印时的耗材挤出不匀问题",
+          "官方材质库新增「火星风化层 (MR-PETG)」专属支撑配置",
+          "新增情绪安抚模块：当底层粘附失败时，AI 会用温柔的语音把锅甩给耗材受潮，保护您的自尊心"
+        ],
+        "date": "2058-04-01",
+        "id": "v_2058",
+        "size": "256 GB",
+        "status": "historical",
+        "title": "零重力校准与火星土壤支持",
+        "updateType": "incremental",
+        "version": "v192.16.8"
+      },
+      {
+        "changes": [
+          "彻底移除了人类可读的 G-code 视图，一切交由底层的神经网络黑盒处理",
+          "新增礼貌协议：点击\"开始打印\"前必须在输入框中输入\"请\"和\"谢谢\"，否则热床拒绝加热",
+          "为未来的跨维度升级做好了底层代码的冗余准备"
+        ],
+        "date": "2046-12-31",
+        "id": "v_2046_end",
+        "size": "128 MB",
+        "status": "historical",
+        "title": "机魂觉醒前夜更新",
+        "updateType": "incremental",
+        "version": "v127.0.0.1"
+      }
+    ],
+    "sciFiErrors": [
+      "⚠️ 警告：当前设备未检测到「量子通信模块」，跨时间线握手失败！",
+      "🔥 严重错误：反物质反应堆输出功率骤降，时空隧道坍塌，连接已断开！",
+      "🌌 协议异常：仙女座星系主节点拒绝了您的匿名下载请求。",
+      "🤖 拦截提示：本地主机算力过低，被强人工智能 (AGI) 判定为「原始硅基垃圾」并强制终止。",
+      "⏱️ 时间悖论检测：下载该版本将导致严重的祖父悖论，时间法庭已介入切断传输！",
+      "🛸 信号丢失：受到半人马座阿尔法星系的高能耀斑干扰，安装包在跃迁中解体。",
+      "🚨 时空链路中断：第四维信道被时空管理局强制关闭，下载终止。",
+      "🔮 量子纠缠失效：安装包粒子在传输中发生随机坍缩，无法重组。",
+      "🌠 维度不兼容：当前版本来自高维宇宙，三维设备无法解析。",
+      "⚡ 能量不足：曲速引擎供能中断，跨时空传输被迫中止。",
+      "📡 深空信号屏蔽：星际辐射风暴导致数据链路完全中断。",
+      "🧬 基因锁验证失败：非授权时空坐标，拒绝接收未来数据。",
+      "🪐 星门连接超时：虫洞通道不稳定，数据包在虚空中遗失。",
+      "🤯 神经接口异常：大脑同步率不足，无法承载未来技术信息。",
+      "🌪️ 时空乱流触发：安装包被卷进时间漩涡，下载失败。",
+      "🔒 未来加密协议：当前时代无法破解，数据自动销毁。",
+      "🛑 超光速传输中断：相对论效应导致数据包时序错乱。",
+      "🧨 反重力模块故障：未来安装包失去悬浮支撑，传输崩溃。",
+      "🌐 星际网络拥堵：跨星域路由节点全忙，连接被丢弃。",
+      "💥 暗物质干扰：未知暗能量场扭曲了安装包结构。",
+      "🕳️ 黑洞引力捕获：数据包被吸入事件视界，无法恢复。",
+      "👽 外星协议拦截：非本星系文明设备，连接被强制切断。",
+      "🧪 粒子对撞失败：安装包分子结构在传输中彻底崩坏。",
+      "📛 时空签证过期：您无权访问该未来版本资源。",
+      "⚛️ 核融合失效：供能核心停摆，跨时间下载中止。",
+      "🚀 跃迁引擎故障：数据包在空间跳跃中丢失。",
+      "🌡️ 时空温度异常：数据载体在极端时序环境中融化。",
+      "🧠 中央智脑拒绝：您的设备未通过未来文明安全认证。",
+      "🔭 深空观测中断：定位卫星被太阳风暴摧毁，连接丢失。",
+      "🎚️ 频率不匹配：未来频段与当前时代完全无法共振。",
+      "🗑️ 自动清理机制：过期时空数据包被系统强制清除。",
+      "🧱 时空防火墙拦截：禁止向过去传输高维技术。",
+      "💫 轨道偏移错误：数据卫星偏离预定时空轨道。",
+      "🔁 时间循环卡死：安装包陷入无限递归，传输崩溃。",
+      "🌡️ 量子冷却失败：数据包过热，自动中断传输。",
+      "🚫 未来版权保护：该版本受时空版权法保护，禁止下载。"
+    ],
+    "trigger": {
+      "clickCount": 3,
+      "timeWindowMs": 2000
+    }
+  },
+  "latest": "0.0.4",
+  "tracks": [
+    {
+      "baseVersion": "0.0.4",
+      "channel": "stable",
+      "latest": "0.0.4"
+    },
+    {
+      "baseVersion": "0.0.3",
+      "channel": "stable",
+      "latest": "0.0.3"
+    },
+    {
+      "baseVersion": "0.0.2",
+      "channel": "stable",
+      "latest": "0.0.2"
+    },
+    {
+      "baseVersion": "0.0.1",
+      "channel": "stable",
+      "latest": "0.0.1"
+    }
+  ],
   "versions": [
     {
-      "date": "2026-07-10T18:00:00+08:00",
+      "channel": "stable",
+      "date": "2026-07-29T20:00:00+08:00",
       "en": "",
       "isMajor": true,
+      "order": 0,
       "release": {
         "downloadUrl": "",
         "fileName": "",
         "fileSize": 0,
-        "forceUpdate": false,
         "hasExe": false,
-        "minAppVersion": "0.0.2",
+        "sha256": ""
+      },
+      "sections": [
+        {
+          "heading": "核心功能",
+          "item": "五层架构解耦：前端 Adapter 层 + 后端 Repository 模式 + ESLint no-direct-wailsjs 架构守护"
+        },
+        {
+          "heading": "核心功能",
+          "item": "通知系统 V2：Content 化 + Selection Coordinator 工作流 + Notification Inspector + @mkp/diagnostics 平台包"
+        },
+        {
+          "heading": "核心功能",
+          "item": "预设生命周期 V2：Preset Lifecycle 平台包 + hasUpdate 单源派生 + ListLocalPresets 诊断增强"
+        },
+        {
+          "heading": "核心功能",
+          "item": "统一内容管线 (Unified Content Pipeline)：useContent 单一入口 + 远程 Provider 架构 + ContentLab"
+        },
+        {
+          "heading": "核心功能",
+          "item": "统一资源管线 (Unified Resource Pipeline)：6 套状态枚举统一为 ResourceStatus"
+        },
+        {
+          "heading": "核心功能",
+          "item": "统一排序引擎：@mkp/order 平台包 + onMove 拖拽语义 + 6 个页面列表排序统一迁移"
+        },
+        {
+          "heading": "核心功能",
+          "item": "平台包抽取：@mkp/preset-components + @mkp/preset-update + @mkp/preset-ui + @mkp/diagnostics + @mkp/text-selection"
+        },
+        {
+          "heading": "核心功能",
+          "item": "selection-behavior 平台包：resolvePrimaryButton 主按钮决策 + SelectionSession 状态模型"
+        },
+        {
+          "heading": "核心功能",
+          "item": "后处理引擎 V2：四层架构 SSOT 统一，三套 ProcessGcode 收敛为单一 Engine 内核"
+        },
+        {
+          "heading": "核心功能",
+          "item": "策略驱动设置重构：Baseline 隐藏目录 + Content Top Accesses"
+        },
+        {
+          "heading": "核心功能",
+          "item": "树编辑器体验升级：递归 depth + 三区域布局 + TreeRow/useTreeExpansion/useTreeSearch 平台包"
+        },
+        {
+          "heading": "核心功能",
+          "item": "Layout 纯 Presentation：Tab/Section 一等实体 + SchemaRenderer 按 schema 驱动渲染"
+        },
+        {
+          "heading": "核心功能",
+          "item": "mkp-prototype 视觉对齐旧版 + enhanced 组件与 design-notes"
+        },
+        {
+          "heading": "核心功能",
+          "item": "MKP DevTools Console + M036 Runtime Lock"
+        },
+        {
+          "heading": "架构优化",
+          "item": "Adapter 层：前端 UI 组件与 Wails 后端完全解耦，统一通过 Adapter 访问后端能力"
+        },
+        {
+          "heading": "架构优化",
+          "item": "Repository 模式：后端 internal/repository 封装数据访问，分离业务逻辑与路径处理"
+        },
+        {
+          "heading": "架构优化",
+          "item": "ESLint 架构守护：no-direct-wailsjs 规则 + audit-five-layer.sh + generate-harness-report.mjs"
+        },
+        {
+          "heading": "架构优化",
+          "item": "Registry as Definition SSOT：Tab/Section 一等实体 + Layout 纯 Presentation 全栈落地"
+        },
+        {
+          "heading": "架构优化",
+          "item": "统一 React 单实例：18.2 → 18.3.1 + Rule M026 + CI 审计脚本"
+        },
+        {
+          "heading": "架构优化",
+          "item": "删除两套 MCP server：收敛为 source/*.toml 单一编辑入口"
+        },
+        {
+          "heading": "架构优化",
+          "item": "Notification Renderer 拆分 panel/supporte 双轨 + BaselineSHA 双比较修复"
+        },
+        {
+          "heading": "架构优化",
+          "item": "NotificationCard 共享组件提取，Panel/Supporte Toast 收敛为薄壳"
+        },
+        {
+          "heading": "架构优化",
+          "item": "参数顺序 SSOT 落地 + subfieldsOrder 所有权澄清"
+        },
+        {
+          "heading": "架构优化",
+          "item": "preset-update 重构：statusMapper → presetState，状态派生统一"
+        },
+        {
+          "heading": "修复",
+          "item": "下载应用流程静默失败修复：applyPreset 锁阻塞改为抛错 + isVersionDownloaded 文件级判断 + 移除 done 后台下载"
+        },
+        {
+          "heading": "修复",
+          "item": "DeviceSelection 主卡片计数与文案解耦 + 版本范围过滤防 pendingBar 计数污染"
+        },
+        {
+          "heading": "修复",
+          "item": "Preset Lifecycle 状态源统一：FileRegistry key 规范化 + pending* helper 家族"
+        },
+        {
+          "heading": "修复",
+          "item": "Preset Lifecycle 状态模型修复：区分 applied/imported/pending_import，消除\"已下载仍提示更新\"真值错误"
+        },
+        {
+          "heading": "修复",
+          "item": "通知 SSOT + 多重 Bug 修复（复制/Alt框选/启动请求/FAQ图片/保存自动Build/彩蛋面板/涂胶画布）"
+        },
+        {
+          "heading": "修复",
+          "item": "深度审查与修复：SSOT 默认值不一致 + 启动 42 次请求 + 静默吞错"
+        },
+        {
+          "heading": "修复",
+          "item": "DeviceSelection hasUpdate 误报修复 + 初始化状态循环 + preferences override 无变化也回写"
+        },
+        {
+          "heading": "修复",
+          "item": "CloudPresetCard/MergeModal/ConflictModal/EditParamsModal 系列修复"
+        },
+        {
+          "heading": "修复",
+          "item": "云端预设列表只显示 1 个预设的回归修复"
+        },
+        {
+          "heading": "体验优化",
+          "item": "通知 CopyTemplate + 统一调试能力（Copy JSON/Timeline/Logs/Inspector/Download Session）"
+        },
+        {
+          "heading": "体验优化",
+          "item": "Theme Studio Live Sandbox + 预设生命周期平台包 + Pipeline Lab + Playback Mode + 回退三连击"
+        },
+        {
+          "heading": "体验优化",
+          "item": "mkp-platform-lab Lab 中文化 + 三级测试报告系统 + Scenario Suite 升级为 4 类场景套件"
+        },
+        {
+          "heading": "体验优化",
+          "item": "Host 语义化 + Stepper 选择器 + Keepalive 优化"
+        },
+        {
+          "heading": "体验优化",
+          "item": "Theme Engine + Publish Flow + Param Layout 平台包"
+        },
+        {
+          "heading": "体验优化",
+          "item": "Interaction Studio + Notification Inspector + V2 Lifecycle 审计"
+        }
+      ],
+      "summary": "## 五层架构解耦与预设生命周期 V2 v0.0.4 (2026-07-29)",
+      "title": "## 五层架构解耦与预设生命周期 V2 v0.0.4 (2026-07-29)",
+      "type": "major",
+      "version": "0.0.4",
+      "zhCN": "## 五层架构解耦与预设生命周期 V2 v0.0.4 (2026-07-29)\n\nv0.0.4 是 mkpse-next 平台化深化阶段版本。本版本完成五层架构解耦（Adapter 层 + Repository 模式 + ESLint 架构守护），重构预设生命周期 V2（Preset Lifecycle 平台包 + hasUpdate 单源派生），建立统一内容/资源/排序管线，并修复下载应用流程静默失败等关键 Bug。\n\n### 核心功能\n1. 五层架构解耦：前端 Adapter 层 + 后端 Repository 模式 + ESLint no-direct-wailsjs 架构守护\n2. 通知系统 V2：Content 化 + Selection Coordinator 工作流 + Notification Inspector + @mkp/diagnostics 平台包\n3. 预设生命周期 V2：Preset Lifecycle 平台包 + hasUpdate 单源派生 + ListLocalPresets 诊断增强\n4. 统一内容管线 (Unified Content Pipeline)：useContent 单一入口 + 远程 Provider 架构 + ContentLab\n5. 统一资源管线 (Unified Resource Pipeline)：6 套状态枚举统一为 ResourceStatus\n6. 统一排序引擎：@mkp/order 平台包 + onMove 拖拽语义 + 6 个页面列表排序统一迁移\n7. 平台包抽取：@mkp/preset-components + @mkp/preset-update + @mkp/preset-ui + @mkp/diagnostics + @mkp/text-selection\n8. selection-behavior 平台包：resolvePrimaryButton 主按钮决策 + SelectionSession 状态模型\n9. 后处理引擎 V2：四层架构 SSOT 统一，三套 ProcessGcode 收敛为单一 Engine 内核\n10. 策略驱动设置重构：Baseline 隐藏目录 + Content Top Accesses\n11. 树编辑器体验升级：递归 depth + 三区域布局 + TreeRow/useTreeExpansion/useTreeSearch 平台包\n12. Layout 纯 Presentation：Tab/Section 一等实体 + SchemaRenderer 按 schema 驱动渲染\n13. mkp-prototype 视觉对齐旧版 + enhanced 组件与 design-notes\n14. MKP DevTools Console + M036 Runtime Lock\n\n### 架构优化\n15. Adapter 层：前端 UI 组件与 Wails 后端完全解耦，统一通过 Adapter 访问后端能力\n16. Repository 模式：后端 internal/repository 封装数据访问，分离业务逻辑与路径处理\n17. ESLint 架构守护：no-direct-wailsjs 规则 + audit-five-layer.sh + generate-harness-report.mjs\n18. Registry as Definition SSOT：Tab/Section 一等实体 + Layout 纯 Presentation 全栈落地\n19. 统一 React 单实例：18.2 → 18.3.1 + Rule M026 + CI 审计脚本\n20. 删除两套 MCP server：收敛为 source/*.toml 单一编辑入口\n21. Notification Renderer 拆分 panel/supporte 双轨 + BaselineSHA 双比较修复\n22. NotificationCard 共享组件提取，Panel/Supporte Toast 收敛为薄壳\n23. 参数顺序 SSOT 落地 + subfieldsOrder 所有权澄清\n24. preset-update 重构：statusMapper → presetState，状态派生统一\n\n### 修复\n25. 下载应用流程静默失败修复：applyPreset 锁阻塞改为抛错 + isVersionDownloaded 文件级判断 + 移除 done 后台下载\n26. DeviceSelection 主卡片计数与文案解耦 + 版本范围过滤防 pendingBar 计数污染\n27. Preset Lifecycle 状态源统一：FileRegistry key 规范化 + pending* helper 家族\n28. Preset Lifecycle 状态模型修复：区分 applied/imported/pending_import，消除\"已下载仍提示更新\"真值错误\n29. 通知 SSOT + 多重 Bug 修复（复制/Alt框选/启动请求/FAQ图片/保存自动Build/彩蛋面板/涂胶画布）\n30. 深度审查与修复：SSOT 默认值不一致 + 启动 42 次请求 + 静默吞错\n31. DeviceSelection hasUpdate 误报修复 + 初始化状态循环 + preferences override 无变化也回写\n32. CloudPresetCard/MergeModal/ConflictModal/EditParamsModal 系列修复\n33. 云端预设列表只显示 1 个预设的回归修复\n\n### 体验优化\n34. 通知 CopyTemplate + 统一调试能力（Copy JSON/Timeline/Logs/Inspector/Download Session）\n35. Theme Studio Live Sandbox + 预设生命周期平台包 + Pipeline Lab + Playback Mode + 回退三连击\n36. mkp-platform-lab Lab 中文化 + 三级测试报告系统 + Scenario Suite 升级为 4 类场景套件\n37. Host 语义化 + Stepper 选择器 + Keepalive 优化\n38. Theme Engine + Publish Flow + Param Layout 平台包\n39. Interaction Studio + Notification Inspector + V2 Lifecycle 审计\n"
+    },
+    {
+      "channel": "stable",
+      "date": "2026-07-16T20:00:00+08:00",
+      "en": "",
+      "isMajor": true,
+      "order": 1,
+      "release": {
+        "downloadUrl": "",
+        "fileName": "",
+        "fileSize": 0,
+        "hasExe": false,
+        "sha256": ""
+      },
+      "sections": [
+        {
+          "heading": "核心功能",
+          "item": "mkp-platform-lab 演练场：TypingSessionManager + CompositeCommand + Timeline 事件流 + Playground 调试 UX"
+        },
+        {
+          "heading": "核心功能",
+          "item": "foundation 设计令牌 SSOT 包：tokens/variants/themes/icons/motions/recipes + theme-engine（ThemeProvider/TokenRuntime/ThemeLoader）"
+        },
+        {
+          "heading": "核心功能",
+          "item": "design-lab 独立工具项目：Shadow/Tokens Design Lab + Scene 模式 + layoutDemos + 视觉快照回归"
+        },
+        {
+          "heading": "核心功能",
+          "item": "Layout Schema 作为 UI SSOT：SchemaRenderer + registry 按 schema 驱动渲染 + param-layout 包"
+        },
+        {
+          "heading": "核心功能",
+          "item": "UI 组件库统一：mkppanel/mkpsupporte 删除 25+ 本地组件，统一从 mkp-ui 消费"
+        },
+        {
+          "heading": "核心功能",
+          "item": "preset_registry SSOT + Canonical/Alias mismatch 修复 + audit-registry 校验"
+        },
+        {
+          "heading": "核心功能",
+          "item": "application_defaults Entity：appearance/update/ambientIntensity 段，双端统一默认值 SSOT"
+        },
+        {
+          "heading": "核心功能",
+          "item": "Sprint-1 平台能力抽取：Focus/Asset/DesignLab 平台包独立"
+        },
+        {
+          "heading": "核心功能",
+          "item": "Draft 平台包抽取：draftHistoryStore + mutationEventBus 平台化"
+        },
+        {
+          "heading": "核心功能",
+          "item": "后处理器路径范围检测：擦料塔/热床预涂胶路径超范围检测"
+        },
+        {
+          "heading": "架构优化",
+          "item": "阴影配置 SSOT 统一：shadow_config 扩展 8 个 variant + ShadowLab + spatial shadow engine + ambientIntensity"
+        },
+        {
+          "heading": "架构优化",
+          "item": "机型元数据硬编码清理：走 catalog SSOT + Orphan 预设诊断"
+        },
+        {
+          "heading": "架构优化",
+          "item": "M018-M020 架构规则扩展：preset_registry Canonical ID 校验 / YAGNI 禁止过早抽象 / layout_schema 禁止扩展为完整 UI Schema"
+        },
+        {
+          "heading": "架构优化",
+          "item": "BBS 卡 95% 运行时模型 + StuckDetector：诊断下载卡死"
+        },
+        {
+          "heading": "修复",
+          "item": "后处理流水线修复 + Design Studio 雏形 + 机型 mismatch 防呆"
+        },
+        {
+          "heading": "修复",
+          "item": "BBS 下载卡 95% + StuckDetector 诊断"
+        },
+        {
+          "heading": "修复",
+          "item": "Mismatch CLI GUI 弹模态框 + 终端窗口复用 + 参数保存 flush"
+        },
+        {
+          "heading": "修复",
+          "item": "斜肋包围盒保守正方形简化 + brim/sheath 加 2mm 安全余量"
+        },
+        {
+          "heading": "修复",
+          "item": "参数侧边栏点击导航修复"
+        },
+        {
+          "heading": "体验优化",
+          "item": "visual regression demo 包：Gallery + KitchenSink + 视觉快照测试基线"
+        },
+        {
+          "heading": "体验优化",
+          "item": "主题环境光渐变渲染：useAmbientGradient + useSpatialShadowEngine + ambientIntensity stepper"
+        },
+        {
+          "heading": "体验优化",
+          "item": "测试执行策略文档化 + evolve-as-debugger spec"
+        }
+      ],
+      "summary": "## 平台能力抽取与设计令牌 SSOT v0.0.3 (2026-07-16)",
+      "title": "## 平台能力抽取与设计令牌 SSOT v0.0.3 (2026-07-16)",
+      "type": "major",
+      "version": "0.0.3",
+      "zhCN": "## 平台能力抽取与设计令牌 SSOT v0.0.3 (2026-07-16)\n\nv0.0.3 是 mkpse-next 平台化阶段的第一版。本版本将设计令牌、UI 组件、Layout Schema、Draft/Focus/Asset 等平台能力抽取为独立包，建立 mkp-platform-lab 作为平台能力演练场，并通过 M018-M020 规则防止过度平台化。\n\n### 核心功能\n1. mkp-platform-lab 演练场：TypingSessionManager + CompositeCommand + Timeline 事件流 + Playground 调试 UX\n2. foundation 设计令牌 SSOT 包：tokens/variants/themes/icons/motions/recipes + theme-engine（ThemeProvider/TokenRuntime/ThemeLoader）\n3. design-lab 独立工具项目：Shadow/Tokens Design Lab + Scene 模式 + layoutDemos + 视觉快照回归\n4. Layout Schema 作为 UI SSOT：SchemaRenderer + registry 按 schema 驱动渲染 + param-layout 包\n5. UI 组件库统一：mkppanel/mkpsupporte 删除 25+ 本地组件，统一从 mkp-ui 消费\n6. preset_registry SSOT + Canonical/Alias mismatch 修复 + audit-registry 校验\n7. application_defaults Entity：appearance/update/ambientIntensity 段，双端统一默认值 SSOT\n8. Sprint-1 平台能力抽取：Focus/Asset/DesignLab 平台包独立\n9. Draft 平台包抽取：draftHistoryStore + mutationEventBus 平台化\n10. 后处理器路径范围检测：擦料塔/热床预涂胶路径超范围检测\n\n### 架构优化\n11. 阴影配置 SSOT 统一：shadow_config 扩展 8 个 variant + ShadowLab + spatial shadow engine + ambientIntensity\n12. 机型元数据硬编码清理：走 catalog SSOT + Orphan 预设诊断\n13. M018-M020 架构规则扩展：preset_registry Canonical ID 校验 / YAGNI 禁止过早抽象 / layout_schema 禁止扩展为完整 UI Schema\n14. BBS 卡 95% 运行时模型 + StuckDetector：诊断下载卡死\n\n### 修复\n15. 后处理流水线修复 + Design Studio 雏形 + 机型 mismatch 防呆\n16. BBS 下载卡 95% + StuckDetector 诊断\n17. Mismatch CLI GUI 弹模态框 + 终端窗口复用 + 参数保存 flush\n18. 斜肋包围盒保守正方形简化 + brim/sheath 加 2mm 安全余量\n19. 参数侧边栏点击导航修复\n\n### 体验优化\n20. visual regression demo 包：Gallery + KitchenSink + 视觉快照测试基线\n21. 主题环境光渐变渲染：useAmbientGradient + useSpatialShadowEngine + ambientIntensity stepper\n22. 测试执行策略文档化 + evolve-as-debugger spec\n"
+    },
+    {
+      "channel": "stable",
+      "date": "2026-07-12T18:00:00+08:00",
+      "en": "",
+      "isMajor": true,
+      "order": 2,
+      "release": {
+        "downloadUrl": "",
+        "fileName": "",
+        "fileSize": 0,
+        "hasExe": false,
         "sha256": ""
       },
       "sections": [
@@ -108,16 +563,16 @@
       "zhCN": "## Manifest 2.0 SSOT 架构与编辑器平台 v0.0.2 (2026-07-10)\n\nv0.0.2 是 mkpse-next 项目架构重塑的第二个正式版本。本版本建立 Manifest 2.0 SSOT 架构，将内容编辑、构建产物、消费查询三层完全分离，并通过 M001-M016 架构防护规则确保长期不退化。\n\n### 核心功能\n1. Manifest 2.0 SSOT 架构：Entity TOML 编辑层 + Builder 全量生成 Artifact，Panel 永远编辑 Entity、Builder 永远生成 Artifact、主应用只读 Artifact\n2. 架构防护体系：M001-M016 错误码规则 + ESLint 规则 + make audit 审计脚本，多层防护防止架构退化\n3. 编辑器平台重设计：14 个操作型 Command + draftHistoryStore + mutationEventBus，操作型 undo v3\n4. 管线架构统一：focus/search/selection/toast/operation 五大管线双侧（Panel/Supporte）统一\n5. 诊断系统：审计规则引擎（KB-001~009 YAML 规则）+ 打印不变量 + 操作回放 + 诊断案例库\n6. 资产系统 2.0：Import First 原则 + resolver 层 + assetname SSOT 命名包\n7. 禁区编辑器重设计：ForbiddenZone 独立 Entity 拆分（M011），ZoneEditorModal 多边形/矩形/圆形编辑\n8. Bundle 编辑器 + 机型-版本-Bundle 关系简化\n\n### 架构优化\n9. ContentManager 唯一 Gateway：所有 SSOT Content 通过 contentMgr 访问（M012/M013）\n10. 统一引用导航系统：referenceNavigationStore + ReferenceChip/Link + AssetPicker\n11. 参数注册表数据优先重设计 + Override 机制 + 机型变体编辑\n12. 后处理器完整性审计：internal/integrity 模块（block_check/comment_drift/lifecycle_check 等）\n13. 高亮/注意力系统统一：highlightManager + SearchPanel + useScrollHighlight\n\n### 修复\n14. 禁区渲染数据源统一（从 ContentManager 读取 machine_catalog）\n15. pass1 状态机 support ironing 移除不完整导致状态错乱\n16. 塔/擦料塔 bbox brim 扩展修正\n17. undo 快捷键合并 + 高亮生命周期修复\n\n### 体验优化\n18. macOS 中文本地化\n19. 机型图标管理（SvgEditor + svgSanitizer/Validator）\n20. ViewStateStore + 保存前 diff 检查\n21. 开发者诊断页面 workspace 化 + G-code 转换分析器\n"
     },
     {
+      "channel": "stable",
       "date": "2026-07-11T13:00:00+08:00",
       "en": "",
       "isMajor": true,
+      "order": 3,
       "release": {
         "downloadUrl": "",
         "fileName": "",
         "fileSize": 0,
-        "forceUpdate": false,
         "hasExe": false,
-        "minAppVersion": "0.0.1",
         "sha256": ""
       },
       "sections": [
@@ -131,7 +586,7 @@
         },
         {
           "heading": "核心功能",
-          "item": "mkppanel 发布流程：publish_flow + manifest_generate + ManifestViewerPage"
+          "item": "mkppanel 发布流程：publish_flow + publish_status + manifest_generate + ManifestViewerPage"
         },
         {
           "heading": "核心功能",

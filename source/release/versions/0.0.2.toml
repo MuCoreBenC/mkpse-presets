@@ -1,0 +1,48 @@
+version = '0.0.2'
+date = '2026-07-12T18:00:00+08:00'
+channel = 'stable'
+isMajor = true
+order = 2.0
+type = 'major'
+title = '## Manifest 2.0 SSOT 架构与编辑器平台 v0.0.2 (2026-07-10)'
+summary = '## Manifest 2.0 SSOT 架构与编辑器平台 v0.0.2 (2026-07-10)'
+en = ''
+zhCN = "## Manifest 2.0 SSOT 架构与编辑器平台 v0.0.2 (2026-07-10)\n\nv0.0.2 是 mkpse-next 项目架构重塑的第二个正式版本。本版本建立 Manifest 2.0 SSOT 架构，将内容编辑、构建产物、消费查询三层完全分离，并通过 M001-M016 架构防护规则确保长期不退化。\n\n### 核心功能\n1. Manifest 2.0 SSOT 架构：Entity TOML 编辑层 + Builder 全量生成 Artifact，Panel 永远编辑 Entity、Builder 永远生成 Artifact、主应用只读 Artifact\n2. 架构防护体系：M001-M016 错误码规则 + ESLint 规则 + make audit 审计脚本，多层防护防止架构退化\n3. 编辑器平台重设计：14 个操作型 Command + draftHistoryStore + mutationEventBus，操作型 undo v3\n4. 管线架构统一：focus/search/selection/toast/operation 五大管线双侧（Panel/Supporte）统一\n5. 诊断系统：审计规则引擎（KB-001~009 YAML 规则）+ 打印不变量 + 操作回放 + 诊断案例库\n6. 资产系统 2.0：Import First 原则 + resolver 层 + assetname SSOT 命名包\n7. 禁区编辑器重设计：ForbiddenZone 独立 Entity 拆分（M011），ZoneEditorModal 多边形/矩形/圆形编辑\n8. Bundle 编辑器 + 机型-版本-Bundle 关系简化\n\n### 架构优化\n9. ContentManager 唯一 Gateway：所有 SSOT Content 通过 contentMgr 访问（M012/M013）\n10. 统一引用导航系统：referenceNavigationStore + ReferenceChip/Link + AssetPicker\n11. 参数注册表数据优先重设计 + Override 机制 + 机型变体编辑\n12. 后处理器完整性审计：internal/integrity 模块（block_check/comment_drift/lifecycle_check 等）\n13. 高亮/注意力系统统一：highlightManager + SearchPanel + useScrollHighlight\n\n### 修复\n14. 禁区渲染数据源统一（从 ContentManager 读取 machine_catalog）\n15. pass1 状态机 support ironing 移除不完整导致状态错乱\n16. 塔/擦料塔 bbox brim 扩展修正\n17. undo 快捷键合并 + 高亮生命周期修复\n\n### 体验优化\n18. macOS 中文本地化\n19. 机型图标管理（SvgEditor + svgSanitizer/Validator）\n20. ViewStateStore + 保存前 diff 检查\n21. 开发者诊断页面 workspace 化 + G-code 转换分析器\n"
+
+[sections]
+'核心功能' = [
+  'Manifest 2.0 SSOT 架构：Entity TOML 编辑层 + Builder 全量生成 Artifact，Panel 永远编辑 Entity、Builder 永远生成 Artifact、主应用只读 Artifact',
+  '架构防护体系：M001-M016 错误码规则 + ESLint 规则 + make audit 审计脚本，多层防护防止架构退化',
+  '编辑器平台重设计：14 个操作型 Command + draftHistoryStore + mutationEventBus，操作型 undo v3',
+  '管线架构统一：focus/search/selection/toast/operation 五大管线双侧（Panel/Supporte）统一',
+  '诊断系统：审计规则引擎（KB-001~009 YAML 规则）+ 打印不变量 + 操作回放 + 诊断案例库',
+  '资产系统 2.0：Import First 原则 + resolver 层 + assetname SSOT 命名包',
+  '禁区编辑器重设计：ForbiddenZone 独立 Entity 拆分（M011），ZoneEditorModal 多边形/矩形/圆形编辑',
+  'Bundle 编辑器 + 机型-版本-Bundle 关系简化',
+]
+'架构优化' = [
+  'ContentManager 唯一 Gateway：所有 SSOT Content 通过 contentMgr 访问（M012/M013）',
+  '统一引用导航系统：referenceNavigationStore + ReferenceChip/Link + AssetPicker',
+  '参数注册表数据优先重设计 + Override 机制 + 机型变体编辑',
+  '后处理器完整性审计：internal/integrity 模块（block_check/comment_drift/lifecycle_check 等）',
+  '高亮/注意力系统统一：highlightManager + SearchPanel + useScrollHighlight',
+]
+'修复' = [
+  '禁区渲染数据源统一（从 ContentManager 读取 machine_catalog）',
+  'pass1 状态机 support ironing 移除不完整导致状态错乱',
+  '塔/擦料塔 bbox brim 扩展修正',
+  'undo 快捷键合并 + 高亮生命周期修复',
+]
+'体验优化' = [
+  'macOS 中文本地化',
+  '机型图标管理（SvgEditor + svgSanitizer/Validator）',
+  'ViewStateStore + 保存前 diff 检查',
+  '开发者诊断页面 workspace 化 + G-code 转换分析器',
+]
+
+[release]
+downloadUrl = ''
+fileName = ''
+fileSize = 0.0
+hasExe = false
+sha256 = ''

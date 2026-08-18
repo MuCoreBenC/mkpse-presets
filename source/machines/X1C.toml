@@ -2,10 +2,10 @@ id = 'X1C'
 name = ''
 display = 'X1C'
 brand = 'Bambu Lab'
-machineKey = ''
+defaultBundle = 'X1C_default'
 externalAliases = ['X1', 'X1S', 'X1E', 'X1 Carbon', 'X1CARBON']
 image = 'x1c.webp'
-icon = 'enclosed'
+icon = 'p1s'
 
 [dimensions]
 edgeZone = 10.0
@@ -47,7 +47,6 @@ minY = 0.0
 [[versions]]
 id = 'LITE'
 name = 'lite版'
-machineKey = 'X1C:LITE'
 presetFile = 'X1.toml'
 recommendedBundle = 'X1C_default'
 tag = '推荐'

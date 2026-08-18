@@ -1,0 +1,26 @@
+# Theme Studio Token Source
+
+[radius]
+sm = "8px"
+md = "12px"
+lg = "15px"
+card = "14px"
+button = "8px"
+
+[shadow]
+cardSm = "0 7.6px 13.3px -12.35px rgba(0, 0, 0, 0.03), 14.44px 5.7px 17.1px -12.35px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0), inset 0 1px 0 rgba(255, 255, 255, 0.3)"
+cardLg = "0 10px 25px -6.5px rgba(0, 0, 0, 0.09), 8px 3px 27px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(0, 0, 0, 0), inset 0 1px 0 rgba(255, 255, 255, 0.4)"
+
+[color]
+primaryRgb = "59, 130, 246"
+
+[motion]
+durationFast = "150ms"
+durationNormal = "250ms"
+durationSlow = "400ms"
+durationSlower = "600ms"
+easeLinear = "linear"
+easeIn = "cubic-bezier(0.4, 0, 1, 1)"
+easeOut = "cubic-bezier(0, 0, 0.2, 1)"
+easeInOut = "cubic-bezier(0.4, 0, 0.2, 1)"
+easeSpring = "cubic-bezier(0.34, 1.56, 0.64, 1)"

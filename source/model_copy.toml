@@ -5,7 +5,7 @@ testModelMakerWorld = 'https://makerworld.com.cn/zh/models/2395687-yu-wei-ce-shi
 
 [[models]]
 description = '基础平面涂胶验证，检验涂胶笔基础功能与 Z 轴偏移精度，确认笔尖出胶状态与高度定位是否正常。'
-image = 'assets/models/model_平面z轴测试.webp'
+image = 'assets/models/model_平面Z轴测试.webp'
 modelFile = 'MKP_support_test_models.3mf'
 order = 1.0
 subtitle = 'Z-Axis Calib'
@@ -19,7 +19,7 @@ label = '基础验证'
 
 [[models]]
 description = '高精度测试 X/Y/Z 轴基础偏移量，精确检测校准状态与笔尖质量，验证半圆弧面的涂胶轨迹精度。'
-image = 'assets/models/model_半圆xy校准.webp'
+image = 'assets/models/model_半圆XY校准.webp'
 modelFile = 'MKP_support_test_models.3mf'
 order = 2.0
 subtitle = 'XY Calibration'
@@ -89,7 +89,7 @@ label = '极限测试'
 
 [[models]]
 description = '一个较高、支撑面较多的模型可以充分测试使用BMCU时是否冲刷'
-image = 'assets/models/model_bmcu冲刷测试.webp'
+image = 'assets/models/model_BMCU冲刷测试.webp'
 isNew = true
 modelFile = 'Precise_Calibration.3mf'
 order = 7.0

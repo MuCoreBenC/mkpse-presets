@@ -1,0 +1,66 @@
+version = '0.0.4'
+date = '2026-07-29T20:00:00+08:00'
+channel = 'stable'
+isMajor = true
+order = 0.0
+type = 'major'
+title = '## 五层架构解耦与预设生命周期 V2 v0.0.4 (2026-07-29)'
+summary = '## 五层架构解耦与预设生命周期 V2 v0.0.4 (2026-07-29)'
+en = ''
+zhCN = "## 五层架构解耦与预设生命周期 V2 v0.0.4 (2026-07-29)\n\nv0.0.4 是 mkpse-next 平台化深化阶段版本。本版本完成五层架构解耦（Adapter 层 + Repository 模式 + ESLint 架构守护），重构预设生命周期 V2（Preset Lifecycle 平台包 + hasUpdate 单源派生），建立统一内容/资源/排序管线，并修复下载应用流程静默失败等关键 Bug。\n\n### 核心功能\n1. 五层架构解耦：前端 Adapter 层 + 后端 Repository 模式 + ESLint no-direct-wailsjs 架构守护\n2. 通知系统 V2：Content 化 + Selection Coordinator 工作流 + Notification Inspector + @mkp/diagnostics 平台包\n3. 预设生命周期 V2：Preset Lifecycle 平台包 + hasUpdate 单源派生 + ListLocalPresets 诊断增强\n4. 统一内容管线 (Unified Content Pipeline)：useContent 单一入口 + 远程 Provider 架构 + ContentLab\n5. 统一资源管线 (Unified Resource Pipeline)：6 套状态枚举统一为 ResourceStatus\n6. 统一排序引擎：@mkp/order 平台包 + onMove 拖拽语义 + 6 个页面列表排序统一迁移\n7. 平台包抽取：@mkp/preset-components + @mkp/preset-update + @mkp/preset-ui + @mkp/diagnostics + @mkp/text-selection\n8. selection-behavior 平台包：resolvePrimaryButton 主按钮决策 + SelectionSession 状态模型\n9. 后处理引擎 V2：四层架构 SSOT 统一，三套 ProcessGcode 收敛为单一 Engine 内核\n10. 策略驱动设置重构：Baseline 隐藏目录 + Content Top Accesses\n11. 树编辑器体验升级：递归 depth + 三区域布局 + TreeRow/useTreeExpansion/useTreeSearch 平台包\n12. Layout 纯 Presentation：Tab/Section 一等实体 + SchemaRenderer 按 schema 驱动渲染\n13. mkp-prototype 视觉对齐旧版 + enhanced 组件与 design-notes\n14. MKP DevTools Console + M036 Runtime Lock\n\n### 架构优化\n15. Adapter 层：前端 UI 组件与 Wails 后端完全解耦，统一通过 Adapter 访问后端能力\n16. Repository 模式：后端 internal/repository 封装数据访问，分离业务逻辑与路径处理\n17. ESLint 架构守护：no-direct-wailsjs 规则 + audit-five-layer.sh + generate-harness-report.mjs\n18. Registry as Definition SSOT：Tab/Section 一等实体 + Layout 纯 Presentation 全栈落地\n19. 统一 React 单实例：18.2 → 18.3.1 + Rule M026 + CI 审计脚本\n20. 删除两套 MCP server：收敛为 source/*.toml 单一编辑入口\n21. Notification Renderer 拆分 panel/supporte 双轨 + BaselineSHA 双比较修复\n22. NotificationCard 共享组件提取，Panel/Supporte Toast 收敛为薄壳\n23. 参数顺序 SSOT 落地 + subfieldsOrder 所有权澄清\n24. preset-update 重构：statusMapper → presetState，状态派生统一\n\n### 修复\n25. 下载应用流程静默失败修复：applyPreset 锁阻塞改为抛错 + isVersionDownloaded 文件级判断 + 移除 done 后台下载\n26. DeviceSelection 主卡片计数与文案解耦 + 版本范围过滤防 pendingBar 计数污染\n27. Preset Lifecycle 状态源统一：FileRegistry key 规范化 + pending* helper 家族\n28. Preset Lifecycle 状态模型修复：区分 applied/imported/pending_import，消除\"已下载仍提示更新\"真值错误\n29. 通知 SSOT + 多重 Bug 修复（复制/Alt框选/启动请求/FAQ图片/保存自动Build/彩蛋面板/涂胶画布）\n30. 深度审查与修复：SSOT 默认值不一致 + 启动 42 次请求 + 静默吞错\n31. DeviceSelection hasUpdate 误报修复 + 初始化状态循环 + preferences override 无变化也回写\n32. CloudPresetCard/MergeModal/ConflictModal/EditParamsModal 系列修复\n33. 云端预设列表只显示 1 个预设的回归修复\n\n### 体验优化\n34. 通知 CopyTemplate + 统一调试能力（Copy JSON/Timeline/Logs/Inspector/Download Session）\n35. Theme Studio Live Sandbox + 预设生命周期平台包 + Pipeline Lab + Playback Mode + 回退三连击\n36. mkp-platform-lab Lab 中文化 + 三级测试报告系统 + Scenario Suite 升级为 4 类场景套件\n37. Host 语义化 + Stepper 选择器 + Keepalive 优化\n38. Theme Engine + Publish Flow + Param Layout 平台包\n39. Interaction Studio + Notification Inspector + V2 Lifecycle 审计\n"
+
+[sections]
+'核心功能' = [
+  '五层架构解耦：前端 Adapter 层 + 后端 Repository 模式 + ESLint no-direct-wailsjs 架构守护',
+  '通知系统 V2：Content 化 + Selection Coordinator 工作流 + Notification Inspector + @mkp/diagnostics 平台包',
+  '预设生命周期 V2：Preset Lifecycle 平台包 + hasUpdate 单源派生 + ListLocalPresets 诊断增强',
+  '统一内容管线 (Unified Content Pipeline)：useContent 单一入口 + 远程 Provider 架构 + ContentLab',
+  '统一资源管线 (Unified Resource Pipeline)：6 套状态枚举统一为 ResourceStatus',
+  '统一排序引擎：@mkp/order 平台包 + onMove 拖拽语义 + 6 个页面列表排序统一迁移',
+  '平台包抽取：@mkp/preset-components + @mkp/preset-update + @mkp/preset-ui + @mkp/diagnostics + @mkp/text-selection',
+  'selection-behavior 平台包：resolvePrimaryButton 主按钮决策 + SelectionSession 状态模型',
+  '后处理引擎 V2：四层架构 SSOT 统一，三套 ProcessGcode 收敛为单一 Engine 内核',
+  '策略驱动设置重构：Baseline 隐藏目录 + Content Top Accesses',
+  '树编辑器体验升级：递归 depth + 三区域布局 + TreeRow/useTreeExpansion/useTreeSearch 平台包',
+  'Layout 纯 Presentation：Tab/Section 一等实体 + SchemaRenderer 按 schema 驱动渲染',
+  'mkp-prototype 视觉对齐旧版 + enhanced 组件与 design-notes',
+  'MKP DevTools Console + M036 Runtime Lock',
+]
+'架构优化' = [
+  'Adapter 层：前端 UI 组件与 Wails 后端完全解耦，统一通过 Adapter 访问后端能力',
+  'Repository 模式：后端 internal/repository 封装数据访问，分离业务逻辑与路径处理',
+  'ESLint 架构守护：no-direct-wailsjs 规则 + audit-five-layer.sh + generate-harness-report.mjs',
+  'Registry as Definition SSOT：Tab/Section 一等实体 + Layout 纯 Presentation 全栈落地',
+  '统一 React 单实例：18.2 → 18.3.1 + Rule M026 + CI 审计脚本',
+  '删除两套 MCP server：收敛为 source/*.toml 单一编辑入口',
+  'Notification Renderer 拆分 panel/supporte 双轨 + BaselineSHA 双比较修复',
+  'NotificationCard 共享组件提取，Panel/Supporte Toast 收敛为薄壳',
+  '参数顺序 SSOT 落地 + subfieldsOrder 所有权澄清',
+  'preset-update 重构：statusMapper → presetState，状态派生统一',
+]
+'修复' = [
+  '下载应用流程静默失败修复：applyPreset 锁阻塞改为抛错 + isVersionDownloaded 文件级判断 + 移除 done 后台下载',
+  'DeviceSelection 主卡片计数与文案解耦 + 版本范围过滤防 pendingBar 计数污染',
+  'Preset Lifecycle 状态源统一：FileRegistry key 规范化 + pending* helper 家族',
+  'Preset Lifecycle 状态模型修复：区分 applied/imported/pending_import，消除"已下载仍提示更新"真值错误',
+  '通知 SSOT + 多重 Bug 修复（复制/Alt框选/启动请求/FAQ图片/保存自动Build/彩蛋面板/涂胶画布）',
+  '深度审查与修复：SSOT 默认值不一致 + 启动 42 次请求 + 静默吞错',
+  'DeviceSelection hasUpdate 误报修复 + 初始化状态循环 + preferences override 无变化也回写',
+  'CloudPresetCard/MergeModal/ConflictModal/EditParamsModal 系列修复',
+  '云端预设列表只显示 1 个预设的回归修复',
+]
+'体验优化' = [
+  '通知 CopyTemplate + 统一调试能力（Copy JSON/Timeline/Logs/Inspector/Download Session）',
+  'Theme Studio Live Sandbox + 预设生命周期平台包 + Pipeline Lab + Playback Mode + 回退三连击',
+  'mkp-platform-lab Lab 中文化 + 三级测试报告系统 + Scenario Suite 升级为 4 类场景套件',
+  'Host 语义化 + Stepper 选择器 + Keepalive 优化',
+  'Theme Engine + Publish Flow + Param Layout 平台包',
+  'Interaction Studio + Notification Inspector + V2 Lifecycle 审计',
+]
+
+[release]
+downloadUrl = ''
+fileName = ''
+fileSize = 0.0
+hasExe = false
+sha256 = ''

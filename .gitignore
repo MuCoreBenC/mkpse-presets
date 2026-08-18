@@ -1,3 +1,6 @@
 
 # Builder 本地构建缓存（增量构建 dirty 检测，不应提交）
 .build_cache.json
+
+# macOS Finder 自动生成，不应提交（被跟踪的 .DS_Store 会导致工作区无故变脏）
+.DS_Store

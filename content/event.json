@@ -1,0 +1,198 @@
+{
+  "event": {
+    "apply": {
+      "category": [
+        "Preset",
+        "Apply"
+      ],
+      "description": "",
+      "notifications": [
+        "preset.apply.unapplied",
+        "preset.apply.deployedToSlicers",
+        "preset.apply.nowUsing",
+        "preset.apply.updateFileGone",
+        "preset.apply.noParamUpdate",
+        "param.apply.applied"
+      ],
+      "title": "应用预设"
+    },
+    "calibration": {
+      "category": [
+        "Calibration"
+      ],
+      "description": "",
+      "notifications": [
+        "calibration.history.restored",
+        "calibration.history.offsetApplied",
+        "calibration.history.unpinned",
+        "calibration.history.pinned",
+        "calibration.history.unlocked",
+        "calibration.history.locked",
+        "calibration.history.nothingToClear",
+        "calibration.history.clearedWithProtected",
+        "calibration.history.clearedAll",
+        "calibration.history.batchDeleted",
+        "calibration.history.nothingToDelete",
+        "calibration.history.singleDeleted",
+        "calibration.complete.success"
+      ],
+      "title": "校准操作"
+    },
+    "clipboard": {
+      "category": [
+        "Preset",
+        "Clipboard"
+      ],
+      "description": "",
+      "notifications": [
+        "preset.clipboard.pasted",
+        "preset.clipboard.copied"
+      ],
+      "title": "剪贴板操作"
+    },
+    "config": {
+      "category": [
+        "Config"
+      ],
+      "description": "",
+      "notifications": [
+        "config.dir.located",
+        "config.reset.success"
+      ],
+      "title": "配置目录"
+    },
+    "crud": {
+      "category": [
+        "Preset",
+        "CRUD"
+      ],
+      "description": "",
+      "notifications": [
+        "preset.crud.renamed",
+        "preset.crud.savedAs",
+        "preset.crud.restoredFromTrash",
+        "preset.crud.editing",
+        "preset.crud.permanentlyDeleted",
+        "preset.crud.trashEmptied"
+      ],
+      "title": "预设增删改"
+    },
+    "download": {
+      "category": [
+        "Preset",
+        "Download"
+      ],
+      "description": "",
+      "notifications": [
+        "preset.download.success",
+        "preset.download.deployedToSlicers",
+        "preset.download.deployFailed",
+        "preset.download.deployFailedWithMsg",
+        "preset.download.alreadyLatest",
+        "preset.download.genericSuccess",
+        "preset.download.busy"
+      ],
+      "title": "下载预设"
+    },
+    "file": {
+      "category": [
+        "File"
+      ],
+      "description": "",
+      "notifications": [
+        "file.operation.successToast",
+        "file.load.error"
+      ],
+      "title": "文件操作"
+    },
+    "machine": {
+      "category": [
+        "Machine"
+      ],
+      "description": "",
+      "notifications": [
+        "machine.mismatch.userCancelled",
+        "machine.mismatch.calibrationTimeout",
+        "machine.mismatch.waitTimeout",
+        "machine.mismatch.manuallyReset",
+        "machine.connect.success",
+        "machine.notfound.error"
+      ],
+      "title": "机型管理"
+    },
+    "merge": {
+      "category": [
+        "Preset",
+        "Merge"
+      ],
+      "description": "",
+      "notifications": [
+        "preset.merge.applied",
+        "preset.merge.appliedWithKept",
+        "preset.merge.discarded",
+        "preset.merge.restored",
+        "preset.merge.undoMerge"
+      ],
+      "title": "合并预设"
+    },
+    "refresh": {
+      "category": [
+        "Preset",
+        "Refresh"
+      ],
+      "description": "",
+      "notifications": [
+        "preset.refresh.success",
+        "machine.catalog.refreshed"
+      ],
+      "title": "刷新列表"
+    },
+    "shadow": {
+      "category": [
+        "Shadow"
+      ],
+      "description": "",
+      "notifications": [
+        "shadow.config.loadFailed",
+        "shadow.config.saved"
+      ],
+      "title": "阴影配置"
+    },
+    "startup": {
+      "category": [
+        "Startup"
+      ],
+      "description": "",
+      "notifications": [
+        "startup.cache.autoCleaned",
+        "startup.init.info"
+      ],
+      "title": "启动初始化"
+    },
+    "undo": {
+      "category": [
+        "Preset",
+        "Undo"
+      ],
+      "description": "",
+      "notifications": [
+        "preset.undo.undoDelete",
+        "preset.undo.undoRename",
+        "preset.undo.redoDelete",
+        "preset.undo.redoRename"
+      ],
+      "title": "撤销/重做"
+    },
+    "update": {
+      "category": [
+        "Update"
+      ],
+      "description": "",
+      "notifications": [
+        "update.autoOnClose",
+        "update.available.info"
+      ],
+      "title": "应用更新"
+    }
+  }
+}

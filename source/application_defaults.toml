@@ -1,0 +1,67 @@
+[appearance]
+ambientIntensity = 2.0
+screenshotMode = 'frontend'
+themeColor = 'blue'
+themeMode = 'light'
+
+[bed_glue]
+allModels = false
+enabled = false
+glueBottomDedupMode = 'dedup'
+glueBottomEnabled = false
+
+[calibration]
+beginStageRetractEnabled = true
+beginStageRetractZLiftMm = 20.0
+skipVibrationCalibration = true
+xyCalibrationDwellSec = 3.0
+zCalibrationDwellSec = 2.0
+
+[interaction]
+autoCopyScriptOnApply = true
+is3DEnabled = true
+isWaterEnabled = true
+miniModeOnStartup = false
+notificationAutoCollapse = true
+onboardingEnabled = true
+processResultFloatingSidebarEnabled = false
+
+[post_process]
+autoCloseSeconds = 10.0
+mode = 'gui'
+notifyOnPostProcessComplete = true
+showPostProcessResult = true
+
+[sync_policy]
+ambientIntensity = 'initialize'
+autoCloseSeconds = 'initialize'
+autoCopyScriptOnApply = 'readonly'
+autoUpdate = 'initialize'
+bedGlueAllModels = 'initialize'
+bedGlueEnabled = 'initialize'
+beginStageRetractEnabled = 'initialize'
+beginStageRetractZLiftMm = 'initialize'
+cacheAlertEnabled = 'initialize'
+cacheAutoCleanEnabled = 'initialize'
+cacheAutoCleanRetainDays = 'initialize'
+glueBottomDedupMode = 'initialize'
+glueBottomEnabled = 'initialize'
+is3DEnabled = 'initialize'
+notifyOnPostProcessComplete = 'initialize'
+onboardingEnabled = 'initialize'
+postProcessMode = 'initialize'
+processResultFloatingSidebarEnabled = 'managed_once'
+screenshotMode = 'initialize'
+showPostProcessResult = 'initialize'
+skipVibrationCalibration = 'initialize'
+soundEnabled = 'initialize'
+themeColor = 'initialize'
+themeMode = 'initialize'
+updatePreference = 'initialize'
+xyCalibrationDwellSec = 'initialize'
+zCalibrationDwellSec = 'initialize'
+
+[update]
+cacheAutoCleanEnabled = true
+cacheAutoCleanRetainDays = 7.0
+updatePreference = 'remind'

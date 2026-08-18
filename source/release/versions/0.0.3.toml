@@ -1,0 +1,49 @@
+version = '0.0.3'
+date = '2026-07-16T20:00:00+08:00'
+channel = 'stable'
+isMajor = true
+order = 1.0
+type = 'major'
+title = '## 平台能力抽取与设计令牌 SSOT v0.0.3 (2026-07-16)'
+summary = '## 平台能力抽取与设计令牌 SSOT v0.0.3 (2026-07-16)'
+en = ''
+zhCN = "## 平台能力抽取与设计令牌 SSOT v0.0.3 (2026-07-16)\n\nv0.0.3 是 mkpse-next 平台化阶段的第一版。本版本将设计令牌、UI 组件、Layout Schema、Draft/Focus/Asset 等平台能力抽取为独立包，建立 mkp-platform-lab 作为平台能力演练场，并通过 M018-M020 规则防止过度平台化。\n\n### 核心功能\n1. mkp-platform-lab 演练场：TypingSessionManager + CompositeCommand + Timeline 事件流 + Playground 调试 UX\n2. foundation 设计令牌 SSOT 包：tokens/variants/themes/icons/motions/recipes + theme-engine（ThemeProvider/TokenRuntime/ThemeLoader）\n3. design-lab 独立工具项目：Shadow/Tokens Design Lab + Scene 模式 + layoutDemos + 视觉快照回归\n4. Layout Schema 作为 UI SSOT：SchemaRenderer + registry 按 schema 驱动渲染 + param-layout 包\n5. UI 组件库统一：mkppanel/mkpsupporte 删除 25+ 本地组件，统一从 mkp-ui 消费\n6. preset_registry SSOT + Canonical/Alias mismatch 修复 + audit-registry 校验\n7. application_defaults Entity：appearance/update/ambientIntensity 段，双端统一默认值 SSOT\n8. Sprint-1 平台能力抽取：Focus/Asset/DesignLab 平台包独立\n9. Draft 平台包抽取：draftHistoryStore + mutationEventBus 平台化\n10. 后处理器路径范围检测：擦料塔/热床预涂胶路径超范围检测\n\n### 架构优化\n11. 阴影配置 SSOT 统一：shadow_config 扩展 8 个 variant + ShadowLab + spatial shadow engine + ambientIntensity\n12. 机型元数据硬编码清理：走 catalog SSOT + Orphan 预设诊断\n13. M018-M020 架构规则扩展：preset_registry Canonical ID 校验 / YAGNI 禁止过早抽象 / layout_schema 禁止扩展为完整 UI Schema\n14. BBS 卡 95% 运行时模型 + StuckDetector：诊断下载卡死\n\n### 修复\n15. 后处理流水线修复 + Design Studio 雏形 + 机型 mismatch 防呆\n16. BBS 下载卡 95% + StuckDetector 诊断\n17. Mismatch CLI GUI 弹模态框 + 终端窗口复用 + 参数保存 flush\n18. 斜肋包围盒保守正方形简化 + brim/sheath 加 2mm 安全余量\n19. 参数侧边栏点击导航修复\n\n### 体验优化\n20. visual regression demo 包：Gallery + KitchenSink + 视觉快照测试基线\n21. 主题环境光渐变渲染：useAmbientGradient + useSpatialShadowEngine + ambientIntensity stepper\n22. 测试执行策略文档化 + evolve-as-debugger spec\n"
+
+[sections]
+'核心功能' = [
+  'mkp-platform-lab 演练场：TypingSessionManager + CompositeCommand + Timeline 事件流 + Playground 调试 UX',
+  'foundation 设计令牌 SSOT 包：tokens/variants/themes/icons/motions/recipes + theme-engine（ThemeProvider/TokenRuntime/ThemeLoader）',
+  'design-lab 独立工具项目：Shadow/Tokens Design Lab + Scene 模式 + layoutDemos + 视觉快照回归',
+  'Layout Schema 作为 UI SSOT：SchemaRenderer + registry 按 schema 驱动渲染 + param-layout 包',
+  'UI 组件库统一：mkppanel/mkpsupporte 删除 25+ 本地组件，统一从 mkp-ui 消费',
+  'preset_registry SSOT + Canonical/Alias mismatch 修复 + audit-registry 校验',
+  'application_defaults Entity：appearance/update/ambientIntensity 段，双端统一默认值 SSOT',
+  'Sprint-1 平台能力抽取：Focus/Asset/DesignLab 平台包独立',
+  'Draft 平台包抽取：draftHistoryStore + mutationEventBus 平台化',
+  '后处理器路径范围检测：擦料塔/热床预涂胶路径超范围检测',
+]
+'架构优化' = [
+  '阴影配置 SSOT 统一：shadow_config 扩展 8 个 variant + ShadowLab + spatial shadow engine + ambientIntensity',
+  '机型元数据硬编码清理：走 catalog SSOT + Orphan 预设诊断',
+  'M018-M020 架构规则扩展：preset_registry Canonical ID 校验 / YAGNI 禁止过早抽象 / layout_schema 禁止扩展为完整 UI Schema',
+  'BBS 卡 95% 运行时模型 + StuckDetector：诊断下载卡死',
+]
+'修复' = [
+  '后处理流水线修复 + Design Studio 雏形 + 机型 mismatch 防呆',
+  'BBS 下载卡 95% + StuckDetector 诊断',
+  'Mismatch CLI GUI 弹模态框 + 终端窗口复用 + 参数保存 flush',
+  '斜肋包围盒保守正方形简化 + brim/sheath 加 2mm 安全余量',
+  '参数侧边栏点击导航修复',
+]
+'体验优化' = [
+  'visual regression demo 包：Gallery + KitchenSink + 视觉快照测试基线',
+  '主题环境光渐变渲染：useAmbientGradient + useSpatialShadowEngine + ambientIntensity stepper',
+  '测试执行策略文档化 + evolve-as-debugger spec',
+]
+
+[release]
+downloadUrl = ''
+fileName = ''
+fileSize = 0.0
+hasExe = false
+sha256 = ''

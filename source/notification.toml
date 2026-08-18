@@ -1,0 +1,1282 @@
+# notification.toml — 通知文案 SSOT (v2 七组字段架构)
+#
+# 所有 Supporte 业务代码通过 notify(id) 调用，不硬编码文案。
+# id 即 TOML 表名（如 preset.download.success），与 Supporte 现有 i18n key 对齐便于迁移。
+#
+# v2 字段说明（七组）：
+#   --- Identity ---
+#   title       - 通知标题（可空字符串）
+#   message     - 通知正文（支持 {{param}} Mustache 占位符）
+#   --- Display ---
+#   level       - info | success | warning | error | progress
+#   icon        - 图标名（optional，playground/preview spec 使用）
+#   duration    - 自动关闭时长（毫秒，0 表示不自动关闭；persistent=true 时忽略）
+#   persistent  - 是否持久通知（true 表示需用户手动关闭）
+#   --- Documentation ---
+#   description - 通知语义说明（optional，知识中心展示）
+#   category    - 业务分类数组（如 ['Preset']，按 ID 前缀推导）
+#   tags        - 标签数组（optional，后续增量填充）
+#   --- Trigger ---
+#   triggers    - 触发场景数组 [[<id>.triggers]]（optional，label/page/component/action/description）
+#   --- Source ---
+#   sources     - 调用点数组 [[<id>.sources]]（file/line/function/label/owner/auto）
+#                 owner = 业务归属（如 "Preset Download"），auto = true 表示 Builder 自动提取
+#   --- Relations ---
+#   related     - 关联通知数组 [[<id>.related]]（optional，id/reason/group/auto）
+#   --- Metadata ---
+#   event       - 引用 event ID（optional，event-domain spec 预留字段）
+#   deprecated  - 是否废弃（optional，缺省 false）
+#   since       - 引入版本（optional，后续增量填充）
+#
+# ID 命名规则：[a-z0-9.]+，遵循 <module>.<scenario>.<status> 模式
+# Level/Duration 默认值：success/info/progress=3000ms, warning=4000ms, error=5000ms, persistent=0
+#
+# category 推导规则（按 ID 前缀）：
+#   preset→['Preset'], param→['Param'], calibration→['Calibration'], machine→['Machine'],
+#   update→['Update'], shadow→['Shadow'], startup→['Startup'], config→['Config'], file→['File'],
+#   postprocess→['PostProcess']
+#
+# 总 ID 数：83（含 12 个未来扩展占位 ID + 71 个实际调用点引用的 ID）
+# 71 个 ID 的 sources 从 migration-map.md 转录（auto=false 表示人工播种）
+# 完整调用点 → ID 映射见 .trae/specs/migrate-toast-to-notify-api/migration-map.md
+
+# ===== 预设模块（preset.*）— 39 个 ID =====
+
+# --- 下载场景（i18n-key） ---
+[preset.download.success]
+title = ''
+message = '✓ {{name}} 下载完成'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.download.success.sources]]
+file = 'pages/PresetManager/hooks/usePresetDownload.ts'
+line = 103
+function = 'downloadPreset'
+auto = false
+
+[[preset.download.success.sources]]
+file = 'pages/PresetManager/hooks/usePresetDownload.ts'
+line = 109
+function = 'downloadPreset'
+auto = false
+
+[preset.download.deployedToSlicers]
+title = ''
+message = '✓ {{name}} 已下载并部署到 {{count}} 个切片器用户目录，重启切片器后生效'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.download.deployedToSlicers.sources]]
+file = 'pages/PresetManager/hooks/usePresetDownload.ts'
+line = 99
+function = 'downloadPreset'
+auto = false
+
+[preset.download.deployFailed]
+title = ''
+message = '✓ {{name}} 下载完成，但自动部署失败: {{error}}'
+level = 'warning'
+duration = 4000
+persistent = false
+category = ['Preset']
+
+[[preset.download.deployFailed.sources]]
+file = 'pages/PresetManager/hooks/usePresetDownload.ts'
+line = 101
+function = 'downloadPreset'
+auto = false
+
+[[preset.download.deployFailed.actions]]
+id = 'retry'
+label = '重新下载'
+icon = 'refresh-cw'
+variant = 'primary'
+handler = 'preset.retry'
+order = 0
+
+[[preset.download.deployFailed.actions]]
+id = 'copy_error'
+label = '复制错误'
+icon = 'copy'
+variant = 'secondary'
+handler = 'system.copy_error'
+order = 1
+
+[[preset.download.deployFailed.actions]]
+id = 'view_log'
+label = '查看日志'
+icon = 'external-link'
+variant = 'ghost'
+handler = 'system.open_log'
+order = 2
+
+[preset.download.deployFailedWithMsg]
+title = ''
+message = '✓ {{name}} 下载完成，但部署失败: {{error}}'
+level = 'warning'
+duration = 4000
+persistent = false
+category = ['Preset']
+
+[[preset.download.deployFailedWithMsg.sources]]
+file = 'pages/PresetManager/hooks/usePresetDownload.ts'
+line = 111
+function = 'downloadPreset'
+auto = false
+
+[[preset.download.deployFailedWithMsg.sources]]
+file = 'pages/PresetManager/hooks/usePresetDownload.ts'
+line = 114
+function = 'downloadPreset'
+auto = false
+
+[preset.download.alreadyLatest]
+title = ''
+message = '✓ 已是最新版本'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.download.alreadyLatest.sources]]
+file = 'pages/PresetManager/hooks/usePresetDownload.ts'
+line = 119
+function = 'downloadPreset'
+auto = false
+
+[preset.download.genericSuccess]
+title = ''
+message = '✓ 下载完成'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.download.genericSuccess.sources]]
+file = 'pages/PresetManager/hooks/usePresetDownload.ts'
+line = 121
+function = 'downloadPreset'
+auto = false
+
+[[preset.download.genericSuccess.sources]]
+file = 'pages/PresetManager/hooks/usePresetDownload.ts'
+line = 125
+function = 'downloadPreset'
+auto = false
+
+[preset.download.busy]
+title = ''
+message = '已有下载任务进行中'
+level = 'warning'
+duration = 4000
+persistent = false
+category = ['Preset']
+
+[[preset.download.busy.sources]]
+file = 'pages/PresetManager/hooks/usePresetDownload.ts'
+line = 154
+function = 'downloadPreset'
+auto = false
+
+# --- 刷新场景（i18n-key） ---
+[preset.refresh.success]
+title = ''
+message = '✓ 预设列表已刷新'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.refresh.success.sources]]
+file = 'pages/PresetManager/hooks/usePresetDownload.ts'
+line = 216
+function = 'refreshPresets'
+auto = false
+
+# --- 应用场景（i18n-key） ---
+[preset.apply.unapplied]
+title = ''
+message = '已取消应用'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.apply.unapplied.sources]]
+file = 'pages/PresetManager/hooks/usePresetApply.ts'
+line = 95
+function = 'unapplyPreset'
+auto = false
+
+[preset.apply.deployedToSlicers]
+title = ''
+message = '已部署到所有切片器: {{name}}'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.apply.deployedToSlicers.sources]]
+file = 'pages/PresetManager/hooks/usePresetApply.ts'
+line = 136
+function = 'applyPreset'
+auto = false
+
+[preset.apply.nowUsing]
+title = ''
+message = '当前正在使用: {{name}}'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.apply.nowUsing.sources]]
+file = 'pages/PresetManager/hooks/usePresetApply.ts'
+line = 180
+function = 'applyPreset'
+auto = false
+
+[preset.apply.updateFileGone]
+title = ''
+message = '更新文件已不存在，请重新检测更新'
+level = 'error'
+duration = 5000
+persistent = false
+category = ['Preset']
+
+[[preset.apply.updateFileGone.sources]]
+file = 'pages/PresetManager/hooks/usePresetApply.ts'
+line = 233
+function = 'applyUpdate'
+auto = false
+
+[[preset.apply.updateFileGone.actions]]
+id = 'retry'
+label = '重试'
+icon = 'refresh-cw'
+variant = 'primary'
+handler = 'preset.retry'
+order = 0
+
+[[preset.apply.updateFileGone.actions]]
+id = 'view_log'
+label = '查看日志'
+icon = 'external-link'
+variant = 'ghost'
+handler = 'system.open_log'
+order = 1
+
+[preset.apply.noParamUpdate]
+title = ''
+message = '下载完成，但未发现任何参数更新'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.apply.noParamUpdate.sources]]
+file = 'pages/PresetManager/hooks/usePresetApply.ts'
+line = 238
+function = 'applyUpdate'
+auto = false
+
+# --- CRUD 场景（i18n-key） ---
+[preset.crud.renamed]
+title = ''
+message = '预设已重命名'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.crud.renamed.sources]]
+file = 'pages/PresetManager/hooks/usePresetCRUD.ts'
+line = 133
+function = 'renamePreset'
+auto = false
+
+[[preset.crud.renamed.sources]]
+file = 'pages/PresetManager/hooks/usePresetCRUD.ts'
+line = 144
+function = 'renamePreset'
+auto = false
+
+[preset.crud.savedAs]
+title = ''
+message = '预设已另存为: {{name}}'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.crud.savedAs.sources]]
+file = 'pages/PresetManager/hooks/usePresetCRUD.ts'
+line = 195
+function = 'saveAsPreset'
+auto = false
+
+[preset.crud.restoredFromTrash]
+title = ''
+message = '{{name}} 已从回收站恢复'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.crud.restoredFromTrash.sources]]
+file = 'pages/PresetManager/hooks/usePresetCRUD.ts'
+line = 218
+function = 'restoreFromTrash'
+auto = false
+
+[preset.crud.editing]
+title = ''
+message = '正在编辑: {{name}}'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.crud.editing.sources]]
+file = 'pages/PresetManager/hooks/usePresetCRUD.ts'
+line = 266
+function = 'editPreset'
+auto = false
+
+[preset.crud.permanentlyDeleted]
+title = ''
+message = '{{name}} 已永久删除'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.crud.permanentlyDeleted.sources]]
+file = 'pages/PresetManager/hooks/usePresetCRUD.ts'
+line = 297
+function = 'permanentlyDeletePreset'
+auto = false
+
+[preset.crud.trashEmptied]
+title = ''
+message = '回收站已清空'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.crud.trashEmptied.sources]]
+file = 'pages/PresetManager/hooks/usePresetCRUD.ts'
+line = 333
+function = 'emptyTrash'
+auto = false
+
+# --- 合并场景（i18n-key + 新增组合 ID） ---
+[preset.merge.applied]
+title = ''
+message = '已应用预设: {{name}}'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.merge.applied.sources]]
+file = 'pages/PresetManager/hooks/usePresetMerge.ts'
+line = 67
+function = 'applyMerge'
+auto = false
+
+[preset.merge.appliedWithKept]
+title = ''
+message = '已应用预设: {{name}}（保留{{kept}}）'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.merge.appliedWithKept.sources]]
+file = 'pages/PresetManager/hooks/usePresetMerge.ts'
+line = 67
+function = 'applyMerge'
+auto = false
+
+[preset.merge.discarded]
+title = ''
+message = '已舍弃 {{name}} 的更新'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.merge.discarded.sources]]
+file = 'pages/PresetManager/hooks/usePresetMerge.ts'
+line = 138
+function = 'discardMerge'
+auto = false
+
+[preset.merge.restored]
+title = ''
+message = '{{name}} 已恢复'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.merge.restored.sources]]
+file = 'pages/PresetManager/hooks/usePresetMerge.ts'
+line = 165
+function = 'restoreMerge'
+auto = false
+
+[preset.merge.undoMerge]
+title = ''
+message = '{{name}} 已成功撤回至修改前'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.merge.undoMerge.sources]]
+file = 'pages/PresetManager/hooks/usePresetMerge.ts'
+line = 176
+function = 'undoMerge'
+auto = false
+
+# --- 剪贴板场景（i18n-key） ---
+[preset.clipboard.pasted]
+title = ''
+message = '已粘贴 {{count}} 个参数'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.clipboard.pasted.sources]]
+file = 'pages/PresetManager/hooks/usePresetClipboard.ts'
+line = 68
+function = 'pasteParams'
+auto = false
+
+[preset.clipboard.copied]
+title = ''
+message = '已复制 {{count}} 个参数'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.clipboard.copied.sources]]
+file = 'pages/PresetManager/hooks/usePresetClipboard.ts'
+line = 132
+function = 'copyParams'
+auto = false
+
+# --- 撤销/重做场景（i18n-key） ---
+[preset.undo.undoDelete]
+title = ''
+message = '已撤回删除'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.undo.undoDelete.sources]]
+file = 'pages/PresetManager/usePresetUndoRedo.ts'
+line = 45
+function = 'undo'
+auto = false
+
+[preset.undo.undoRename]
+title = ''
+message = '已撤回重命名'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.undo.undoRename.sources]]
+file = 'pages/PresetManager/usePresetUndoRedo.ts'
+line = 58
+function = 'undo'
+auto = false
+
+[preset.undo.redoDelete]
+title = ''
+message = '已重做删除'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.undo.redoDelete.sources]]
+file = 'pages/PresetManager/usePresetUndoRedo.ts'
+line = 87
+function = 'redo'
+auto = false
+
+[preset.undo.redoRename]
+title = ''
+message = '已重做重命名'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.undo.redoRename.sources]]
+file = 'pages/PresetManager/usePresetUndoRedo.ts'
+line = 99
+function = 'redo'
+auto = false
+
+# --- 右键菜单场景（i18n-key） ---
+[preset.contextMenu.scriptCopied]
+title = ''
+message = '后处理脚本已复制到剪贴板'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.contextMenu.scriptCopied.sources]]
+file = 'pages/PresetManager/usePresetContextMenu.tsx'
+line = 78
+function = 'copyScript'
+auto = false
+
+[preset.contextMenu.updateCacheDeleted]
+title = ''
+message = '更新缓存文件已删除'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.contextMenu.updateCacheDeleted.sources]]
+file = 'pages/PresetManager/usePresetContextMenu.tsx'
+line = 101
+function = 'deleteUpdateCache'
+auto = false
+
+# --- 侧边栏场景（原硬编码） ---
+[preset.sidebar.applied]
+title = ''
+message = '已应用预设: {{name}}'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.sidebar.applied.sources]]
+file = 'components/organisms/PresetBrowserSidebar/PresetBrowserSidebar.tsx'
+line = 115
+function = 'applyPreset'
+auto = false
+
+[preset.sidebar.switchedAndApplied]
+title = ''
+message = '已切换机型并应用: {{name}}'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.sidebar.switchedAndApplied.sources]]
+file = 'components/organisms/PresetBrowserSidebar/PresetBrowserSidebar.tsx'
+line = 128
+function = 'switchAndApplyPreset'
+auto = false
+
+# --- 弹窗场景（原硬编码） ---
+[preset.modals.localApplied]
+title = ''
+message = '已应用本地版本，云端更新仍保留'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.modals.localApplied.sources]]
+file = 'pages/PresetManager/PresetModals.tsx'
+line = 544
+function = 'applyLocalVersion'
+auto = false
+
+[preset.modals.devDiffView]
+title = ''
+message = '已进入开发者代码 Diff 视图（再次点击 Tab 退出）'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[[preset.modals.devDiffView.sources]]
+file = 'pages/PresetManager/PresetModals.tsx'
+line = 568
+function = 'toggleDevDiffView'
+auto = false
+
+# --- 管理器页面（原硬编码） ---
+[preset.manager.notFoundLocal]
+title = ''
+message = '本地未找到该预设，请先下载'
+level = 'error'
+duration = 5000
+persistent = false
+category = ['Preset']
+
+[[preset.manager.notFoundLocal.sources]]
+file = 'pages/PresetManager/PresetManagerPage.tsx'
+line = 212
+function = 'handlePresetAction'
+auto = false
+
+# --- 占位 ID（种子保留，未来扩展用） ---
+[preset.update.success]
+title = '预设更新'
+message = '预设 {{name}} 已更新'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+[preset.delete.success]
+title = '预设删除'
+message = '预设 {{name}} 已删除'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Preset']
+
+# ===== 参数模块（param.*）— 14 个 ID =====
+
+# --- 保存场景（i18n-key） ---
+[param.save.noChanges]
+title = ''
+message = '参数无变更，已跳过保存'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Param']
+
+[[param.save.noChanges.sources]]
+file = 'pages/Params/useParamSave.ts'
+line = 99
+function = 'saveParams'
+auto = false
+
+[param.save.deprecatedReverted]
+title = ''
+message = '有参数已弃用，已自动恢复'
+level = 'warning'
+duration = 4000
+persistent = false
+category = ['Param']
+
+[[param.save.deprecatedReverted.sources]]
+file = 'pages/Params/useParamSave.ts'
+line = 160
+function = 'saveParams'
+auto = false
+
+[param.save.deprecatedRevertedCount]
+title = ''
+message = '已恢复 {{count}} 个弃用参数'
+level = 'warning'
+duration = 4000
+persistent = false
+category = ['Param']
+
+[[param.save.deprecatedRevertedCount.sources]]
+file = 'pages/Params/ParamsPage.tsx'
+line = 301
+function = 'saveParams'
+auto = false
+
+# --- 原始代码编辑（i18n-key） ---
+[param.rawEdit.saved]
+title = ''
+message = '原始代码已保存'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Param']
+
+[[param.rawEdit.saved.sources]]
+file = 'pages/Params/useRawEdit.ts'
+line = 163
+function = 'saveRawEdit'
+auto = false
+
+# --- 历史记录（i18n-key） ---
+[param.history.cleared]
+title = ''
+message = '历史记录已清空'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Param']
+
+[[param.history.cleared.sources]]
+file = 'pages/Params/useVersionHistory.ts'
+line = 371
+function = 'clearHistory'
+auto = false
+
+[param.history.deleted]
+title = ''
+message = '历史记录已删除'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Param']
+
+[[param.history.deleted.sources]]
+file = 'pages/Params/useVersionHistory.ts'
+line = 420
+function = 'deleteHistory'
+auto = false
+
+# --- 注册表（i18n-key） ---
+[param.registry.reloadSuccess]
+title = ''
+message = '已重载预设参数定义'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Param']
+
+[[param.registry.reloadSuccess.sources]]
+file = 'pages/Params/ParamsPage.tsx'
+line = 274
+function = 'reloadRegistry'
+auto = false
+
+[param.registry.reloadFailed]
+title = ''
+message = '重载失败：{{error}}'
+level = 'warning'
+duration = 4000
+persistent = false
+category = ['Param']
+
+[[param.registry.reloadFailed.sources]]
+file = 'pages/Params/ParamsPage.tsx'
+line = 276
+function = 'reloadRegistry'
+auto = false
+
+[[param.registry.reloadFailed.actions]]
+id = 'retry'
+label = '重试'
+icon = 'refresh-cw'
+variant = 'primary'
+handler = 'preset.retry'
+order = 0
+
+[[param.registry.reloadFailed.actions]]
+id = 'copy_error'
+label = '复制错误'
+icon = 'copy'
+variant = 'secondary'
+handler = 'system.copy_error'
+order = 1
+
+# --- 应用预设（i18n-key） ---
+[param.apply.applied]
+title = ''
+message = '已应用预设: {{name}}'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Param']
+
+[[param.apply.applied.sources]]
+file = 'pages/Params/ParamsPage.tsx'
+line = 391
+function = 'applyPreset'
+auto = false
+
+[param.apply.returned]
+title = ''
+message = '已回到: {{name}}'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Param']
+
+[[param.apply.returned.sources]]
+file = 'pages/Params/ParamsPage.tsx'
+line = 397
+function = 'returnToPreset'
+auto = false
+
+# --- TOML 切换/恢复（i18n-key） ---
+[param.toml.defaultsRestored]
+title = ''
+message = '已恢复为云端默认值（偏移值已保留）'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Param']
+
+[[param.toml.defaultsRestored.sources]]
+file = 'pages/Params/useTomlManager.ts'
+line = 587
+function = 'restoreDefaults'
+auto = false
+
+[param.toml.switched]
+title = ''
+message = '已切换到: {{name}}'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Param']
+
+[[param.toml.switched.sources]]
+file = 'pages/Params/useTomlManager.ts'
+line = 640
+function = 'switchToml'
+auto = false
+
+# --- 占位 ID（种子保留） ---
+[param.save.success]
+title = '参数保存'
+message = '参数已保存'
+level = 'success'
+duration = 2000
+persistent = false
+category = ['Param']
+
+[param.invalid.error]
+title = '参数错误'
+message = '参数 {{key}} 的值无效，请检查后重试'
+level = 'error'
+duration = 5000
+persistent = true
+category = ['Param']
+
+# ===== 校准模块（calibration.*）— 13 个 ID =====
+
+# --- 历史记录操作（原硬编码，useCalibrationHistory.ts） ---
+[calibration.history.restored]
+title = ''
+message = '已恢复至历史校准参数'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Calibration']
+
+[[calibration.history.restored.sources]]
+file = 'pages/Calibration/useCalibrationHistory.ts'
+line = 157
+function = 'restoreHistory'
+auto = false
+
+[calibration.history.offsetApplied]
+title = ''
+message = '已应用该使用记录的偏移值'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Calibration']
+
+[[calibration.history.offsetApplied.sources]]
+file = 'pages/Calibration/useCalibrationHistory.ts'
+line = 194
+function = 'applyOffset'
+auto = false
+
+[calibration.history.unpinned]
+title = ''
+message = '已取消置顶'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Calibration']
+
+[[calibration.history.unpinned.sources]]
+file = 'pages/Calibration/useCalibrationHistory.ts'
+line = 233
+function = 'unpin'
+auto = false
+
+[calibration.history.pinned]
+title = ''
+message = '已置顶'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Calibration']
+
+[[calibration.history.pinned.sources]]
+file = 'pages/Calibration/useCalibrationHistory.ts'
+line = 234
+function = 'pin'
+auto = false
+
+[calibration.history.unlocked]
+title = ''
+message = '已解锁'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Calibration']
+
+[[calibration.history.unlocked.sources]]
+file = 'pages/Calibration/useCalibrationHistory.ts'
+line = 242
+function = 'unlock'
+auto = false
+
+[calibration.history.locked]
+title = ''
+message = '已锁定'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Calibration']
+
+[[calibration.history.locked.sources]]
+file = 'pages/Calibration/useCalibrationHistory.ts'
+line = 243
+function = 'lock'
+auto = false
+
+[calibration.history.nothingToClear]
+title = ''
+message = '无可清空的记录（全部已锁定或置顶）'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Calibration']
+
+[[calibration.history.nothingToClear.sources]]
+file = 'pages/Calibration/useCalibrationHistory.ts'
+line = 283
+function = 'clearHistory'
+auto = false
+
+[calibration.history.clearedWithProtected]
+title = ''
+message = '已清空 {{successCount}} 条记录，{{protectedCount}} 条锁定/置顶记录已保留'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Calibration']
+
+[[calibration.history.clearedWithProtected.sources]]
+file = 'pages/Calibration/useCalibrationHistory.ts'
+line = 298
+function = 'clearHistory'
+auto = false
+
+[calibration.history.clearedAll]
+title = ''
+message = '校准历史已清空'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Calibration']
+
+[[calibration.history.clearedAll.sources]]
+file = 'pages/Calibration/useCalibrationHistory.ts'
+line = 298
+function = 'clearHistory'
+auto = false
+
+[calibration.history.batchDeleted]
+title = ''
+message = '已删除 {{count}} 条记录'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Calibration']
+
+[[calibration.history.batchDeleted.sources]]
+file = 'pages/Calibration/useCalibrationHistory.ts'
+line = 345
+function = 'batchDelete'
+auto = false
+
+[calibration.history.nothingToDelete]
+title = ''
+message = '无可删除的记录（可能已锁定或置顶）'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Calibration']
+
+[[calibration.history.nothingToDelete.sources]]
+file = 'pages/Calibration/useCalibrationHistory.ts'
+line = 349
+function = 'batchDelete'
+auto = false
+
+[calibration.history.singleDeleted]
+title = ''
+message = '已删除该条记录'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Calibration']
+
+[[calibration.history.singleDeleted.sources]]
+file = 'pages/Calibration/useCalibrationHistory.ts'
+line = 369
+function = 'deleteSingle'
+auto = false
+
+# --- 占位 ID（种子保留） ---
+[calibration.complete.success]
+title = '校准完成'
+message = '机型 {{machine}} 校准已完成'
+level = 'success'
+duration = 4000
+persistent = false
+category = ['Calibration']
+
+# ===== 后处理模块（postprocess.*）— 1 个 ID =====
+
+# --- 用户在进度模态框主动取消后处理 ---
+# 区别于 machine.mismatch.manuallyReset（设置页「重置后处理状态」）：
+# 这条是用户在处理进行中点了「取消」，走 CancelActiveGUIProcess（rc.RequestCancel）。
+[postprocess.cancelled]
+title = ''
+message = '已取消后处理'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['PostProcess']
+
+[[postprocess.cancelled.sources]]
+file = 'components/molecules/ProcessingModal/ProcessingModalContainer.tsx'
+line = 240
+function = 'handleAction'
+auto = false
+
+# ===== 设备/机型模块（machine.*）— 7 个 ID =====
+
+# --- 机型不匹配系列（原硬编码，useStartupBootstrap.ts） ---
+[machine.mismatch.userCancelled]
+title = ''
+message = '机型不匹配：用户取消处理'
+level = 'error'
+duration = 5000
+persistent = false
+category = ['Machine']
+
+[[machine.mismatch.userCancelled.sources]]
+file = 'app/useStartupBootstrap.ts'
+line = 225
+function = 'handleMachineMismatch'
+auto = false
+
+[machine.mismatch.calibrationTimeout]
+title = ''
+message = '校准处理超时，已自动重置'
+level = 'warning'
+duration = 4000
+persistent = false
+category = ['Machine']
+
+[[machine.mismatch.calibrationTimeout.sources]]
+file = 'app/useStartupBootstrap.ts'
+line = 273
+function = 'handleMachineMismatch'
+auto = false
+
+[machine.mismatch.waitTimeout]
+title = ''
+message = '机型不匹配：等待 5 分钟超时，已自动取消处理'
+level = 'error'
+duration = 5000
+persistent = false
+category = ['Machine']
+
+[[machine.mismatch.waitTimeout.sources]]
+file = 'app/useStartupBootstrap.ts'
+line = 311
+function = 'handleMachineMismatch'
+auto = false
+
+[machine.mismatch.manuallyReset]
+title = ''
+message = '后处理状态已重置'
+level = 'success'
+duration = 4000
+persistent = false
+category = ['Machine']
+
+[[machine.mismatch.manuallyReset.sources]]
+file = 'app/useStartupBootstrap.ts'
+line = 324
+function = 'handleMachineMismatch'
+auto = false
+
+# --- 机型目录（原硬编码，DeviceSelectionPage.tsx） ---
+[machine.catalog.refreshed]
+title = ''
+message = '机型目录已刷新'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Machine']
+
+[[machine.catalog.refreshed.sources]]
+file = 'pages/DeviceSelection/DeviceSelectionPage.tsx'
+line = 116
+function = 'refreshCatalog'
+auto = false
+
+# --- 占位 ID（种子保留） ---
+[machine.connect.success]
+title = '机型连接'
+message = '机型 {{machine}} 已连接'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Machine']
+
+[machine.notfound.error]
+title = '机型缺失'
+message = '未找到机型 {{id}}，请检查机型目录'
+level = 'error'
+duration = 5000
+persistent = true
+category = ['Machine']
+
+# ===== 更新模块（update.*）— 2 个 ID =====
+
+# --- 关闭时更新（原硬编码，UpdateBootstrap.tsx） ---
+[update.autoOnClose]
+title = ''
+message = '将在关闭应用时自动更新'
+level = 'info'
+duration = 3000
+persistent = false
+category = ['Update']
+
+[[update.autoOnClose.sources]]
+file = 'app/UpdateBootstrap.tsx'
+line = 297
+function = 'setAutoUpdate'
+auto = false
+
+# --- 占位 ID（种子保留） ---
+[update.available.info]
+title = '发现新版本'
+message = '发现新版本 {{version}}，点击立即更新'
+level = 'info'
+duration = 0
+persistent = true
+category = ['Update']
+
+# ===== 阴影配置模块（shadow.*）— 2 个 ID =====
+
+# --- 加载失败（原硬编码，useShadowConfigFromSSOT.ts） ---
+[shadow.config.loadFailed]
+title = ''
+message = '阴影配置加载失败：{{error}}'
+level = 'error'
+duration = 5000
+persistent = false
+category = ['Shadow']
+
+[[shadow.config.loadFailed.sources]]
+file = 'hooks/useShadowConfigFromSSOT.ts'
+line = 83
+function = 'loadShadowConfig'
+auto = false
+
+# --- 占位 ID（种子保留） ---
+[shadow.config.saved]
+title = '涂胶配置'
+message = '涂胶配置已保存'
+level = 'success'
+duration = 2000
+persistent = false
+category = ['Shadow']
+
+# ===== 启动/缓存模块（startup.*）— 2 个 ID =====
+
+# --- 自动清理缓存（原硬编码，useStartupBootstrap.ts） ---
+[startup.cache.autoCleaned]
+title = ''
+message = '已自动清理 {{size}} 旧缓存'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Startup']
+
+[[startup.cache.autoCleaned.sources]]
+file = 'app/useStartupBootstrap.ts'
+line = 640
+function = 'cleanOldCache'
+auto = false
+
+# --- 占位 ID（种子保留） ---
+[startup.init.info]
+title = '启动初始化'
+message = '应用初始化完成'
+level = 'info'
+duration = 2000
+persistent = false
+category = ['Startup']
+
+# ===== 配置目录模块（config.*）— 2 个 ID =====
+
+# --- 数据目录定位（原硬编码，ConfigDirNotifier.tsx） ---
+[config.dir.located]
+title = ''
+message = '数据目录已定位到: {{path}}'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['Config']
+
+[[config.dir.located.sources]]
+file = 'app/notifiers/ConfigDirNotifier.tsx'
+line = 33
+function = 'locateConfigDir'
+auto = false
+
+# --- 占位 ID（种子保留） ---
+[config.reset.success]
+title = '配置重置'
+message = '配置已恢复为默认值'
+level = 'warning'
+duration = 4000
+persistent = false
+category = ['Config']
+
+# ===== 文件操作模块（file.*）— 2 个 ID =====
+
+# --- 参数化成功通知（useFileOperation.ts，successToast 选项） ---
+[file.operation.successToast]
+title = ''
+message = '{{message}}'
+level = 'success'
+duration = 3000
+persistent = false
+category = ['File']
+
+[[file.operation.successToast.sources]]
+file = 'hooks/useFileOperation.ts'
+line = 111
+function = 'performFileOperation'
+auto = false
+
+# --- 占位 ID（种子保留） ---
+[file.load.error]
+title = '文件加载失败'
+message = '文件 {{path}} 加载失败，请检查文件是否存在或格式是否正确'
+level = 'error'
+duration = 5000
+persistent = true
+category = ['File']

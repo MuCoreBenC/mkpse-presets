@@ -12,16 +12,17 @@
         "id": "A1",
         "name": "",
         "display": "A1",
-        "machineKey": "",
-        "defaultBundle": "",
-        "aliases": [],
+        "defaultBundle": "A1_default",
+        "externalAliases": [
+          "A1C",
+          "A1F"
+        ],
         "image": "a1.webp",
-        "icon": "gantry",
+        "icon": "a1",
         "versions": [
           {
             "id": "STANDARD",
             "name": "标准版",
-            "machineKey": "A1:STANDARD",
             "presetFile": "A1.toml",
             "recommendedBundle": "A1_default",
             "tag": "推荐",
@@ -30,7 +31,6 @@
           {
             "id": "FAST",
             "name": "快拆版6月以前",
-            "machineKey": "A1:FAST",
             "presetFile": "A1F.toml",
             "recommendedBundle": "A1_default",
             "tag": "热门",
@@ -39,7 +39,6 @@
           {
             "id": "FASTV3.3",
             "name": "快拆版260628",
-            "machineKey": "A1:FASTV3.3",
             "presetFile": "A1F_260628.toml",
             "recommendedBundle": "A1_default",
             "tag": "最新",
@@ -51,16 +50,20 @@
         "id": "A1_MINI",
         "name": "",
         "display": "A1 mini",
-        "machineKey": "",
-        "defaultBundle": "",
-        "aliases": [],
+        "defaultBundle": "A1_MINI_default",
+        "externalAliases": [
+          "A1MINI",
+          "A1M",
+          "A1MC",
+          "A1MQ",
+          "A1MF"
+        ],
         "image": "a1_mini.webp",
-        "icon": "cantilever",
+        "icon": "a1_mini",
         "versions": [
           {
             "id": "STANDARD",
             "name": "标准版",
-            "machineKey": "A1_MINI:STANDARD",
             "presetFile": "A1M.toml",
             "recommendedBundle": "A1_MINI_default",
             "tag": "推荐",
@@ -69,7 +72,6 @@
           {
             "id": "FAST",
             "name": "快拆版6月以前",
-            "machineKey": "A1_MINI:FAST",
             "presetFile": "A1MF.toml",
             "recommendedBundle": "A1_MINI_default",
             "tag": "热门",
@@ -78,7 +80,6 @@
           {
             "id": "FASTV3.3",
             "name": "快拆版260628",
-            "machineKey": "A1_MINI:FASTV3.3",
             "presetFile": "A1MF_260628.toml",
             "recommendedBundle": "A1_MINI_default",
             "tag": "最新",
@@ -90,16 +91,14 @@
         "id": "A2L",
         "name": "",
         "display": "A2L",
-        "machineKey": "",
         "defaultBundle": "",
-        "aliases": [],
+        "externalAliases": [],
         "image": "",
-        "icon": "gantry",
+        "icon": "a1",
         "versions": [
           {
             "id": "STANDARD",
             "name": "标准版",
-            "machineKey": "A2L:STANDARD",
             "presetFile": "",
             "recommendedBundle": "",
             "tag": "",
@@ -111,16 +110,19 @@
         "id": "P1S",
         "name": "",
         "display": "P1S",
-        "machineKey": "",
-        "defaultBundle": "",
-        "aliases": [],
+        "defaultBundle": "P1S_default",
+        "externalAliases": [
+          "P1",
+          "P1SC",
+          "P1P",
+          "P1C"
+        ],
         "image": "p1s.webp",
-        "icon": "enclosed",
+        "icon": "p1s",
         "versions": [
           {
             "id": "LITE",
             "name": "lite版",
-            "machineKey": "P1S:LITE",
             "presetFile": "P1.toml",
             "recommendedBundle": "P1S_default",
             "tag": "推荐",
@@ -132,16 +134,16 @@
         "id": "P2S",
         "name": "",
         "display": "P2S",
-        "machineKey": "",
-        "defaultBundle": "",
-        "aliases": [],
+        "defaultBundle": "P2S_default",
+        "externalAliases": [
+          "P2"
+        ],
         "image": "p2s.webp",
-        "icon": "enclosed",
+        "icon": "p1s",
         "versions": [
           {
             "id": "STANDARD",
             "name": "标准版",
-            "machineKey": "P2S:STANDARD",
             "presetFile": "P2.toml",
             "recommendedBundle": "P2S_default",
             "tag": "推荐",
@@ -153,16 +155,20 @@
         "id": "X1C",
         "name": "",
         "display": "X1C",
-        "machineKey": "",
-        "defaultBundle": "",
-        "aliases": [],
+        "defaultBundle": "X1C_default",
+        "externalAliases": [
+          "X1",
+          "X1S",
+          "X1E",
+          "X1 Carbon",
+          "X1CARBON"
+        ],
         "image": "x1c.webp",
-        "icon": "enclosed",
+        "icon": "p1s",
         "versions": [
           {
             "id": "LITE",
             "name": "lite版",
-            "machineKey": "X1C:LITE",
             "presetFile": "X1.toml",
             "recommendedBundle": "X1C_default",
             "tag": "推荐",
@@ -197,7 +203,7 @@
       },
       "glueArea": {
         "glueMaxX": 260,
-        "glueMaxY": 225,
+        "glueMaxY": 255,
         "glueMinX": -40,
         "glueMinY": 0,
         "wipeX": 252
@@ -234,7 +240,7 @@
       },
       "glueArea": {
         "glueMaxX": 180,
-        "glueMaxY": 155,
+        "glueMaxY": 180,
         "glueMinX": -10,
         "glueMinY": 0,
         "wipeX": 160

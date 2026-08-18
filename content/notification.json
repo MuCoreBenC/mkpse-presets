@@ -1,0 +1,2008 @@
+{
+  "calibration": {
+    "complete": {
+      "success": {
+        "category": [
+          "Calibration"
+        ],
+        "duration": 4000,
+        "event": "calibration",
+        "level": "success",
+        "message": "机型 {{machine}} 校准已完成",
+        "persistent": false,
+        "title": "校准完成"
+      }
+    },
+    "history": {
+      "batchDeleted": {
+        "category": [
+          "Calibration"
+        ],
+        "duration": 3000,
+        "event": "calibration",
+        "level": "success",
+        "message": "已删除 {{count}} 条记录",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/Calibration/useCalibrationHistory.ts",
+            "line": 345,
+            "function": "batchDelete",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "clearedAll": {
+        "category": [
+          "Calibration"
+        ],
+        "duration": 3000,
+        "event": "calibration",
+        "level": "success",
+        "message": "校准历史已清空",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/Calibration/useCalibrationHistory.ts",
+            "line": 298,
+            "function": "clearHistory",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "clearedWithProtected": {
+        "category": [
+          "Calibration"
+        ],
+        "duration": 3000,
+        "event": "calibration",
+        "level": "success",
+        "message": "已清空 {{successCount}} 条记录，{{protectedCount}} 条锁定/置顶记录已保留",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/Calibration/useCalibrationHistory.ts",
+            "line": 298,
+            "function": "clearHistory",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "locked": {
+        "category": [
+          "Calibration"
+        ],
+        "duration": 3000,
+        "event": "calibration",
+        "level": "success",
+        "message": "已锁定",
+        "persistent": false,
+        "related": [
+          {
+            "auto": true,
+            "id": "calibration.history.pinned"
+          },
+          {
+            "auto": true,
+            "id": "calibration.history.restored"
+          },
+          {
+            "auto": true,
+            "id": "calibration.history.unlocked"
+          },
+          {
+            "auto": true,
+            "id": "calibration.history.unpinned"
+          }
+        ],
+        "sources": [
+          {
+            "file": "pages/Calibration/useCalibrationHistory.ts",
+            "line": 243,
+            "function": "lock",
+            "auto": false
+          },
+          {
+            "file": "pages/Calibration/useCalibrationHistory.ts",
+            "line": 241,
+            "function": "count",
+            "owner": "Calibration",
+            "auto": true
+          }
+        ],
+        "title": ""
+      },
+      "nothingToClear": {
+        "category": [
+          "Calibration"
+        ],
+        "duration": 3000,
+        "event": "calibration",
+        "level": "info",
+        "message": "无可清空的记录（全部已锁定或置顶）",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/Calibration/useCalibrationHistory.ts",
+            "line": 283,
+            "function": "clearHistory",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "nothingToDelete": {
+        "category": [
+          "Calibration"
+        ],
+        "duration": 3000,
+        "event": "calibration",
+        "level": "info",
+        "message": "无可删除的记录（可能已锁定或置顶）",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/Calibration/useCalibrationHistory.ts",
+            "line": 349,
+            "function": "batchDelete",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "offsetApplied": {
+        "category": [
+          "Calibration"
+        ],
+        "duration": 3000,
+        "event": "calibration",
+        "level": "info",
+        "message": "已应用该使用记录的偏移值",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/Calibration/useCalibrationHistory.ts",
+            "line": 194,
+            "function": "applyOffset",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "pinned": {
+        "category": [
+          "Calibration"
+        ],
+        "duration": 3000,
+        "event": "calibration",
+        "level": "success",
+        "message": "已置顶",
+        "persistent": false,
+        "related": [
+          {
+            "auto": true,
+            "id": "calibration.history.locked"
+          },
+          {
+            "auto": true,
+            "id": "calibration.history.restored"
+          },
+          {
+            "auto": true,
+            "id": "calibration.history.unlocked"
+          },
+          {
+            "auto": true,
+            "id": "calibration.history.unpinned"
+          }
+        ],
+        "sources": [
+          {
+            "file": "pages/Calibration/useCalibrationHistory.ts",
+            "line": 234,
+            "function": "pin",
+            "auto": false
+          },
+          {
+            "file": "pages/Calibration/useCalibrationHistory.ts",
+            "line": 232,
+            "function": "count",
+            "owner": "Calibration",
+            "auto": true
+          }
+        ],
+        "title": ""
+      },
+      "restored": {
+        "category": [
+          "Calibration"
+        ],
+        "duration": 3000,
+        "event": "calibration",
+        "level": "info",
+        "message": "已恢复至历史校准参数",
+        "persistent": false,
+        "related": [
+          {
+            "auto": true,
+            "id": "calibration.history.locked"
+          },
+          {
+            "auto": true,
+            "id": "calibration.history.pinned"
+          },
+          {
+            "auto": true,
+            "id": "calibration.history.unlocked"
+          },
+          {
+            "auto": true,
+            "id": "calibration.history.unpinned"
+          }
+        ],
+        "sources": [
+          {
+            "file": "pages/Calibration/useCalibrationHistory.ts",
+            "line": 157,
+            "function": "restoreHistory",
+            "auto": false
+          },
+          {
+            "file": "pages/Calibration/useCalibrationHistory.ts",
+            "line": 155,
+            "function": "count",
+            "owner": "Calibration",
+            "auto": true
+          }
+        ],
+        "title": ""
+      },
+      "singleDeleted": {
+        "category": [
+          "Calibration"
+        ],
+        "duration": 3000,
+        "event": "calibration",
+        "level": "success",
+        "message": "已删除该条记录",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/Calibration/useCalibrationHistory.ts",
+            "line": 369,
+            "function": "deleteSingle",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "unlocked": {
+        "category": [
+          "Calibration"
+        ],
+        "duration": 3000,
+        "event": "calibration",
+        "level": "info",
+        "message": "已解锁",
+        "persistent": false,
+        "related": [
+          {
+            "auto": true,
+            "id": "calibration.history.locked"
+          },
+          {
+            "auto": true,
+            "id": "calibration.history.pinned"
+          },
+          {
+            "auto": true,
+            "id": "calibration.history.restored"
+          },
+          {
+            "auto": true,
+            "id": "calibration.history.unpinned"
+          }
+        ],
+        "sources": [
+          {
+            "file": "pages/Calibration/useCalibrationHistory.ts",
+            "line": 242,
+            "function": "unlock",
+            "auto": false
+          },
+          {
+            "file": "pages/Calibration/useCalibrationHistory.ts",
+            "line": 240,
+            "function": "count",
+            "owner": "Calibration",
+            "auto": true
+          }
+        ],
+        "title": ""
+      },
+      "unpinned": {
+        "category": [
+          "Calibration"
+        ],
+        "duration": 3000,
+        "event": "calibration",
+        "level": "info",
+        "message": "已取消置顶",
+        "persistent": false,
+        "related": [
+          {
+            "auto": true,
+            "id": "calibration.history.locked"
+          },
+          {
+            "auto": true,
+            "id": "calibration.history.pinned"
+          },
+          {
+            "auto": true,
+            "id": "calibration.history.restored"
+          },
+          {
+            "auto": true,
+            "id": "calibration.history.unlocked"
+          }
+        ],
+        "sources": [
+          {
+            "file": "pages/Calibration/useCalibrationHistory.ts",
+            "line": 233,
+            "function": "unpin",
+            "auto": false
+          },
+          {
+            "file": "pages/Calibration/useCalibrationHistory.ts",
+            "line": 231,
+            "function": "count",
+            "owner": "Calibration",
+            "auto": true
+          }
+        ],
+        "title": ""
+      }
+    }
+  },
+  "config": {
+    "dir": {
+      "located": {
+        "category": [
+          "Config"
+        ],
+        "duration": 3000,
+        "event": "config",
+        "level": "success",
+        "message": "数据目录已定位到: {{path}}",
+        "persistent": false,
+        "related": [
+          {
+            "auto": true,
+            "id": "postprocess.cancelled"
+          }
+        ],
+        "sources": [
+          {
+            "file": "app/notifiers/ConfigDirNotifier.tsx",
+            "line": 33,
+            "function": "locateConfigDir",
+            "auto": false
+          }
+        ],
+        "title": ""
+      }
+    },
+    "reset": {
+      "success": {
+        "category": [
+          "Config"
+        ],
+        "duration": 4000,
+        "event": "config",
+        "level": "warning",
+        "message": "配置已恢复为默认值",
+        "persistent": false,
+        "title": "配置重置"
+      }
+    }
+  },
+  "file": {
+    "load": {
+      "error": {
+        "category": [
+          "File"
+        ],
+        "duration": 5000,
+        "event": "file",
+        "level": "error",
+        "message": "文件 {{path}} 加载失败，请检查文件是否存在或格式是否正确",
+        "persistent": true,
+        "title": "文件加载失败"
+      }
+    },
+    "operation": {
+      "successToast": {
+        "category": [
+          "File"
+        ],
+        "duration": 3000,
+        "event": "file",
+        "level": "success",
+        "message": "{{message}}",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "hooks/useFileOperation.ts",
+            "line": 111,
+            "function": "performFileOperation",
+            "auto": false
+          }
+        ],
+        "title": ""
+      }
+    }
+  },
+  "machine": {
+    "catalog": {
+      "refreshed": {
+        "category": [
+          "Machine"
+        ],
+        "duration": 3000,
+        "event": "refresh",
+        "level": "info",
+        "message": "机型目录已刷新",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/DeviceSelection/DeviceSelectionPage.tsx",
+            "line": 116,
+            "function": "refreshCatalog",
+            "auto": false
+          }
+        ],
+        "title": ""
+      }
+    },
+    "connect": {
+      "success": {
+        "category": [
+          "Machine"
+        ],
+        "duration": 3000,
+        "event": "machine",
+        "level": "success",
+        "message": "机型 {{machine}} 已连接",
+        "persistent": false,
+        "title": "机型连接"
+      }
+    },
+    "mismatch": {
+      "calibrationTimeout": {
+        "category": [
+          "Machine"
+        ],
+        "duration": 4000,
+        "event": "machine",
+        "level": "warning",
+        "message": "校准处理超时，已自动重置",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "app/useStartupBootstrap.ts",
+            "line": 273,
+            "function": "handleMachineMismatch",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "manuallyReset": {
+        "category": [
+          "Machine"
+        ],
+        "duration": 4000,
+        "event": "machine",
+        "level": "success",
+        "message": "后处理状态已重置",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "app/useStartupBootstrap.ts",
+            "line": 324,
+            "function": "handleMachineMismatch",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "userCancelled": {
+        "category": [
+          "Machine"
+        ],
+        "duration": 5000,
+        "event": "machine",
+        "level": "error",
+        "message": "机型不匹配：用户取消处理",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "app/useStartupBootstrap.ts",
+            "line": 225,
+            "function": "handleMachineMismatch",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "waitTimeout": {
+        "category": [
+          "Machine"
+        ],
+        "duration": 5000,
+        "event": "machine",
+        "level": "error",
+        "message": "机型不匹配：等待 5 分钟超时，已自动取消处理",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "app/useStartupBootstrap.ts",
+            "line": 311,
+            "function": "handleMachineMismatch",
+            "auto": false
+          }
+        ],
+        "title": ""
+      }
+    },
+    "notfound": {
+      "error": {
+        "category": [
+          "Machine"
+        ],
+        "duration": 5000,
+        "event": "machine",
+        "level": "error",
+        "message": "未找到机型 {{id}}，请检查机型目录",
+        "persistent": true,
+        "title": "机型缺失"
+      }
+    }
+  },
+  "param": {
+    "apply": {
+      "applied": {
+        "category": [
+          "Param"
+        ],
+        "duration": 3000,
+        "event": "apply",
+        "level": "success",
+        "message": "已应用预设: {{name}}",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/Params/ParamsPage.tsx",
+            "line": 391,
+            "function": "applyPreset",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "returned": {
+        "category": [
+          "Param"
+        ],
+        "duration": 3000,
+        "level": "info",
+        "message": "已回到: {{name}}",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/Params/ParamsPage.tsx",
+            "line": 397,
+            "function": "returnToPreset",
+            "auto": false
+          },
+          {
+            "file": "pages/Params/ParamsPage.tsx",
+            "line": 450,
+            "function": "action",
+            "owner": "Params",
+            "auto": true
+          }
+        ],
+        "title": ""
+      }
+    },
+    "history": {
+      "cleared": {
+        "category": [
+          "Param"
+        ],
+        "duration": 3000,
+        "level": "success",
+        "message": "历史记录已清空",
+        "persistent": false,
+        "related": [
+          {
+            "auto": true,
+            "id": "param.history.deleted"
+          }
+        ],
+        "sources": [
+          {
+            "file": "pages/Params/useVersionHistory.ts",
+            "line": 371,
+            "function": "clearHistory",
+            "auto": false
+          },
+          {
+            "file": "pages/Params/useVersionHistory.ts",
+            "line": 392,
+            "function": "afterValue",
+            "owner": "Params",
+            "auto": true
+          }
+        ],
+        "title": ""
+      },
+      "deleted": {
+        "category": [
+          "Param"
+        ],
+        "duration": 3000,
+        "level": "success",
+        "message": "历史记录已删除",
+        "persistent": false,
+        "related": [
+          {
+            "auto": true,
+            "id": "param.history.cleared"
+          }
+        ],
+        "sources": [
+          {
+            "file": "pages/Params/useVersionHistory.ts",
+            "line": 420,
+            "function": "deleteHistory",
+            "auto": false
+          },
+          {
+            "file": "pages/Params/useVersionHistory.ts",
+            "line": 441,
+            "function": "afterValue",
+            "owner": "Params",
+            "auto": true
+          }
+        ],
+        "title": ""
+      }
+    },
+    "invalid": {
+      "error": {
+        "category": [
+          "Param"
+        ],
+        "duration": 5000,
+        "level": "error",
+        "message": "参数 {{key}} 的值无效，请检查后重试",
+        "persistent": true,
+        "title": "参数错误"
+      }
+    },
+    "rawEdit": {
+      "saved": {
+        "category": [
+          "Param"
+        ],
+        "duration": 3000,
+        "level": "success",
+        "message": "原始代码已保存",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/Params/useRawEdit.ts",
+            "line": 163,
+            "function": "saveRawEdit",
+            "auto": false
+          }
+        ],
+        "title": ""
+      }
+    },
+    "registry": {
+      "reloadFailed": {
+        "actions": [
+          {
+            "handler": "preset.retry",
+            "icon": "refresh-cw",
+            "id": "retry",
+            "label": "重试",
+            "order": 0,
+            "variant": "primary"
+          },
+          {
+            "handler": "system.copy_error",
+            "icon": "copy",
+            "id": "copy_error",
+            "label": "复制错误",
+            "order": 1,
+            "variant": "secondary"
+          }
+        ],
+        "category": [
+          "Param"
+        ],
+        "duration": 4000,
+        "level": "warning",
+        "message": "重载失败：{{error}}",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/Params/ParamsPage.tsx",
+            "line": 276,
+            "function": "reloadRegistry",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "reloadSuccess": {
+        "category": [
+          "Param"
+        ],
+        "duration": 3000,
+        "level": "success",
+        "message": "已重载预设参数定义",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/Params/ParamsPage.tsx",
+            "line": 274,
+            "function": "reloadRegistry",
+            "auto": false
+          }
+        ],
+        "title": ""
+      }
+    },
+    "save": {
+      "deprecatedReverted": {
+        "category": [
+          "Param"
+        ],
+        "duration": 4000,
+        "level": "warning",
+        "message": "有参数已弃用，已自动恢复",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/Params/useParamSave.ts",
+            "line": 160,
+            "function": "saveParams",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "deprecatedRevertedCount": {
+        "category": [
+          "Param"
+        ],
+        "duration": 4000,
+        "level": "warning",
+        "message": "已恢复 {{count}} 个弃用参数",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/Params/ParamsPage.tsx",
+            "line": 301,
+            "function": "saveParams",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "noChanges": {
+        "category": [
+          "Param"
+        ],
+        "duration": 3000,
+        "level": "info",
+        "message": "参数无变更，已跳过保存",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/Params/useParamSave.ts",
+            "line": 99,
+            "function": "saveParams",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "success": {
+        "category": [
+          "Param"
+        ],
+        "duration": 2000,
+        "level": "success",
+        "message": "参数已保存",
+        "persistent": false,
+        "title": "参数保存"
+      }
+    },
+    "toml": {
+      "defaultsRestored": {
+        "category": [
+          "Param"
+        ],
+        "duration": 3000,
+        "level": "success",
+        "message": "已恢复为云端默认值（偏移值已保留）",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/Params/useTomlManager.ts",
+            "line": 587,
+            "function": "restoreDefaults",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "switched": {
+        "category": [
+          "Param"
+        ],
+        "duration": 3000,
+        "level": "info",
+        "message": "已切换到: {{name}}",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/Params/useTomlManager.ts",
+            "line": 640,
+            "function": "switchToml",
+            "auto": false
+          },
+          {
+            "file": "pages/Params/useTomlManager.ts",
+            "line": 682,
+            "function": "val2",
+            "owner": "Params",
+            "auto": true
+          }
+        ],
+        "title": ""
+      }
+    }
+  },
+  "postprocess": {
+    "cancelled": {
+      "category": [
+        "PostProcess"
+      ],
+      "duration": 3000,
+      "level": "info",
+      "message": "已取消后处理",
+      "persistent": false,
+      "related": [
+        {
+          "auto": true,
+          "id": "config.dir.located"
+        }
+      ],
+      "sources": [
+        {
+          "file": "components/molecules/ProcessingModal/ProcessingModalContainer.tsx",
+          "line": 240,
+          "function": "handleAction",
+          "auto": false
+        },
+        {
+          "file": "components/molecules/ProcessingModal/ProcessingModalContainer.tsx",
+          "line": 294,
+          "function": "onClick",
+          "owner": "Components",
+          "auto": true
+        }
+      ],
+      "title": ""
+    }
+  },
+  "preset": {
+    "apply": {
+      "deployedToSlicers": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "apply",
+        "level": "info",
+        "message": "已部署到所有切片器: {{name}}",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetApply.ts",
+            "line": 136,
+            "function": "applyPreset",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "noParamUpdate": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "apply",
+        "level": "info",
+        "message": "下载完成，但未发现任何参数更新",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetApply.ts",
+            "line": 238,
+            "function": "applyUpdate",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "nowUsing": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "apply",
+        "level": "info",
+        "message": "当前正在使用: {{name}}",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetApply.ts",
+            "line": 180,
+            "function": "applyPreset",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "unapplied": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "apply",
+        "level": "info",
+        "message": "已取消应用",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetApply.ts",
+            "line": 95,
+            "function": "unapplyPreset",
+            "auto": false
+          },
+          {
+            "file": "hooks/usePresetApplyAction.ts",
+            "line": 69,
+            "function": "usePresetApplyAction",
+            "owner": "Hooks",
+            "auto": true
+          }
+        ],
+        "title": ""
+      },
+      "updateFileGone": {
+        "actions": [
+          {
+            "handler": "preset.retry",
+            "icon": "refresh-cw",
+            "id": "retry",
+            "label": "重试",
+            "order": 0,
+            "variant": "primary"
+          },
+          {
+            "handler": "system.open_log",
+            "icon": "external-link",
+            "id": "view_log",
+            "label": "查看日志",
+            "order": 1,
+            "variant": "ghost"
+          }
+        ],
+        "category": [
+          "Preset"
+        ],
+        "duration": 5000,
+        "event": "apply",
+        "level": "error",
+        "message": "更新文件已不存在，请重新检测更新",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetApply.ts",
+            "line": 233,
+            "function": "applyUpdate",
+            "auto": false
+          }
+        ],
+        "title": ""
+      }
+    },
+    "clipboard": {
+      "copied": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "clipboard",
+        "level": "info",
+        "message": "已复制 {{count}} 个参数",
+        "persistent": false,
+        "related": [
+          {
+            "auto": true,
+            "id": "preset.clipboard.pasted"
+          }
+        ],
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetClipboard.ts",
+            "line": 132,
+            "function": "copyParams",
+            "auto": false
+          },
+          {
+            "file": "pages/PresetManager/hooks/usePresetClipboard.ts",
+            "line": 106,
+            "function": "usePresetClipboard",
+            "owner": "Preset Manager",
+            "auto": true
+          }
+        ],
+        "title": ""
+      },
+      "pasted": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "clipboard",
+        "level": "info",
+        "message": "已粘贴 {{count}} 个参数",
+        "persistent": false,
+        "related": [
+          {
+            "auto": true,
+            "id": "preset.clipboard.copied"
+          }
+        ],
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetClipboard.ts",
+            "line": 68,
+            "function": "pasteParams",
+            "auto": false
+          },
+          {
+            "file": "pages/PresetManager/hooks/usePresetClipboard.ts",
+            "line": 37,
+            "function": "usePresetClipboard",
+            "owner": "Preset Manager",
+            "auto": true
+          }
+        ],
+        "title": ""
+      }
+    },
+    "contextMenu": {
+      "scriptCopied": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "level": "info",
+        "message": "后处理脚本已复制到剪贴板",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/usePresetContextMenu.tsx",
+            "line": 78,
+            "function": "copyScript",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "updateCacheDeleted": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "level": "info",
+        "message": "更新缓存文件已删除",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/usePresetContextMenu.tsx",
+            "line": 101,
+            "function": "deleteUpdateCache",
+            "auto": false
+          }
+        ],
+        "title": ""
+      }
+    },
+    "crud": {
+      "editing": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "crud",
+        "level": "info",
+        "message": "正在编辑: {{name}}",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetCRUD.ts",
+            "line": 266,
+            "function": "editPreset",
+            "auto": false
+          },
+          {
+            "file": "pages/PresetManager/hooks/usePresetCRUD.ts",
+            "line": 248,
+            "function": "setPendingRestoreTrash",
+            "owner": "Preset Manager",
+            "auto": true
+          }
+        ],
+        "title": ""
+      },
+      "permanentlyDeleted": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "crud",
+        "level": "success",
+        "message": "{{name}} 已永久删除",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetCRUD.ts",
+            "line": 297,
+            "function": "permanentlyDeletePreset",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "renamed": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "crud",
+        "level": "info",
+        "message": "预设已重命名",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetCRUD.ts",
+            "line": 133,
+            "function": "renamePreset",
+            "auto": false
+          },
+          {
+            "file": "pages/PresetManager/hooks/usePresetCRUD.ts",
+            "line": 144,
+            "function": "renamePreset",
+            "auto": false
+          },
+          {
+            "file": "pages/PresetManager/hooks/usePresetCRUD.ts",
+            "line": 116,
+            "function": "usePresetCRUD",
+            "owner": "Preset Manager",
+            "auto": true
+          },
+          {
+            "file": "pages/PresetManager/hooks/usePresetCRUD.ts",
+            "line": 125,
+            "function": "usePresetCRUD",
+            "owner": "Preset Manager",
+            "auto": true
+          }
+        ],
+        "title": ""
+      },
+      "restoredFromTrash": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "crud",
+        "level": "success",
+        "message": "{{name}} 已从回收站恢复",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetCRUD.ts",
+            "line": 218,
+            "function": "restoreFromTrash",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "savedAs": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "crud",
+        "level": "info",
+        "message": "预设已另存为: {{name}}",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetCRUD.ts",
+            "line": 195,
+            "function": "saveAsPreset",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "trashEmptied": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "crud",
+        "level": "success",
+        "message": "回收站已清空",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetCRUD.ts",
+            "line": 333,
+            "function": "emptyTrash",
+            "auto": false
+          }
+        ],
+        "title": ""
+      }
+    },
+    "delete": {
+      "success": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "level": "info",
+        "message": "预设 {{name}} 已删除",
+        "persistent": false,
+        "title": "预设删除"
+      }
+    },
+    "download": {
+      "alreadyLatest": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "download",
+        "level": "success",
+        "message": "✓ 已是最新版本",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetDownload.ts",
+            "line": 119,
+            "function": "downloadPreset",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "busy": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 4000,
+        "event": "download",
+        "level": "warning",
+        "message": "已有下载任务进行中",
+        "persistent": false,
+        "related": [
+          {
+            "auto": true,
+            "id": "preset.download.success"
+          }
+        ],
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetDownload.ts",
+            "line": 154,
+            "function": "downloadPreset",
+            "auto": false
+          },
+          {
+            "file": "pages/PresetManager/hooks/usePresetDownload.ts",
+            "line": 149,
+            "function": "usePresetDownload",
+            "owner": "Preset Manager",
+            "auto": true
+          }
+        ],
+        "title": ""
+      },
+      "deployFailed": {
+        "actions": [
+          {
+            "handler": "preset.retry",
+            "icon": "refresh-cw",
+            "id": "retry",
+            "label": "重新下载",
+            "order": 0,
+            "variant": "primary"
+          },
+          {
+            "handler": "system.copy_error",
+            "icon": "copy",
+            "id": "copy_error",
+            "label": "复制错误",
+            "order": 1,
+            "variant": "secondary"
+          },
+          {
+            "handler": "system.open_log",
+            "icon": "external-link",
+            "id": "view_log",
+            "label": "查看日志",
+            "order": 2,
+            "variant": "ghost"
+          }
+        ],
+        "category": [
+          "Preset"
+        ],
+        "duration": 4000,
+        "event": "download",
+        "level": "warning",
+        "message": "✓ {{name}} 下载完成，但自动部署失败: {{error}}",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetDownload.ts",
+            "line": 101,
+            "function": "downloadPreset",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "deployFailedWithMsg": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 4000,
+        "event": "download",
+        "level": "warning",
+        "message": "✓ {{name}} 下载完成，但部署失败: {{error}}",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetDownload.ts",
+            "line": 111,
+            "function": "downloadPreset",
+            "auto": false
+          },
+          {
+            "file": "pages/PresetManager/hooks/usePresetDownload.ts",
+            "line": 114,
+            "function": "downloadPreset",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "deployedToSlicers": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "download",
+        "level": "success",
+        "message": "✓ {{name}} 已下载并部署到 {{count}} 个切片器用户目录，重启切片器后生效",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetDownload.ts",
+            "line": 99,
+            "function": "downloadPreset",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "genericSuccess": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "download",
+        "level": "success",
+        "message": "✓ 下载完成",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetDownload.ts",
+            "line": 121,
+            "function": "downloadPreset",
+            "auto": false
+          },
+          {
+            "file": "pages/PresetManager/hooks/usePresetDownload.ts",
+            "line": 125,
+            "function": "downloadPreset",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "success": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "download",
+        "level": "success",
+        "message": "✓ {{name}} 下载完成",
+        "persistent": false,
+        "related": [
+          {
+            "auto": true,
+            "id": "preset.download.busy"
+          }
+        ],
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetDownload.ts",
+            "line": 103,
+            "function": "downloadPreset",
+            "auto": false
+          },
+          {
+            "file": "pages/PresetManager/hooks/usePresetDownload.ts",
+            "line": 109,
+            "function": "downloadPreset",
+            "auto": false
+          },
+          {
+            "file": "pages/PresetManager/hooks/usePresetDownload.ts",
+            "line": 98,
+            "function": "usePresetDownload",
+            "owner": "Preset Manager",
+            "auto": true
+          },
+          {
+            "file": "pages/PresetManager/hooks/usePresetDownload.ts",
+            "line": 104,
+            "function": "usePresetDownload",
+            "owner": "Preset Manager",
+            "auto": true
+          }
+        ],
+        "title": ""
+      }
+    },
+    "manager": {
+      "notFoundLocal": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 5000,
+        "level": "error",
+        "message": "本地未找到该预设，请先下载",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/PresetManagerPage.tsx",
+            "line": 212,
+            "function": "handlePresetAction",
+            "auto": false
+          }
+        ],
+        "title": ""
+      }
+    },
+    "merge": {
+      "applied": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "merge",
+        "level": "info",
+        "message": "已应用预设: {{name}}",
+        "persistent": false,
+        "related": [
+          {
+            "auto": true,
+            "id": "preset.merge.discarded"
+          },
+          {
+            "auto": true,
+            "id": "preset.merge.restored"
+          },
+          {
+            "auto": true,
+            "id": "preset.refresh.success"
+          }
+        ],
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetMerge.ts",
+            "line": 67,
+            "function": "applyMerge",
+            "auto": false
+          },
+          {
+            "file": "pages/PresetManager/hooks/usePresetMerge.ts",
+            "line": 63,
+            "function": "execute",
+            "owner": "Preset Manager",
+            "auto": true
+          }
+        ],
+        "title": ""
+      },
+      "appliedWithKept": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "merge",
+        "level": "info",
+        "message": "已应用预设: {{name}}（保留{{kept}}）",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetMerge.ts",
+            "line": 67,
+            "function": "applyMerge",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "discarded": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "merge",
+        "level": "info",
+        "message": "已舍弃 {{name}} 的更新",
+        "persistent": false,
+        "related": [
+          {
+            "auto": true,
+            "id": "preset.merge.applied"
+          },
+          {
+            "auto": true,
+            "id": "preset.merge.restored"
+          },
+          {
+            "auto": true,
+            "id": "preset.refresh.success"
+          }
+        ],
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetMerge.ts",
+            "line": 138,
+            "function": "discardMerge",
+            "auto": false
+          },
+          {
+            "file": "pages/PresetManager/hooks/usePresetMerge.ts",
+            "line": 124,
+            "function": "execute",
+            "owner": "Preset Manager",
+            "auto": true
+          }
+        ],
+        "title": ""
+      },
+      "restored": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "merge",
+        "level": "success",
+        "message": "{{name}} 已恢复",
+        "persistent": false,
+        "related": [
+          {
+            "auto": true,
+            "id": "preset.merge.applied"
+          },
+          {
+            "auto": true,
+            "id": "preset.merge.discarded"
+          },
+          {
+            "auto": true,
+            "id": "preset.refresh.success"
+          }
+        ],
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetMerge.ts",
+            "line": 165,
+            "function": "restoreMerge",
+            "auto": false
+          },
+          {
+            "file": "pages/PresetManager/hooks/usePresetMerge.ts",
+            "line": 151,
+            "function": "execute",
+            "owner": "Preset Manager",
+            "auto": true
+          }
+        ],
+        "title": ""
+      },
+      "undoMerge": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "merge",
+        "level": "info",
+        "message": "{{name}} 已成功撤回至修改前",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetMerge.ts",
+            "line": 176,
+            "function": "undoMerge",
+            "auto": false
+          }
+        ],
+        "title": ""
+      }
+    },
+    "modals": {
+      "devDiffView": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "level": "info",
+        "message": "已进入开发者代码 Diff 视图（再次点击 Tab 退出）",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/PresetModals.tsx",
+            "line": 568,
+            "function": "toggleDevDiffView",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "localApplied": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "level": "success",
+        "message": "已应用本地版本，云端更新仍保留",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/PresetModals.tsx",
+            "line": 544,
+            "function": "applyLocalVersion",
+            "auto": false
+          }
+        ],
+        "title": ""
+      }
+    },
+    "refresh": {
+      "success": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "refresh",
+        "level": "info",
+        "message": "✓ 预设列表已刷新",
+        "persistent": false,
+        "related": [
+          {
+            "auto": true,
+            "id": "preset.merge.applied"
+          },
+          {
+            "auto": true,
+            "id": "preset.merge.discarded"
+          },
+          {
+            "auto": true,
+            "id": "preset.merge.restored"
+          }
+        ],
+        "sources": [
+          {
+            "file": "pages/PresetManager/hooks/usePresetDownload.ts",
+            "line": 216,
+            "function": "refreshPresets",
+            "auto": false
+          },
+          {
+            "file": "pages/PresetManager/hooks/usePresetDownload.ts",
+            "line": 219,
+            "function": "execute",
+            "owner": "Preset Manager",
+            "auto": true
+          }
+        ],
+        "title": ""
+      }
+    },
+    "sidebar": {
+      "applied": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "level": "success",
+        "message": "已应用预设: {{name}}",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "components/organisms/PresetBrowserSidebar/PresetBrowserSidebar.tsx",
+            "line": 115,
+            "function": "applyPreset",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "switchedAndApplied": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "level": "success",
+        "message": "已切换机型并应用: {{name}}",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "components/organisms/PresetBrowserSidebar/PresetBrowserSidebar.tsx",
+            "line": 128,
+            "function": "switchAndApplyPreset",
+            "auto": false
+          }
+        ],
+        "title": ""
+      }
+    },
+    "undo": {
+      "redoDelete": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "undo",
+        "level": "info",
+        "message": "已重做删除",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/usePresetUndoRedo.ts",
+            "line": 87,
+            "function": "redo",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "redoRename": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "undo",
+        "level": "info",
+        "message": "已重做重命名",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/usePresetUndoRedo.ts",
+            "line": 99,
+            "function": "redo",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "undoDelete": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "undo",
+        "level": "success",
+        "message": "已撤回删除",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/usePresetUndoRedo.ts",
+            "line": 45,
+            "function": "undo",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "undoRename": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "event": "undo",
+        "level": "info",
+        "message": "已撤回重命名",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "pages/PresetManager/usePresetUndoRedo.ts",
+            "line": 58,
+            "function": "undo",
+            "auto": false
+          }
+        ],
+        "title": ""
+      }
+    },
+    "update": {
+      "success": {
+        "category": [
+          "Preset"
+        ],
+        "duration": 3000,
+        "level": "success",
+        "message": "预设 {{name}} 已更新",
+        "persistent": false,
+        "title": "预设更新"
+      }
+    }
+  },
+  "shadow": {
+    "config": {
+      "loadFailed": {
+        "category": [
+          "Shadow"
+        ],
+        "duration": 5000,
+        "event": "shadow",
+        "level": "error",
+        "message": "阴影配置加载失败：{{error}}",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "hooks/useShadowConfigFromSSOT.ts",
+            "line": 83,
+            "function": "loadShadowConfig",
+            "auto": false
+          }
+        ],
+        "title": ""
+      },
+      "saved": {
+        "category": [
+          "Shadow"
+        ],
+        "duration": 2000,
+        "event": "shadow",
+        "level": "success",
+        "message": "涂胶配置已保存",
+        "persistent": false,
+        "title": "涂胶配置"
+      }
+    }
+  },
+  "startup": {
+    "cache": {
+      "autoCleaned": {
+        "category": [
+          "Startup"
+        ],
+        "duration": 3000,
+        "event": "startup",
+        "level": "success",
+        "message": "已自动清理 {{size}} 旧缓存",
+        "persistent": false,
+        "sources": [
+          {
+            "file": "app/useStartupBootstrap.ts",
+            "line": 640,
+            "function": "cleanOldCache",
+            "auto": false
+          }
+        ],
+        "title": ""
+      }
+    },
+    "init": {
+      "info": {
+        "category": [
+          "Startup"
+        ],
+        "duration": 2000,
+        "event": "startup",
+        "level": "info",
+        "message": "应用初始化完成",
+        "persistent": false,
+        "title": "启动初始化"
+      }
+    }
+  },
+  "update": {
+    "autoOnClose": {
+      "category": [
+        "Update"
+      ],
+      "duration": 3000,
+      "event": "update",
+      "level": "info",
+      "message": "将在关闭应用时自动更新",
+      "persistent": false,
+      "sources": [
+        {
+          "file": "app/UpdateBootstrap.tsx",
+          "line": 297,
+          "function": "setAutoUpdate",
+          "auto": false
+        }
+      ],
+      "title": ""
+    },
+    "available": {
+      "info": {
+        "category": [
+          "Update"
+        ],
+        "duration": 0,
+        "event": "update",
+        "level": "info",
+        "message": "发现新版本 {{version}}，点击立即更新",
+        "persistent": true,
+        "title": "发现新版本"
+      }
+    }
+  }
+}

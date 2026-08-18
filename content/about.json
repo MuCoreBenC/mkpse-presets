@@ -11,8 +11,8 @@
     "coreIndex": 0,
     "list": [
       {
-        "avatarAltCloudPath": "assets/avatars/Avatar_Jhmodel喵~(alt).webp",
-        "avatarCloudPath": "assets/avatars/Avatar_Jhmodel喵~.webp",
+        "avatarAltCloudPath": "assets/avatars/avatar_Jhmodel喵_alt.webp",
+        "avatarCloudPath": "assets/avatars/avatar_Jhmodel喵.webp",
         "contactHref": "mailto:Jhmodel01@outlook.com",
         "contactLabel": "联系作者",
         "description": "项目发起人，核心算法设计与实现，负责项目的技术方向与实现。",
@@ -20,7 +20,7 @@
         "role": "ORIGINAL CREATOR"
       },
       {
-        "avatarCloudPath": "assets/avatars/Avatar_孜羊.webp",
+        "avatarCloudPath": "assets/avatars/avatar_孜羊.webp",
         "description": "参与界面重构、模型优化和软件优化。",
         "name": "孜羊",
         "role": "CONTRIBUTOR"
