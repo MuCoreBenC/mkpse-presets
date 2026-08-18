@@ -1103,7 +1103,7 @@
         "A1:FASTV3.3": 0.1,
         "A1:STANDARD": -1,
         "A1_MINI:FAST": -0.5,
-        "A1_MINI:FASTV3.3": -0.4,
+        "A1_MINI:FASTV3.3": -0.9,
         "A1_MINI:STANDARD": -0.3,
         "P1S:LITE": -25.9,
         "P2S:STANDARD": -25.9,
@@ -1685,7 +1685,7 @@
     },
     {
       "configKey": "MaxSpeed",
-      "defaultValue": 75,
+      "defaultValue": 70,
       "desc": "涂胶笔的最大移动速度 (mm/s)，过高可能导致涂胶不均匀或丢步",
       "jsonKey": "speed_limit",
       "key": "toolhead.speed_limit",

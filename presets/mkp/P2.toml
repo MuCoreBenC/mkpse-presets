@@ -1,12 +1,12 @@
 # uuid: 1bcd83d8-8255-4ab7-a402-2dd2500b05a3
-# release_time: 2026-08-18 18:39:29
+# release_time: 2026-08-19 01:38:13
 # machine: P2S
 # variant: standard
 #胶笔配置
 
 [toolhead]
 offset = { x = -25.9, y = 14, z = 1.1 } # 笔尖偏移
-speed_limit = 75 # 涂胶速度限制 (mm/s)
+speed_limit = 70 # 涂胶速度限制 (mm/s)
 # 自定义工具头获取 G-code
 custom_mount_gcode = """
 L803;此处使喷嘴降温
