@@ -859,8 +859,8 @@
       "id": "",
       "fileName": "fallback_registry.json",
       "relativePath": "content/fallback_registry.json",
-      "sha256": "c4c7facf794964ddc4e2188d598ab9cba522fcc87b9ad14c9451d2e401a93561",
-      "size": 465,
+      "sha256": "824abef19ff053d601b5a016f47e98a28bd182dffa6cbef34c3fdf37cd10a803",
+      "size": 10172,
       "ttl": "never",
       "strategy": "no-swr",
       "prefetch": false,
@@ -1383,6 +1383,6 @@
     }
   ],
   "ttl": "0s",
-  "updated": "2026-08-19T07:58:38Z",
+  "updated": "2026-08-19T09:22:35Z",
   "version": ""
 }
