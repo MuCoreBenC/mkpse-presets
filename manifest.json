@@ -848,8 +848,19 @@
       "id": "",
       "fileName": "param_registry.json",
       "relativePath": "content/param_registry.json",
-      "sha256": "c8f9489f3273345d7d5f257b5210ff86e37325101f862bd29b12d1c53bfeeaca",
-      "size": 74725,
+      "sha256": "f8d4da5400bed6a481ba55610279c3c0310a8d5da5ee24669a07210970124bc9",
+      "size": 74724,
+      "ttl": "never",
+      "strategy": "no-swr",
+      "prefetch": false,
+      "priority": "normal"
+    },
+    {
+      "id": "",
+      "fileName": "fallback_registry.json",
+      "relativePath": "content/fallback_registry.json",
+      "sha256": "c4c7facf794964ddc4e2188d598ab9cba522fcc87b9ad14c9451d2e401a93561",
+      "size": 465,
       "ttl": "never",
       "strategy": "no-swr",
       "prefetch": false,
@@ -1372,6 +1383,6 @@
     }
   ],
   "ttl": "0s",
-  "updated": "2026-08-18T17:38:28Z",
+  "updated": "2026-08-19T07:58:38Z",
   "version": ""
 }

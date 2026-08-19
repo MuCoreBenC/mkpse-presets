@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "updated": "2026-08-19 00:00:00",
+  "fallbacks": [
+    {
+      "id": "support_fallback_to_tower",
+      "trigger": "仅有支撑面无支撑体（无支撑体可擦）",
+      "from": "disk/none",
+      "to": "tower",
+      "enabled": true,
+      "severity": "info",
+      "desc": "圆盘擦拭/关闭擦拭在只有支撑面无支撑体时，强制回退为擦料塔以保证支撑面涂胶",
+      "reportField": "supportFallback"
+    }
+  ]
+}

@@ -1701,7 +1701,7 @@
       "scope": "universal",
       "section": "toolhead",
       "selectable": true,
-      "step": 10,
+      "step": 5,
       "tomlComment": "涂胶速度限制 (mm/s)",
       "tomlKey": "speed_limit",
       "uiComponent": "number",

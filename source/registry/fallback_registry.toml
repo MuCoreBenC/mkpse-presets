@@ -1,0 +1,32 @@
+# fallback_registry — 运行时回退登记表 SSOT（Source Entity）
+#
+# 本文件是「运行时改写用户配置」类回退的唯一登记入口（spec: govern-fallback-and-param-validation）。
+# Panel 编辑本文件（Entity），Builder 生成 content/fallback_registry.json（Artifact）并注册 manifest，
+# 主应用经 seeds / 云端 content 同步消费。禁止手编 content/*.json。
+#
+# 字段含义：
+#   id          回退唯一标识（后处理代码经 FallbackGate 按 id 查询，如 "support_fallback_to_tower"）
+#   trigger     触发条件的中文描述（供 Panel 管理页与人读）
+#   from        回退前的配置值（可含 "/" 分隔多个来源，如 "disk/none" = 圆盘或关闭擦拭）
+#   to          回退后的目标值（如 "tower" = 擦料塔）
+#   enabled     开关：true = 回退放行执行；false = 触发时报错中止（fail fast，不静默改写）
+#   severity    回退记录的严重级别（info / warning / error）
+#   desc        回退行为的完整说明
+#   reportField 后处理报告（meta.json detail）中承载该回退记录的字段名（兼容旧字段）
+#
+# 元数据（参照 param_registry.toml 风格，人工维护、构建时透传）：
+#   version     登记表结构版本
+#   updated     最后编辑时间
+
+version = 1
+updated = '2026-08-19 00:00:00'
+
+[[fallbacks]]
+id = "support_fallback_to_tower"
+trigger = "仅有支撑面无支撑体（无支撑体可擦）"
+from = "disk/none"
+to = "tower"
+enabled = true
+severity = "info"
+desc = "圆盘擦拭/关闭擦拭在只有支撑面无支撑体时，强制回退为擦料塔以保证支撑面涂胶"
+reportField = "supportFallback"
