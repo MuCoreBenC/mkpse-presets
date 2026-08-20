@@ -28,14 +28,11 @@
     "processResultFloatingSidebarEnabled": false
   },
   "post_process": {
-    "autoCloseSeconds": 10,
     "mode": "gui",
-    "notifyOnPostProcessComplete": true,
-    "showPostProcessResult": true
+    "notifyOnPostProcessComplete": true
   },
   "sync_policy": {
     "ambientIntensity": "initialize",
-    "autoCloseSeconds": "initialize",
     "autoCopyScriptOnApply": "readonly",
     "autoUpdate": "initialize",
     "bedGlueAllModels": "initialize",
@@ -53,7 +50,6 @@
     "postProcessMode": "initialize",
     "processResultFloatingSidebarEnabled": "managed_once",
     "screenshotMode": "initialize",
-    "showPostProcessResult": "initialize",
     "skipVibrationCalibration": "initialize",
     "soundEnabled": "initialize",
     "themeColor": "initialize",

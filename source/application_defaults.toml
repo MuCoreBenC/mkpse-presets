@@ -27,14 +27,11 @@ onboardingEnabled = true
 processResultFloatingSidebarEnabled = false
 
 [post_process]
-autoCloseSeconds = 10.0
 mode = 'gui'
 notifyOnPostProcessComplete = true
-showPostProcessResult = true
 
 [sync_policy]
 ambientIntensity = 'initialize'
-autoCloseSeconds = 'initialize'
 autoCopyScriptOnApply = 'readonly'
 autoUpdate = 'initialize'
 bedGlueAllModels = 'initialize'
@@ -52,7 +49,6 @@ onboardingEnabled = 'initialize'
 postProcessMode = 'initialize'
 processResultFloatingSidebarEnabled = 'managed_once'
 screenshotMode = 'initialize'
-showPostProcessResult = 'initialize'
 skipVibrationCalibration = 'initialize'
 soundEnabled = 'initialize'
 themeColor = 'initialize'
