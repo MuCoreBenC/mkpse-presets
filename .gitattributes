@@ -1,0 +1,43 @@
+# 行尾（EOL）唯一 SSOT —— 2026-08-22 新增。
+#
+# 为什么需要它：本仓库是 `MuCoreBenC/mkpse-next-v3` 的 submodule，工作树与超项目同盘。
+# 超项目侧 Windows git 的 `core.autocrlf=true` 把 LF 的 blob 检出成 CRLF，而 WSL 的 git
+# 没有这项设置 ⇒ 同一棵工作树在两个 git 眼里结论相反。实测（2026-08-22，
+# `g:\project\mkpse-next-v3\mkpse-presets`）：
+#   Windows git  → 0 个文件被修改
+#   WSL git      → 105 个文件被修改 / 51,624 行增删，而 `--ignore-cr-at-eol` 一减归零
+# 即差异 100% 是 CRLF/LF。在 WSL 视图里一次 `git add -A` 就会把整棵树的行尾翻转提交进去。
+#
+# `text` 属性能根治这一类：它让**比较与入库时的归一化由仓库声明**，不再取决于每台机器的
+# `core.autocrlf`。超项目已在同日落地同一声明，但 `.gitattributes` **不跨仓库生效**，
+# 故 submodule 必须自己有一份。
+* text=auto
+
+# ── 刻意**不写**任何 `eol=lf` / `eol=crlf` 覆盖 ──────────────────────────────
+# 本仓库是内容数据仓（.toml / .json / .webp / .3mf …），其中多个文件的 **sha256 与 size
+# 被 `manifest.json` / `content/release.json` 逐条记录**，并由消费方的门禁按字节校验
+# （超项目 `mkpsupporte/seeds_manifest_consistency_test.go`、`scripts/release-contract-check.sh`）。
+# `eol=lf` 会改变工作树里这些文件的**字节**，从而改变它们的 sha ⇒ 可能凭空打红一整批
+# 契约门禁。而 `text=auto` 只影响 git 的比较/入库归一化，**不改变既有检出行为**
+# （既有 blob 全为 LF，autocrlf 此前已按同样规则处理文本文件）⇒ 零字节风险。
+# 需要工作树行尾变更时，必须与那批 sha 的重算同批进行，不在本声明里顺手做。
+
+# ── 二进制：显式声明，不依赖 text=auto 的 NUL 启发式 ──────────────────────────
+# 猜错一次的后果是损坏一个内容文件且不可逆，故对本仓库实际存在的类型逐个点名。
+*.webp binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svgz binary
+*.3mf binary
+*.zip binary
+*.7z binary
+*.gz binary
+*.stl binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
