@@ -1,0 +1,295 @@
+# fallback_registry — 运行时回退登记表 SSOT（Source Entity）
+#
+# 本文件是「运行时改写用户配置」类回退的唯一登记入口（spec: govern-fallback-and-param-validation）。
+# Panel 编辑本文件（Entity），Builder 生成 content/fallback_registry.json（Artifact）并注册 manifest，
+# 主应用经 seeds / 云端 content 同步消费。禁止手编 content/*.json。
+#
+# ===== 字段含义（怎么改） =====
+#   id          回退唯一标识（后处理代码经 FallbackGate 按 id 查询，如 "support_fallback_to_tower"）。
+#               必填且全局唯一，新增时不要复用已有 id。
+#   category    语义分类（一句话看懂每条在干嘛）：
+#               override  强行改掉原来的值（你设了 A，程序用了 B）
+#               infer     不知道就根据其他信息猜（G-code 元数据、回抽量反推等）
+#               default   你没填就给默认值
+#               migration 旧版字段名升级成新版字段名
+#               recovery  正常方法失败了，换个办法再试
+#   trigger     触发条件的中文描述（供 Panel 管理页与人读）
+#   from        回退前的配置值（可含 "/" 分隔多个来源，如 "disk/none" = 圆盘或关闭擦拭）
+#   to          回退后的目标值（如 "tower" = 擦料塔）
+#   enabled     开关：true = 回退放行执行；false = 触发时报错中止（fail fast，不静默改写）
+#   severity    严重级别（warn = L1 改写类；info = L2 默认填充类）
+#   desc        回退行为的完整说明（建议用白话写清楚「什么时候、把什么改成什么」）
+#   reportField 后处理报告（meta.json detail）中承载该回退记录的字段名（兼容旧字段）
+#
+# ===== 怎么关掉一条回退 =====
+# 把对应条目的 enabled 改成 false：开启时放行执行（L1 留痕 / L2 补默认），
+# 关闭后一旦触发就直接报错中止（fail fast），不再静默改写。
+#
+# ===== 级别（L1/L2 来源：spec govern-fallback-and-param-validation 与
+# expand-fallback-registry-and-range-guards 定义的分级规则）=====
+#   L1 改写类（severity = "warn"）：覆盖用户显式设置的非零/非空值时触发
+#       → 经 FallbackGate：enabled=true 执行 + 写 meta.json detail.fallbacks 留痕；enabled=false 报错中止
+#   L2 默认填充类（severity = "info"）：用户未设置（零值/空）时填默认
+#       → 单点检查：enabled=true 放行（默认不留痕）；enabled=false 且存在零值 → 报错中止
+#   L3 内部兜底：不进本清单，只在日志里带 fallbackId 可见（不改变处理结果）
+#
+# 顶层 guide 字段是给读 JSON 的人看的说明（这是什么 / 怎么改 / 级别 / 分类），
+# 构建时透传到 content/fallback_registry.json（JSON 不能写注释，用 guide 补上）。
+#
+# 元数据（参照 param_registry.toml 风格，人工维护、构建时透传）：
+#   version     登记表结构版本
+#   updated     最后编辑时间
+
+version = 1
+updated = '2026-08-19 17:20:00'
+
+guide = '''
+# 这是什么？
+本文件登记「后处理运行时改写用户配置」的回退行为清单，每条是一个 [[fallbacks]] 块。
+它由 mkppanel 编辑 source/registry/fallback_registry.toml（Entity）生成；
+禁止手改 content/*.json —— 改动请在 Panel「回退登记表」页或本 TOML 里做，然后构建 + 同步。
+
+# 怎么改？
+- 关掉某条：把该条 enabled 改为 false。开启 = 放行执行（L1 留痕 / L2 补默认）；
+  关闭 = 一旦触发直接报错中止（fail fast），不再静默改写。
+- 新增一条：加一个 [[fallbacks]] 块，id 必须全局唯一（代码按 id 查询），
+  category/trigger/from/to/severity/desc/reportField 写清楚。
+- severity 含义：warn = L1 改写类，info = L2 默认填充类。
+
+# 级别（L1/L2 来源：spec govern-fallback-and-param-validation / expand-fallback-registry-and-range-guards）
+- L1 改写类（severity=warn）：覆盖你显式设置的非零/非空值（元数据覆盖、模式强制切换、clamp 等）。
+  开启 → 执行 + 留痕；关闭 → 报错中止。
+- L2 默认填充类（severity=info）：你没设置（零值/空）时补默认。开启 → 放行不留痕；关闭且存在零值 → 报错。
+- L3 内部兜底：不进本清单，只在日志里带 fallbackId 可见（不改变处理结果）。
+
+# 语义分类（category）
+- override  强行改掉原来的值（你设了 A，程序用了 B）
+- infer     不知道就根据其他信息猜（G-code 元数据、回抽量反推等）
+- default   你没填就给默认值
+- migration 旧版字段名升级成新版字段名
+- recovery  正常方法失败了，换个办法再试
+'''
+
+[[fallbacks]]
+id = "support_fallback_to_tower"
+category = "override"
+trigger = "仅有支撑面无支撑体（无支撑体可擦）"
+from = "disk/none"
+to = "tower"
+enabled = true
+severity = "info"
+desc = "圆盘擦拭/关闭擦拭在只有支撑面无支撑体时，强制改为擦料塔，保证支撑面能涂胶。"
+reportField = "supportFallback"
+
+# ===== L1 改写类（severity=warn）：覆盖用户显式设置的非零/非空值时触发 =====
+
+[[fallbacks]]
+id = "wiping_preferred_none_to_tower"
+category = "override"
+trigger = "需要擦拭但用户 PreferredMode 为 none/空/false（非支撑回退原因）"
+from = 'none/""'
+to = "tower"
+enabled = true
+severity = "warn"
+desc = "需要擦拭但你选了 PreferredMode none/空/false（且不是支撑回退）时，强制改写为擦料塔，保证擦拭流程能跑。"
+reportField = "wipingPreferredFallback"
+
+[[fallbacks]]
+id = "gcode_meta_l803_infer"
+category = "infer"
+trigger = "mount G-code 含 L803 时将 L803LeakPreventFlag 覆盖为 true"
+from = "false/未设置"
+to = "true"
+enabled = true
+severity = "warn"
+desc = "mount G-code 里有 L803 命令时，推断要防漏液，把 L803LeakPreventFlag 强制设为 true（G-code 元数据优先于表单值）。"
+reportField = "l803LeakPreventInfer"
+
+[[fallbacks]]
+id = "gcode_meta_retract_infer"
+category = "infer"
+trigger = "MKPRetract 为 0 时从 mount G-code G1 E 行反推；含正值→负值符号归一化覆盖"
+from = "0/正值"
+to = "G-code 反推值（负值）"
+enabled = true
+severity = "warn"
+desc = "MKPRetract 为 0 时，从 mount G-code 的 G1 E 行反推回抽长度，并按约定把正值归一化为负值后填入。"
+reportField = "mkpRetractInfer"
+
+[[fallbacks]]
+id = "gcode_meta_extrude_infer"
+category = "infer"
+trigger = "MKPExtrude 为 0 时按 |mkpRetract|+0.5 推导（可被 unmount 正向 E 覆盖）"
+from = "0"
+to = "|mkpRetract|+0.5"
+enabled = true
+severity = "warn"
+desc = "MKPExtrude 为 0 时按 |mkpRetract|+0.5 推导挤出长度；若 unmount G-code 有正向 E 值则被它覆盖。"
+reportField = "mkpExtrudeInfer"
+
+[[fallbacks]]
+id = "gcode_meta_wait_drying_infer"
+category = "infer"
+trigger = "WaitForDryingCommand 为空时从 unmount G-code G4 行提取"
+from = '""'
+to = "G4 行提取值"
+enabled = true
+severity = "warn"
+desc = "WaitForDryingCommand 为空时，从 unmount G-code 的 G4 停留行提取等待干燥指令填入。"
+reportField = "waitDryingInfer"
+
+[[fallbacks]]
+id = "tree_support_extrusion_multiplier_override"
+category = "override"
+trigger = "G-code 元数据 TreeSupport 时将 SupportExtrusionMultiplier 覆盖为 1.27（仅覆盖显式非零值时）"
+from = "显式非零值"
+to = "1.27"
+enabled = true
+severity = "warn"
+desc = "G-code 元数据标记树状支撑时，把 SupportExtrusionMultiplier 强制覆盖为 1.27（树状支撑经验系数）。"
+reportField = "treeSupportExtrusionOverride"
+
+[[fallbacks]]
+id = "ir_build_value_clamp"
+category = "override"
+trigger = "内部计算值超出边界被 clamp（仅内部计算源，用户参数源已改为报错）"
+from = "超界内部计算值"
+to = "边界值"
+enabled = true
+severity = "warn"
+desc = "IR 构建期内部计算值超出边界时压回边界内（只针对内部计算结果；你显式填的越界值现在是直接报错，不再夹紧）。"
+reportField = "irBuildValueClamp"
+
+# ===== L2 默认填充类（severity=info）：用户未设置（零值/空）时填默认，默认放行不留痕 =====
+
+[[fallbacks]]
+id = "tower_zero_value_defaults"
+category = "default"
+trigger = "Tower 组参数取零值（未设置）"
+from = "零值/空"
+to = "组默认值"
+enabled = true
+severity = "info"
+desc = "Tower 组你没填的字段补默认：SafeZOffset→0.7、TravelSpeed→300、GlueLayerSpeed→35、SheathSpeed←TowerWipeSpeed（没有则 40）、RibSpeedValue→组默认、FirstLayerFlow→1.0。"
+reportField = "towerZeroDefaults"
+
+[[fallbacks]]
+id = "disk_zero_value_defaults"
+category = "default"
+trigger = "Disk 组参数取零值（未设置）"
+from = "零值/空"
+to = "组默认值"
+enabled = true
+severity = "info"
+desc = "Disk 组你没填的字段补默认：StaggerAngle→5、StaggerMaxAngle→45。"
+reportField = "diskZeroDefaults"
+
+[[fallbacks]]
+id = "ironing_zero_value_defaults"
+category = "default"
+trigger = "Ironing 组参数取零值（未设置）"
+from = "零值/空"
+to = "组默认值"
+enabled = true
+severity = "info"
+desc = "Ironing 组你没填的字段补默认：ESumThreshold→7.9。"
+reportField = "ironingZeroDefaults"
+
+[[fallbacks]]
+id = "sheath_zero_value_defaults"
+category = "default"
+trigger = "Sheath 组参数取零值（未设置）"
+from = "零值/空"
+to = "组默认值"
+enabled = true
+severity = "info"
+desc = "Sheath 组你没填的字段补默认：BaseExpand→5、WallWidth→0.8、EnableHeight→70、ConvergeLayers→50。"
+reportField = "sheathZeroDefaults"
+
+[[fallbacks]]
+id = "glue_zero_value_defaults"
+category = "default"
+trigger = "Glue 组参数取零值（未设置）"
+from = "零值/空"
+to = "组默认值"
+enabled = true
+severity = "info"
+desc = "Glue 组你没填的字段补默认：PassCount→1、ZLiftHeightFirstLayers→6、InterModelLiftHeight→2、ZLiftHeight←MinHopDistance。"
+reportField = "glueZeroDefaults"
+
+[[fallbacks]]
+id = "prime_zero_value_defaults"
+category = "default"
+trigger = "Prime 组参数取零值（未设置）"
+from = "零值/空"
+to = "组默认值"
+enabled = true
+severity = "info"
+desc = "Prime 组你没填的字段补默认：PrimeLength→100、MinPathLength→5。"
+reportField = "primeZeroDefaults"
+
+[[fallbacks]]
+id = "enum_empty_defaults"
+category = "default"
+trigger = "枚举字段为空/未设置"
+from = "空/未设置"
+to = "枚举默认值"
+enabled = true
+severity = "info"
+desc = "枚举字段为空/没选时补默认：RibSpeedMode→follow、CustomLayerHeight→auto、WipeMode→auto、StaggerMode→off、SwingMode→spiral、Ironing.Mode→auto或off、SuppressExpandMode→bbox、OuterStructure→brim、ZCompMode→bed、XY/ZCalibration→default、CalibrationExecutionMode→print_then_calibrate、FastTowerMode→fast、BottomFillStyle→grid。"
+reportField = "enumEmptyDefaults"
+
+[[fallbacks]]
+id = "machine_meta_fill_defaults"
+category = "default"
+trigger = "G-code 解析后 Machine 字段仍为 0"
+from = "零值/空"
+to = "元数据默认值"
+enabled = true
+severity = "info"
+desc = "G-code 解析完 Machine 字段还是 0 时补默认：TravelSpeed→150、NozzleDiameter→0.4、FirstLayerHeight→0.2、TypicalLayerHeight→0.2、RetractLength→0.4、WallPrintSpeed→60。"
+reportField = "machineMetaDefaults"
+
+[[fallbacks]]
+id = "dto_mapper_zero_defaults"
+category = "default"
+trigger = "DTO 映射时字段为零值/空"
+from = "零值/空"
+to = "映射默认值"
+enabled = true
+severity = "info"
+desc = "后端转前端（DTO 映射）发现没值时补默认：TowerFirstLayerFlow 0→1.0、outer_structure 空或 none→brim。"
+reportField = "dtoMapperZeroDefaults"
+
+[[fallbacks]]
+id = "legacy_field_migration"
+category = "migration"
+trigger = "检测到旧版字段（源数据迁移）"
+from = "旧字段"
+to = "新字段"
+enabled = true
+severity = "info"
+desc = "发现旧版字段名时升级成新版本：MinHopDistance→GlueZLiftHeight、TowerWipeSpeed→SheathSpeed、RibSpeedValue 旧字段→新结构。"
+reportField = "legacyFieldMigration"
+
+[[fallbacks]]
+id = "toml_crlf_normalize_retry"
+category = "recovery"
+trigger = "TOML 解析失败（CRLF 行尾）"
+from = "CRLF"
+to = "LF"
+enabled = true
+severity = "info"
+desc = "TOML 第一次解析失败时，把 Windows 换行（CRLF）改成 LF 再重试一次。"
+reportField = "tomlCrlfRetry"
+
+[[fallbacks]]
+id = "filament_type_default"
+category = "infer"
+trigger = "filament_settings_id 为空/未识别"
+from = "空/未识别"
+to = "推断或回退类型"
+enabled = true
+severity = "info"
+desc = "从 filament_settings_id 推断耗材类型（PETG/PLA）；推断不出且为空时，回退用 irData.Filament.Type。"
+reportField = "filamentTypeDefault"

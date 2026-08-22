@@ -1,11 +1,11 @@
 # uuid: f3c0a6d7-2cf4-447e-93f8-822f97b35bc6
-# release_time: 2026-08-14 22:49:54
+# release_time: 2026-08-19 01:38:13
 # machine: A1_MINI
 # variant: fastv3.3
 #胶笔配置
 
 [toolhead]
-offset = { x = -0.4, y = 23, z = 4 } # 笔尖偏移
+offset = { x = -0.9, y = 23, z = 4 } # 笔尖偏移
 speed_limit = 70 # 涂胶速度限制 (mm/s)
 # 自定义工具头获取 G-code
 custom_mount_gcode = """

@@ -51,9 +51,9 @@
       "machineId": "A1_MINI",
       "fileName": "A1MF.toml",
       "relativePath": "presets/mkp/A1MF.toml",
-      "sha256": "8867782ed7148c79036dd81a610bebb54332bf92237cf75b2da9c317c349ee71",
+      "sha256": "115e061f72014f7680adde6f4dfd2345f6acf7499dd247e4b8f1354f95f7cd43",
       "size": 4300,
-      "updatedAt": "2026-08-18T02:04:59Z"
+      "updatedAt": "2026-08-18T17:38:27Z"
     },
     {
       "id": "a1_mini_mkp_fastv3.3",
@@ -62,9 +62,9 @@
       "machineId": "A1_MINI",
       "fileName": "A1MF_260628.toml",
       "relativePath": "presets/mkp/A1MF_260628.toml",
-      "sha256": "72ebb005fc5d680c095e74df7fbbd2508e1eab7f81c67225153d0065b2ef0eb2",
+      "sha256": "f4e51d8f889637e80e7321bc73e440f84fa4060855af09bb0d4ef657e6d1a06f",
       "size": 4304,
-      "updatedAt": "2026-08-18T02:04:59Z"
+      "updatedAt": "2026-08-18T17:38:27Z"
     },
     {
       "id": "a1_mini_mkp_standard",
@@ -73,9 +73,9 @@
       "machineId": "A1_MINI",
       "fileName": "A1M.toml",
       "relativePath": "presets/mkp/A1M.toml",
-      "sha256": "4da992793cdc1c73eb5f34ffca0485a07ac833ba0747bc5d830ebbdd4913a38f",
+      "sha256": "26d1aad549bc76c66bd362de8f6adc84caf7ccf0f5ffcb3f0a25ebda61435286",
       "size": 4306,
-      "updatedAt": "2026-08-18T02:04:59Z"
+      "updatedAt": "2026-08-18T17:38:27Z"
     },
     {
       "id": "a1_mkp_fast",
@@ -84,9 +84,9 @@
       "machineId": "A1",
       "fileName": "A1F.toml",
       "relativePath": "presets/mkp/A1F.toml",
-      "sha256": "3d186f90fedbc77714390d298e57e89d99667c434d93eaf47e41351865c5559e",
+      "sha256": "522eb884c820bcaee35574d6ccf0522861031cf16aad0b26fca461512025a7cd",
       "size": 4297,
-      "updatedAt": "2026-08-18T02:04:59Z"
+      "updatedAt": "2026-08-18T17:38:26Z"
     },
     {
       "id": "a1_mkp_fastv3.3",
@@ -95,9 +95,9 @@
       "machineId": "A1",
       "fileName": "A1F_260628.toml",
       "relativePath": "presets/mkp/A1F_260628.toml",
-      "sha256": "81cc460c04f4f4ea93cf8e93823229fdbb5f87e27d40e290fa705e1c293618c0",
+      "sha256": "3426fd38ddc1389f3d1a893ed9f0a6faa3a5aba9f3a0c97411ef76aef5e530bf",
       "size": 4300,
-      "updatedAt": "2026-08-18T02:04:59Z"
+      "updatedAt": "2026-08-18T17:38:26Z"
     },
     {
       "id": "a1_mkp_standard",
@@ -106,9 +106,9 @@
       "machineId": "A1",
       "fileName": "A1.toml",
       "relativePath": "presets/mkp/A1.toml",
-      "sha256": "924ac7855fb009a5d9fe693aeda2746fc419d633017d66a91e929cf2226af592",
+      "sha256": "0b19feaa67a77d2f0e61dfcf1c9d0ae1632c0ddb53db030c417b61ed00b69359",
       "size": 4299,
-      "updatedAt": "2026-08-18T02:04:59Z"
+      "updatedAt": "2026-08-18T17:38:26Z"
     },
     {
       "id": "image_avatars_avatar_jhmodel喵",
@@ -733,9 +733,9 @@
       "machineId": "P1S",
       "fileName": "P1.toml",
       "relativePath": "presets/mkp/P1.toml",
-      "sha256": "3d1be116efb3cd0559cf275f1f9cdb2a9ca8133ff6a98950721e753d7dc63dd4",
+      "sha256": "bed23fb6b45e680a7fd520a8ae4669402ffe2385930035fbab73bfb666dd3025",
       "size": 4362,
-      "updatedAt": "2026-08-18T02:04:59Z"
+      "updatedAt": "2026-08-18T17:38:27Z"
     },
     {
       "id": "p2s_bbs_mkpprocess_p2s_04_024",
@@ -755,9 +755,9 @@
       "machineId": "P2S",
       "fileName": "P2.toml",
       "relativePath": "presets/mkp/P2.toml",
-      "sha256": "235c6c8e87209fcc0315f3337fa570a1a2f40f1e49eea5da8c58ee6a28152bad",
+      "sha256": "df96bda82aa41fdbbd89e6a066369f0827179b3df987b494bbf80b97b396fdf3",
       "size": 4366,
-      "updatedAt": "2026-08-18T02:04:59Z"
+      "updatedAt": "2026-08-18T17:38:28Z"
     },
     {
       "id": "x1c_bbs_mkpprocess_x1_02_010",
@@ -788,9 +788,9 @@
       "machineId": "X1C",
       "fileName": "X1.toml",
       "relativePath": "presets/mkp/X1.toml",
-      "sha256": "9e69056ed53653456f749d19fcaa06b6b79e1004e432e4a0c6444efca6cb8ab7",
+      "sha256": "17ca04c3c51035b30df54939354f9b21ea9aee827a5a9000cfc25b44273f6772",
       "size": 4362,
-      "updatedAt": "2026-08-18T02:04:59Z"
+      "updatedAt": "2026-08-18T17:38:28Z"
     }
   ],
   "brands": [
@@ -848,8 +848,19 @@
       "id": "",
       "fileName": "param_registry.json",
       "relativePath": "content/param_registry.json",
-      "sha256": "12f58f85e3a468adbd3358a8475d661d5055a7ed3d2c7cc552dd3741d238bb8f",
-      "size": 74725,
+      "sha256": "f8d4da5400bed6a481ba55610279c3c0310a8d5da5ee24669a07210970124bc9",
+      "size": 74724,
+      "ttl": "never",
+      "strategy": "no-swr",
+      "prefetch": false,
+      "priority": "normal"
+    },
+    {
+      "id": "",
+      "fileName": "fallback_registry.json",
+      "relativePath": "content/fallback_registry.json",
+      "sha256": "6a9b0392b7d57202501dea9df0ff89660f416f64cb19797f9e6b7c7465305530",
+      "size": 10994,
       "ttl": "never",
       "strategy": "no-swr",
       "prefetch": false,
@@ -941,7 +952,7 @@
       "id": "",
       "fileName": "assets_index.json",
       "relativePath": "content/assets_index.json",
-      "sha256": "7fb9b691340e9eb4d375ac8686af80e64afefe42a4b17b5869bdc821e394cff7",
+      "sha256": "2e0ce686757cc403ff42f9e07154deb224aac610acadbf82f1b009956efbe867",
       "size": 5840,
       "ttl": "24h",
       "strategy": "swr",
@@ -977,8 +988,8 @@
       "id": "",
       "fileName": "application_defaults.json",
       "relativePath": "content/application_defaults.json",
-      "sha256": "4834d13a1d793bd48987ee39e1acd91fd8da60a1dc50925162a95ff9513e8fc6",
-      "size": 2109,
+      "sha256": "01daa17437e9fcbc0f9cd38e4e884ab4833671b4d3ae36f9e89ceb94f4f54a8a",
+      "size": 1965,
       "ttl": "never",
       "strategy": "no-swr",
       "prefetch": false,
@@ -1372,6 +1383,6 @@
     }
   ],
   "ttl": "0s",
-  "updated": "2026-08-18T02:27:12Z",
+  "updated": "2026-08-19T14:10:10Z",
   "version": ""
 }
